@@ -7,27 +7,48 @@ intents:
   - deny
   - mood_great
   - mood_unhappy
+  - i_komponen_survey_akademik
+  - i_unit_survei
+  - i_komponen_survey_kemahasiswaan
+  - i_peserta_wisuda
+  - i_pendaftaran_dan_biaya
   - bot_challenge
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
 
   utter_did_that_help:
-  - text: "Did that help you?"
+    - text: "Did that help you?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Bye"
+
+  utter_komponen_survey_akademik:
+    - text: " 1) pengukuran komponen pedagogik\n2) kompetensi profesional dosen\n3) kompetensi kepribadian dosen\n4) kompetensi sosial dosen."
+
+  utter_unit_survei:
+    - text: "Unit LP3MP"
+
+  utter_komponen_survey_kemahasiswaan:
+    - text: "1. layanan minat bakat\n2. layanan softskill\n3. beasiswa\n4. klinik kesehatan\n5. lembaga bahasa\n6. perpustakaan\n7. sarana umum\n8. keuangan, wisuda\n9. penerimaan mahasiswa baru\n10. bimbingan konseling\n11. KKN/magang/PKL."
+
+  utter_peserta_wisuda:
+    - text: "1. Mahasiswa Universitas Sriwijaya yang telah diyudisium dan telah memenuhi seluruh persyaratan yang ditetapkan oleh Fakultas/Program dan Universitas Sriwijaya.\n2. Anggota Senat Universitas Sriwijaya.\n3. Panitia pelaksana wisuda yang ditetapkan dengan SK Rektor Universitas Sriwijaya.\n4. Undangan."
+
+  utter_pendaftaran_dan_biaya:
+    - text: "1. Seluruh mahasiswa yang akan mengikuti upacara wisuda diwajibkan untuk mendaftarkan diri melalui web/aplikasi yang ditetapkan BAK, serta menyerahkan berkas pendaftaran ke BAK.\n2. Mahasiswa yang telah membayar UKT tidak perlu lagi membayar biaya wisuda.\n3. Pendaftaran dilakukan selambat-lambatnya 2 (dua) minggu sebelum wisuda dilaksanakan.
+"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "I am a bot, powered by Rasa."
 
 session_config:
   session_expiration_time: 60

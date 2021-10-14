@@ -1,92 +1,147 @@
 version: "2.0"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
 
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - good afternoon
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - ok
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: i_komponen_survey_akademik
+    examples: |
+      - Apa saja survey yang dilakukan terhadap mahasiswa untuk mengukur kepuasan layanan akademik?
+      - Apa komponen survei yang mengukur kepuasan layanan akademik terutama proses Belajar Mengajar yang diberikan oleh dosen?
+      - Apa komponen survey layanan akademik di universitas sriwijaya?
+      - Apa komponen survei layanan akademik?
+      - Sebutkan komponen yang mengukur kepuasan layanan akademik
+      - Sebutkan komponen yang mengukur kepuasan layanan akademik terutama Proses Belajar Mengajar yang diberikan oleh dosen
+      - Sebutkan apa saja yang menjadi komponen survei layanan akademik unsri?
+      - Komponen apa saja yang digunakan untuk mengukur kepuasan layanan akademik?
+      - Hal apa saja yang menjadi komponen survei layanan akademik unsri?
+      - Komponen survey layanan akademik?
+
+  - intent: i_unit_survei
+    examples: |
+      - Siapa unit yang melakukan survei?
+      - Unit mana yang melakukan survei layanan akademik?
+      - Apa nama unit yang melakukan survei layanan akademik?
+      - Nama unit survey layanan akademik ?
+
+  - intent: i_komponen_survey_kemahasiswaan
+    examples: |
+      - Apa saja yang menjadi tolak ukur kepuasan layanan kemahasiswaan?
+      - Apa saja yang menjadi penilaian kepuasan layanan kemahasiswaan?
+      - Hal apa saja yang menjadi presepsi kepuasan layanan kemahasiswaan?
+      - Apa saja komponen yang survei kemahasiswaan?
+      - Apa saja komponen penilaian untuk survei layanan kemahasiswaan?
+      - Sebutkan komponen survei kepuasan layanan kemahasiswaan
+      - Sebutkan yang menjadi tolak ukur kepuasan layanan kemahasiswaan
+      - Sebutkan yang menjadi penilaian kepuasan layanan kemahasiswaan
+
+  - intent: i_peserta_wisuda
+    examples: |
+      - Siapa saja peserta wisuda?
+      - Siapa saja yang menjadi peserta wisuda?
+      - Siapa saja yang boleh mengikuti acara wisuda?
+      - Siapa yang diperkenankan menghadiri wisuda?
+      - Siapa yang berhak menjadi peserta wisuda?
+      - Siapa yang menjadi peserta wisuda?
+      - Siapa yang diperbolehkan menghadiri wisuda?
+      - Siapa yang diizinkan menjadii peserta wisuda?
+      - Apa saja syarat peserta wisuda?
+      - Apa ketentuan menjadi peserta wisuda?
+      - Terdiri dari siapa saja peserta wisuda?
+      - sebutkan persyaratan menjadi perserta wisuda
+
+  - intent: i_pendaftaran_dan_biaya
+    examples: |
+      - Bagaimana pendaftaran dan biaya wisuda?
+      - Apa persyaratan pendaftaran dan biaya wisuda?
+      - Hal yang perlu dilakukan untuk pendaftaran wisuda?
+      - Sebutkan yang menjadi aturan pendaftaran dan biaya wisuda?
+      - Apa saja yang harus dilakukan mahasiswa untuk pendaftaran wisuda?
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
