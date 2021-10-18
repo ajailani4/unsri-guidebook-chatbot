@@ -36,3 +36,14 @@ nlu:
     - sore
     - selamat malam
     - malam
+
+- intent: fasilitas_minat_bakat
+  examples: |
+    - Apa saja kegiatan minat dan bakat yang ada di Universitas Sriwijaya?
+    - Apa saja BEM, HIMA, dan Unit Kegiatan Mahasiswa yang ada di Universitas Sriwijaya?
+    - Apa fasilitas yang didapat dari Kegiatan di bidang [olahraga](bidang_minat)?
+    - Apa fasilitas yang didapat dari Kegiatan di bidang [BEM](bidang_minat)?
+    - Apa fasilitas yang didapat dari Kegiatan di bidang [HIMA](bidang_minat)?
+    - Apa fasilitas yang didapat dari Kegiatan di bidang [Unit Kegiatan Mahasiswa](bidang_minat)?
+    - Apa fasilitas yang didapat dari Kegiatan di bidang [UKM](bidang_minat)?
+    - Apa fasilitas yang didapat dari Kegiatan di bidang [kewirausahaan](bidang_minat)?
