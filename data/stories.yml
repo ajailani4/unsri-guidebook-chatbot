@@ -22,3 +22,10 @@ stories:
   - action: utter_salam
   - intent: jenis_kegiatan_minat_bakat
   - action: utter_jenis_kegiatan_minat_bakat
+
+- story: tanya fasilitas kegiatan minat dan bakat
+  steps:
+  - intent: salam
+  - action: utter_salam
+  - intent: fasilitas_minat_bakat
+  - action: action_tampil_fasilitas_minat_bakat

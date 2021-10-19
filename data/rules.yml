@@ -16,3 +16,8 @@ rules:
   steps:
   - intent: jenis_kegiatan_minat_bakat
   - action: utter_jenis_kegiatan_minat_bakat
+
+- rule: Jawab fasilitas kegiatan minat dan bakat
+  steps:
+  - intent: fasilitas_minat_bakat
+  - action: action_tampil_fasilitas_minat_bakat

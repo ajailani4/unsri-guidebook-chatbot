@@ -58,7 +58,9 @@ nlu:
   examples: |
     - Apa fasilitas yang didapat dari kegiatan di bidang [olahraga](bidang_minat)?
     - Fasilitas apa saja yang didapat dari kegiatan di bidang [BEM](bidang_minat)?
+    - Fasilitas apa saja yang didapat dari kegiatan [badan eksekutif mahasiswa](bidang_minat)?
     - Kegiatan di bidang [HIMA](bidang_minat) mendapat fasilitas apa saja?
-    - Apa fasilitas yang didapat dari kegiatan [Unit Kegiatan Mahasiswa](bidang_minat)?
+    - Kegiatan [himpunan mahasiswa](bidang_minat) mendapat fasilitas apa saja?
+    - Apa fasilitas yang didapat dari kegiatan [unit kegiatan mahasiswa](bidang_minat)?
     - [UKM](bidang_minat) mendapat fasilitas apa?
     - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
