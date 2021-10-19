@@ -2,12 +2,22 @@ version: "2.0"
 
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Katakan sampai jumpa
   steps:
-  - intent: goodbye
-  - action: utter_goodbye
+  - intent: sampai_jumpa
+  - action: utter_sampai_jumpa
 
-- rule: Say 'I am a bot' anytime the user challenges
+- rule: Jawab kegiatan minat dan bakat
   steps:
-  - intent: bot_challenge
-  - action: utter_iamabot
+  - intent: kegiatan_minat_bakat
+  - action: utter_kegiatan_minat_bakat
+
+- rule: Jawab jenis kegiatan minat dan bakat
+  steps:
+  - intent: jenis_kegiatan_minat_bakat
+  - action: utter_jenis_kegiatan_minat_bakat
+
+- rule: Jawab fasilitas kegiatan minat dan bakat
+  steps:
+  - intent: fasilitas_minat_bakat
+  - action: action_tampil_fasilitas_minat_bakat

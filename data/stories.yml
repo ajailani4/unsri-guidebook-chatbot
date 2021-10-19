@@ -2,29 +2,30 @@ version: "2.0"
 
 stories:
 
-- story: happy path
+- story: salam dan sampai jumpa
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: salam
+  - action: utter_salam
+  - intent: sampai_jumpa
+  - action: utter_sampai_jumpa
 
-- story: sad path 1
+- story: tanya kegiatan minat dan bakat
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - intent: salam
+  - action: utter_salam
+  - intent: kegiatan_minat_bakat
+  - action: utter_kegiatan_minat_bakat
 
-- story: sad path 2
+- story: tanya jenis kegiatan minat dan bakat
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - intent: salam
+  - action: utter_salam
+  - intent: jenis_kegiatan_minat_bakat
+  - action: utter_jenis_kegiatan_minat_bakat
+
+- story: tanya fasilitas kegiatan minat dan bakat
+  steps:
+  - intent: salam
+  - action: utter_salam
+  - intent: fasilitas_minat_bakat
+  - action: action_tampil_fasilitas_minat_bakat
