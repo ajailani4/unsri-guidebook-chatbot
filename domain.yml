@@ -3,20 +3,28 @@ version: "2.0"
 intents:
   - salam
   - sampai_jumpa
+  - kegiatan_minat_bakat
+  - jenis_kegiatan_minat_bakat
   - fasilitas_minat_bakat
 
 responses:
   utter_salam:
-  - text: "Halo. Apa kabar?"
+  - text: "Halo. Ada yang ingin ditanyakan?"
 
   utter_sampai_jumpa:
   - text: "Silahkan mampir kembali jika masih ada yang ingin ditanyakan, ya! :)"
 
-- slots:
+  utter_kegiatan_minat_bakat:
+  - text: "Di Universitas Siriwjaya ada kegiatan di bidang olahraga seperti volley, futsal, sepak bola, dll, kegiatan di bidang kewirausahaan, dan juga adanya kegiatan praktikum, praktek lapangan atupun kegiatan fieldtrip sesuai bidang ilmu yang ditempuh, serta adanya kegiatan pengabdian pada masyarakat."
+
+  utter_jenis_kegiatan_minat_bakat:
+  - text: "Di Universitas Siriwjaya ada kegiatan BEM, HIMA dan Unit Kegiatan Mahasiswa (UKM) seperti UKM Wahana Dakwah Islamiyah “NADWAH”, UKM SRCT/SAR, UKM Paduan Suara “Belisario”, UKM Lembaga Pers Mahasiswa “Gelora Sriwijaya”, UKM Seni dan Teater “GABI” Pecinta Alam “Sabak” dan UKM Olahraga."
+
+slots:
   bidang_minat:
     type: text
 
-- entities:
+entities:
   - bidang_minat
 
 session_config:

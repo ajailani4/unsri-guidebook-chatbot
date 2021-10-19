@@ -6,3 +6,13 @@ rules:
   steps:
   - intent: sampai_jumpa
   - action: utter_sampai_jumpa
+
+- rule: Jawab kegiatan minat dan bakat
+  steps:
+  - intent: kegiatan_minat_bakat
+  - action: utter_kegiatan_minat_bakat
+
+- rule: Jawab jenis kegiatan minat dan bakat
+  steps:
+  - intent: jenis_kegiatan_minat_bakat
+  - action: utter_jenis_kegiatan_minat_bakat

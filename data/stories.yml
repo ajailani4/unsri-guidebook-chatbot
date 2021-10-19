@@ -2,9 +2,23 @@ version: "2.0"
 
 stories:
 
-- story: Salam dan sampai jumpa
+- story: salam dan sampai jumpa
   steps:
   - intent: salam
   - action: utter_salam
   - intent: sampai_jumpa
   - action: utter_sampai_jumpa
+
+- story: tanya kegiatan minat dan bakat
+  steps:
+  - intent: salam
+  - action: utter_salam
+  - intent: kegiatan_minat_bakat
+  - action: utter_kegiatan_minat_bakat
+
+- story: tanya jenis kegiatan minat dan bakat
+  steps:
+  - intent: salam
+  - action: utter_salam
+  - intent: jenis_kegiatan_minat_bakat
+  - action: utter_jenis_kegiatan_minat_bakat

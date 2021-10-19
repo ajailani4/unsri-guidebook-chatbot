@@ -37,13 +37,28 @@ nlu:
     - selamat malam
     - malam
 
-- intent: fasilitas_minat_bakat
+- intent: kegiatan_minat_bakat
   examples: |
     - Apa saja kegiatan minat dan bakat yang ada di Universitas Sriwijaya?
+    - Kegiatan minat dan bakat apa saja yang ada di Universitas Sriwijaya?
+    - Universitas Sriwijaya memiliki kegiatan minat dan bakat apa saja?
+    - Kegiatan apa saja yang ada di Universitas Sriwijaya?
+    - Kegiatan seperti apa yang ada di Universitas Sriwijaya?
+
+- intent: jenis_kegiatan_minat_bakat
+  examples: |
     - Apa saja BEM, HIMA, dan Unit Kegiatan Mahasiswa yang ada di Universitas Sriwijaya?
-    - Apa fasilitas yang didapat dari Kegiatan di bidang [olahraga](bidang_minat)?
-    - Apa fasilitas yang didapat dari Kegiatan di bidang [BEM](bidang_minat)?
-    - Apa fasilitas yang didapat dari Kegiatan di bidang [HIMA](bidang_minat)?
-    - Apa fasilitas yang didapat dari Kegiatan di bidang [Unit Kegiatan Mahasiswa](bidang_minat)?
-    - Apa fasilitas yang didapat dari Kegiatan di bidang [UKM](bidang_minat)?
-    - Apa fasilitas yang didapat dari Kegiatan di bidang [kewirausahaan](bidang_minat)?
+    - BEM apa saja yang ada di Universitas Sriwijaya?
+    - HIMA apa saja yang ada di Universitas Sriwijaya?
+    - Unit Kegiatan Mahasiswa apa saja yang ada di Universitas Sriwijaya?
+    - UKM apa saja yang ada di Universitas Sriwijaya?
+    - Organisasi apa saja yang ada di Universitas Sriwijaya?
+
+- intent: fasilitas_minat_bakat
+  examples: |
+    - Apa fasilitas yang didapat dari kegiatan di bidang [olahraga](bidang_minat)?
+    - Fasilitas apa saja yang didapat dari kegiatan di bidang [BEM](bidang_minat)?
+    - Kegiatan di bidang [HIMA](bidang_minat) mendapat fasilitas apa saja?
+    - Apa fasilitas yang didapat dari kegiatan [Unit Kegiatan Mahasiswa](bidang_minat)?
+    - [UKM](bidang_minat) mendapat fasilitas apa?
+    - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
