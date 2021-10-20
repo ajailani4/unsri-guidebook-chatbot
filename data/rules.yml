@@ -23,15 +23,20 @@ rules:
 
   - rule: Jawab komponen survey akademik
     steps:
-      - intent: komponen_survey_akademik
-      - action: utter_komponen_survey_akademik
+      - intent: komponen_survey_akademik
+      - action: utter_komponen_survey_akademik
 
   - rule: Jawab unit survei
     steps:
       - intent: unit_survei
       - action: utter_unit_survei
 
-  - rule: Jawab unit survei
-    steps:
-      - intent: komponen_survei_kemahasiswaan
-      - action: utter_komponen_survei_kemahasiswaan
+  - rule: Jawab unit survei
+    steps:
+      - intent: komponen_survei_kemahasiswaan
+      - action: utter_komponen_survei_kemahasiswaan
+
+  - rule: Jawab platform survei
+    steps:
+      - intent: platform_survei
+      - action: action_tampil_platform_survei
