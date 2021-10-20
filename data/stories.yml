@@ -29,3 +29,24 @@ stories:
   - action: utter_salam
   - intent: fasilitas_minat_bakat
   - action: action_tampil_fasilitas_minat_bakat
+
+- story: tanya komponen survey akademik
+  steps:
+  - intent: salam
+  - action: utter_salam
+  - intent: komponen_survey_akademik
+  - action: utter_komponen_survey_akademik
+
+ - story: tanya unit survei
+  steps:
+  - intent: salam
+  - action: utter_salam
+  - intent: unit_survei
+  - action: utter_unit_survei
+
+- story: tanya komponen survei kemahasiswaan
+  steps:
+  - intent: salam
+  - action: utter_salam
+  - intent: komponen_survei_kemahasiswaan
+  - action: utter_komponen_survei_kemahasiswaan

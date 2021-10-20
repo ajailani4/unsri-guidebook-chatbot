@@ -6,6 +6,9 @@ intents:
   - kegiatan_minat_bakat
   - jenis_kegiatan_minat_bakat
   - fasilitas_minat_bakat
+  - komponen_survey_akademik
+  - unit_survei
+  - komponen_survei_kemahasiswaan
 
 actions:
   - action_tampil_fasilitas_minat_bakat

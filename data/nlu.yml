@@ -72,3 +72,36 @@ nlu:
     - [BEM](bidang_minat) mendapatkan fasilitas apa?
     - [kewirausahaan](bidang_minat) mendapatkan fasilitas apa?
     - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
+
+- intent: komponen_survey_akademik
+  examples: |
+    - Apa saja survey yang dilakukan terhadap mahasiswa untuk mengukur kepuasan layanan akademik?
+    - Apa komponen survei yang mengukur kepuasan layanan akademik terutama proses Belajar Mengajar yang diberikan oleh dosen?
+    - Apa komponen survey layanan akademik di universitas sriwijaya?
+    - Apa komponen survei layanan akademik?
+    - Sebutkan komponen yang mengukur kepuasan layanan akademik
+    - Sebutkan komponen yang mengukur kepuasan layanan akademik terutama Proses Belajar Mengajar yang diberikan oleh dosen
+    - Sebutkan apa saja yang menjadi komponen survei layanan akademik unsri?
+    - Komponen apa saja yang digunakan untuk mengukur kepuasan layanan akademik?
+    - Hal apa saja yang menjadi komponen survei layanan akademik unsri?
+
+  - intent: unit_survei
+    examples: |
+    - Siapa unit yang melakukan survei?
+    - Unit mana yang melakukan survei layanan akademik?
+    - Apa nama unit yang melakukan survei layanan akademik?
+    - Unit survei layanan akademik
+
+  - intent: komponen_survei_kemahasiswaan
+    examples: |
+    - Apa saja yang menjadi tolak ukur kepuasan layanan kemahasiswaan?
+    - Apa saja yang menjadi penilaian kepuasan layanan kemahasiswaan?
+    - Hal apa saja yang menjadi presepsi kepuasan layanan kemahasiswaan?
+    - Apa saja komponen yang survei kemahasiswaan?
+    - Apa saja komponen penilaian untuk survei layanan kemahasiswaan?
+    - Sebutkan komponen survei kepuasan layanan kemahasiswaan
+    - Sebutkan yang menjadi tolak ukur kepuasan layanan kemahasiswaan
+    - Sebutkan yang menjadi penilaian kepuasan layanan kemahasiswaan
+    - Tolak ukur kepuasan layanan kemahasiswaan
+    - Komponen kepuasan layanan kemahasiswaan
+  
