@@ -25,3 +25,24 @@ class ActionTampilFasilitasMinatBakat(Action):
         dispatcher.utter_message(text=message)
 
         return []
+
+class ActionTampilPlatformSurvei(Action):
+    def name(self) -> Text:
+        return "action_tampil_platform_survei"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        jenis_survei = str(next(tracker.get_latest_entity_values("jenis_survei"), None)).lower()
+        print(jenis_survei)
+        message = ""
+
+        if jenis_survei == "kemahasiswaan":
+            message = "Survei layanan kemahasiswaan dapat diakses di web cdc.unsri.ac.id."
+        elif jenis_survei == "akademik":
+            message = "Survei layanan akademik dapat diakses di web lp3mp.unsri.ac.id"
+
+        dispatcher.utter_message(text=message)
+
+        return []
