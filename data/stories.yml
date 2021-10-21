@@ -56,3 +56,24 @@ stories:
       - action: utter_salam
       - intent: platform_survei
       - action: action_tampil_platform_survei
+
+  - story: tanya cdc unsri
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: cdc
+      - action: utter_cdc
+
+  - story: tanya link cdc
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: link_cdc
+      - action: utter_link_cdc
+
+  - story: tanya layanan cdc
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: layanan_cdc
+      - action: utter_layanan_cdc

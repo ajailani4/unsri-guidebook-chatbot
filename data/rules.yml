@@ -40,3 +40,19 @@ rules:
     steps:
       - intent: platform_survei
       - action: action_tampil_platform_survei
+
+  - rule: Jawab cdc
+    steps:
+      - intent: cdc
+      - action: utter_cdc
+  
+  - rule: Jawab link cdc
+    steps:
+      - intent: link_cdc
+      - action: utter_link_cdc
+  
+  - rule: Jawab layanan cdc
+    steps:
+      - intent: layanan_cdc
+      - action: utter_layanan_cdc
+  
