@@ -21,3 +21,8 @@ rules:
   steps:
   - intent: fasilitas_minat_bakat
   - action: action_tampil_fasilitas_minat_bakat
+
+- rule: Jawab daftar layanan sarana akademik
+  steps:
+  - intent: daftar_layanan_sarana_akademik
+  - action: utter_daftar_layanan_sarana_akademik

@@ -29,3 +29,11 @@ stories:
   - action: utter_salam
   - intent: fasilitas_minat_bakat
   - action: action_tampil_fasilitas_minat_bakat
+
+- story: tanya daftar layanan sarana akademik
+  steps:
+  - intent: salam
+  - action: utter_salam
+  - intent: daftar_layanan_sarana_akademik
+  - action: utter_daftar_layanan_sarana_akademik
+  

@@ -6,6 +6,7 @@ intents:
   - kegiatan_minat_bakat
   - jenis_kegiatan_minat_bakat
   - fasilitas_minat_bakat
+  - daftar_layanan_sarana_akademik
 
 actions:
   - action_tampil_fasilitas_minat_bakat
@@ -22,6 +23,22 @@ responses:
 
   utter_jenis_kegiatan_minat_bakat:
   - text: "Di Universitas Sriwijaya ada kegiatan BEM, HIMA dan Unit Kegiatan Mahasiswa (UKM) seperti UKM Wahana Dakwah Islamiyah “NADWAH”, UKM SRCT/SAR, UKM Paduan Suara “Belisario”, UKM Lembaga Pers Mahasiswa “Gelora Sriwijaya”, UKM Seni dan Teater “GABI” Pecinta Alam “Sabak” dan UKM Olahraga."
+
+  utter_daftar_layanan_sarana_akademik:
+  - text: "1) Perpustakaan\n
+          2) Laboraturium Komputer\n
+          3) Laboraturium Dasar Terpadu\n
+          4) Lembaga Bahasa\n
+          5) Asrama Mahasiswa\n
+          6) Student Center\n
+          7) Auditorium dan Gedung Serbaguna\n
+          8) Fasilitas Lapangan\n
+          9) Pelayanan Kesehatan\n
+          10) Pusat Peribadatan\n
+          11) Bus Kampus\n
+          12) Kafetaria\n
+          13) Pelayanan Bank\n
+          14) Keamanan Kampus"
 
 slots:
   bidang_minat:
