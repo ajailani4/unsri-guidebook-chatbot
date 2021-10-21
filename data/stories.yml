@@ -1,31 +1,58 @@
 version: "2.0"
 
 stories:
+  - story: salam dan sampai jumpa
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: sampai_jumpa
+      - action: utter_sampai_jumpa
 
-- story: salam dan sampai jumpa
-  steps:
-  - intent: salam
-  - action: utter_salam
-  - intent: sampai_jumpa
-  - action: utter_sampai_jumpa
+  - story: tanya kegiatan minat dan bakat
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: kegiatan_minat_bakat
+      - action: utter_kegiatan_minat_bakat
 
-- story: tanya kegiatan minat dan bakat
-  steps:
-  - intent: salam
-  - action: utter_salam
-  - intent: kegiatan_minat_bakat
-  - action: utter_kegiatan_minat_bakat
+  - story: tanya jenis kegiatan minat dan bakat
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: jenis_kegiatan_minat_bakat
+      - action: utter_jenis_kegiatan_minat_bakat
 
-- story: tanya jenis kegiatan minat dan bakat
-  steps:
-  - intent: salam
-  - action: utter_salam
-  - intent: jenis_kegiatan_minat_bakat
-  - action: utter_jenis_kegiatan_minat_bakat
+  - story: tanya fasilitas kegiatan minat dan bakat
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: fasilitas_minat_bakat
+      - action: action_tampil_fasilitas_minat_bakat
 
-- story: tanya fasilitas kegiatan minat dan bakat
-  steps:
-  - intent: salam
-  - action: utter_salam
-  - intent: fasilitas_minat_bakat
-  - action: action_tampil_fasilitas_minat_bakat
+  - story: tanya komponen survey akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: komponen_survey_akademik
+      - action: utter_komponen_survey_akademik
+
+  - story: tanya unit survei
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: unit_survei
+      - action: utter_unit_survei
+
+  - story: tanya komponen survei kemahasiswaan
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: komponen_survei_kemahasiswaan
+      - action: utter_komponen_survei_kemahasiswaan
+
+  - story: tanya platform survei
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: platform_survei
+      - action: action_tampil_platform_survei
