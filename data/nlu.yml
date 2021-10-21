@@ -1,106 +1,190 @@
 version: "2.0"
 
 nlu:
-- intent: salam
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hai
-    - halo
-    - hey
-    - selamat pagi
-    - pagi
-    - selamat siang
-    - siang
-    - selamat sore
-    - sore
-    - selamat malam
-    - malam
-    - halo yang di sana
-    - hai bro
+  - intent: salam
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hai
+      - halo
+      - hey
+      - selamat pagi
+      - pagi
+      - selamat siang
+      - siang
+      - selamat sore
+      - sore
+      - selamat malam
+      - malam
+      - halo yang di sana
+      - hai bro
 
-- intent: sampai_jumpa
-  examples: |
-    - bye
-    - good bye
-    - see you
-    - sampai jumpa
-    - sampai berjumpa lagi
-    - selamat tinggal
-    - selamat pagi
-    - pagi
-    - selamat siang
-    - siang
-    - selamat sore
-    - sore
-    - selamat malam
-    - malam
+  - intent: sampai_jumpa
+    examples: |
+      - bye
+      - good bye
+      - see you
+      - sampai jumpa
+      - sampai berjumpa lagi
+      - selamat tinggal
+      - selamat pagi
+      - pagi
+      - selamat siang
+      - siang
+      - selamat sore
+      - sore
+      - selamat malam
+      - malam
 
-- intent: kegiatan_minat_bakat
-  examples: |
-    - Apa saja kegiatan minat dan bakat yang ada di Universitas Sriwijaya?
-    - Kegiatan minat dan bakat apa saja yang ada di Universitas Sriwijaya?
-    - Universitas Sriwijaya memiliki kegiatan minat dan bakat apa saja?
-    - Kegiatan apa saja yang ada di Universitas Sriwijaya?
-    - Kegiatan seperti apa yang ada di Universitas Sriwijaya?
+  - intent: kegiatan_minat_bakat
+    examples: |
+      - Apa saja kegiatan minat dan bakat yang ada di Universitas Sriwijaya?
+      - Kegiatan minat dan bakat apa saja yang ada di Universitas Sriwijaya?
+      - Universitas Sriwijaya memiliki kegiatan minat dan bakat apa saja?
+      - Kegiatan apa saja yang ada di Universitas Sriwijaya?
+      - Kegiatan seperti apa yang ada di Universitas Sriwijaya?
 
-- intent: jenis_kegiatan_minat_bakat
-  examples: |
-    - Apa saja BEM, HIMA, dan Unit Kegiatan Mahasiswa yang ada di Universitas Sriwijaya?
-    - BEM apa saja yang ada di Universitas Sriwijaya?
-    - HIMA apa saja yang ada di Universitas Sriwijaya?
-    - Unit Kegiatan Mahasiswa apa saja yang ada di Universitas Sriwijaya?
-    - UKM apa saja yang ada di Universitas Sriwijaya?
-    - Organisasi apa saja yang ada di Universitas Sriwijaya?
+  - intent: jenis_kegiatan_minat_bakat
+    examples: |
+      - Apa saja BEM, HIMA, dan Unit Kegiatan Mahasiswa yang ada di Universitas Sriwijaya?
+      - BEM apa saja yang ada di Universitas Sriwijaya?
+      - HIMA apa saja yang ada di Universitas Sriwijaya?
+      - Unit Kegiatan Mahasiswa apa saja yang ada di Universitas Sriwijaya?
+      - UKM apa saja yang ada di Universitas Sriwijaya?
+      - Organisasi apa saja yang ada di Universitas Sriwijaya?
 
-- intent: fasilitas_minat_bakat
-  examples: |
-    - Apa fasilitas yang didapat dari kegiatan di bidang [olahraga](bidang_minat)?
-    - Fasilitas apa saja yang didapat dari kegiatan di bidang [BEM](bidang_minat)?
-    - Fasilitas apa saja yang didapat dari kegiatan di bidang [bem](bidang_minat)?
-    - Fasilitas apa saja yang didapat dari kegiatan [Badan Eksekutif Mahasiswa](bidang_minat)?
-    - Kegiatan di bidang [HIMA](bidang_minat) mendapat fasilitas apa saja?
-    - Kegiatan di bidang [hima](bidang_minat) mendapat fasilitas apa saja?
-    - Kegiatan di bidang [ukm](bidang_minat) mendapatkan fasilitas apa?
-    - Kegiatan [Himpunan Mahasiswa](bidang_minat) mendapat fasilitas apa saja?
-    - Kegiatan [kewirausahaan](bidang_minat) mendapat fasilitas apa saja?
-    - Kegiatan [olahraga](bidang_minat) mendapat fasilitas apa saja?
-    - Apa fasilitas yang didapat dari kegiatan [Unit Kegiatan Mahasiswa](bidang_minat)?
-    - [UKM](bidang_minat) mendapat fasilitas apa?
-    - [HIMA](bidang_minat) mendapatkan fasilitas apa?
-    - [BEM](bidang_minat) mendapatkan fasilitas apa?
-    - [kewirausahaan](bidang_minat) mendapatkan fasilitas apa?
-    - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
+  - intent: fasilitas_minat_bakat
+    examples: |
+      - Apa fasilitas yang didapat dari kegiatan di bidang [olahraga](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [BEM](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [bem](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan [Badan Eksekutif Mahasiswa](bidang_minat)?
+      - Kegiatan di bidang [HIMA](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [hima](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [ukm](bidang_minat) mendapatkan fasilitas apa?
+      - Kegiatan [Himpunan Mahasiswa](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [kewirausahaan](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [olahraga](bidang_minat) mendapat fasilitas apa saja?
+      - Apa fasilitas yang didapat dari kegiatan [Unit Kegiatan Mahasiswa](bidang_minat)?
+      - [UKM](bidang_minat) mendapat fasilitas apa?
+      - [HIMA](bidang_minat) mendapatkan fasilitas apa?
+      - [BEM](bidang_minat) mendapatkan fasilitas apa?
+      - [kewirausahaan](bidang_minat) mendapatkan fasilitas apa?
+      - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
 
-- intent: daftar_layanan_sarana_akademik
-  examples: |
-    - Apa saja layanan akademik di Universitas Sriwijaya?
-    - Apa saja layanan sarana akademik di Universitas Sriwijaya?
-    - Apa saja sarana akademik yang ada di Universitas Sriwijaya?
-    - Apa saja layanan akademik di Unsri?
-    - Layanan akademik apa saja yang ada di Universitas Sriwijaya?
-    - Layanan akademik apa yang ada di Universitas Sriwijaya?
-    - Universitas Sriwijaya memiliki layanan akademik apa saja?
-    - Unsri memiliki layanan akademik apa saja?
-    - Di Universitas Sriwijaya memiliki layanan akademik apa?
+  - intent: daftar_layanan_sarana_akademik
+    examples: |
+      - Apa saja layanan akademik di Universitas Sriwijaya?
+      - Apa saja layanan sarana akademik di Universitas Sriwijaya?
+      - Apa saja sarana akademik yang ada di Universitas Sriwijaya?
+      - Apa saja layanan akademik di Unsri?
+      - Layanan akademik apa saja yang ada di Universitas Sriwijaya?
+      - Layanan akademik apa yang ada di Universitas Sriwijaya?
+      - Universitas Sriwijaya memiliki layanan akademik apa saja?
+      - Unsri memiliki layanan akademik apa saja?
+      - Di Universitas Sriwijaya memiliki layanan akademik apa?
 
-- intent: definisi_layanan_sarana_akademik
-  examples: |
-    - Apa itu [perpustakaan](sarana_akademik)?
-    - Apa itu [student center](sarana_akademik)?
-    - Apa itu [bus kampus](sarana_akademik)?
-    - Apa yang dimaksud [laboraturium dasar terpadu](sarana_akademik)?
-    - Apa yang dimaksud [auditorium](sarana_akademik)?
-    - Apa yang dimaksud [kafetaria](sarana_akademik)?
-    - [laboraturium komputer](sarana_akademik) adalah?
-    - [fasilitas lapangan](sarana_akademik) adalah?
-    - [pelayanan bank](sarana_akademik) adalah?
-    - [lembaga bahasa](sarana_akademik) ialah?
-    - [pelayanan kesehatan](sarana_akademik) ialah?
-    - [keamanan kampus](sarana_akademik) ialah?
-    - [asrama mahasiswa](sarana_akademik) merupakan?
-    - [pusat peribadatan](sarana_akademik) merupakan?
+  - intent: definisi_layanan_sarana_akademik
+    examples: |
+      - Apa itu [perpustakaan](sarana_akademik)?
+      - Apa itu [student center](sarana_akademik)?
+      - Apa itu [bus kampus](sarana_akademik)?
+      - Apa yang dimaksud [laboraturium dasar terpadu](sarana_akademik)?
+      - Apa yang dimaksud [auditorium](sarana_akademik)?
+      - Apa yang dimaksud [kafetaria](sarana_akademik)?
+      - [laboraturium komputer](sarana_akademik) adalah?
+      - [fasilitas lapangan](sarana_akademik) adalah?
+      - [pelayanan bank](sarana_akademik) adalah?
+      - [lembaga bahasa](sarana_akademik) ialah?
+      - [pelayanan kesehatan](sarana_akademik) ialah?
+      - [keamanan kampus](sarana_akademik) ialah?
+      - [asrama mahasiswa](sarana_akademik) merupakan?
+      - [pusat peribadatan](sarana_akademik) merupakan?
+
+  - intent: fasilitas_minat_bakat
+    examples: |
+      - Apa fasilitas yang didapat dari kegiatan di bidang [olahraga](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [BEM](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [bem](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan [Badan Eksekutif Mahasiswa](bidang_minat)?
+      - Kegiatan di bidang [HIMA](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [hima](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [ukm](bidang_minat) mendapatkan fasilitas apa?
+      - Kegiatan [Himpunan Mahasiswa](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [kewirausahaan](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [olahraga](bidang_minat) mendapat fasilitas apa saja?
+      - Apa fasilitas yang didapat dari kegiatan [Unit Kegiatan Mahasiswa](bidang_minat)?
+      - [UKM](bidang_minat) mendapat fasilitas apa?
+      - [HIMA](bidang_minat) mendapatkan fasilitas apa?
+      - [BEM](bidang_minat) mendapatkan fasilitas apa?
+      - [kewirausahaan](bidang_minat) mendapatkan fasilitas apa?
+      - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
+
+  - intent: komponen_survey_akademik
+    examples: |
+      - Apa saja survey yang dilakukan terhadap mahasiswa untuk mengukur kepuasan layanan akademik?
+      - Apa komponen survei yang mengukur kepuasan layanan akademik terutama proses Belajar Mengajar yang diberikan oleh dosen?
+      - Apa komponen survey layanan akademik di universitas sriwijaya?
+      - Apa komponen survei layanan akademik?
+      - Sebutkan komponen yang mengukur kepuasan layanan akademik
+      - Sebutkan komponen yang mengukur kepuasan layanan akademik terutama Proses Belajar Mengajar yang diberikan oleh dosen
+      - Sebutkan apa saja yang menjadi komponen survei layanan akademik unsri?
+      - Komponen apa saja yang digunakan untuk mengukur kepuasan layanan akademik?
+      - Hal apa saja yang menjadi komponen survei layanan akademik unsri?
+
+  - intent: unit_survei
+    examples: |
+      - Siapa unit yang melakukan survei?
+      - Unit mana yang melakukan survei layanan akademik?
+      - Apa nama unit yang melakukan survei layanan akademik?
+      - Unit survei layanan akademik
+
+  - intent: komponen_survei_kemahasiswaan
+    examples: |
+      - Apa saja yang menjadi tolak ukur kepuasan layanan kemahasiswaan?
+      - Apa saja yang menjadi penilaian kepuasan layanan kemahasiswaan?
+      - Hal apa saja yang menjadi presepsi kepuasan layanan kemahasiswaan?
+      - Apa saja komponen yang survei kemahasiswaan?
+      - Apa saja komponen penilaian untuk survei layanan kemahasiswaan?
+      - Sebutkan komponen survei kepuasan layanan kemahasiswaan
+      - Sebutkan yang menjadi tolak ukur kepuasan layanan kemahasiswaan
+      - Sebutkan yang menjadi penilaian kepuasan layanan kemahasiswaan
+      - Tolak ukur kepuasan layanan kemahasiswaan
+      - Komponen kepuasan layanan kemahasiswaan
+
+  - intent: platform_survei
+    examples: |
+      - Apa platform survei layanan kepuasan [akademik](jenis_survei)?
+      - Apa platform survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Platform survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Platform survei layanan kepuasan [akademik](jenis_survei)?
+      - Survei layanan kepuasan [akademik](jenis_survei)?
+      - Survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Apa platform survei layanan kepuasan [akademik](jenis_survei) Universitas Sriwijaya?
+      - Apa platform survei layanan kepuasan [kemahasiswaan](jenis_survei) Universitas Sriwijaya?
+      - Platform survei layanan kepuasan [kemahasiswaan](jenis_survei) Universitas Sriwijaya?
+      - Platform survei layanan kepuasan [akademik](jenis_survei) Universitas Sriwijaya?
+      - Dimana mahasiswa dapat mengakses survei layanan kepuasan [akademik](jenis_survei)?
+      - Dimana mahasiswa dapat mengakses survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Dimana website untuk mengakses survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Dimana website untuk mengakses survei layanan kepuasan [akademik](jenis_survei)?
+      - Link survei layanan layanan [akademik](jenis_survei)?
+      - Link survei layanan layanan [kemahasiswaan](jenis_survei)?
+      - Apa link survei layanan kepuasan [akademik](jenis_survei)?
+      - Apa link survei [akademik](jenis_survei)?
+      - Apa nama website survei layanan kepuasan [akademik](jenis_survei) unsri?
+      - Apa platform survei layanan [kemahasiswaan](jenis_survei)?
+      - Apa platform survei layanan kepuasan [kemahasiswaan](jenis_survei) Universitas Sriwijaya?
+      - Dimana melihat survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Dimana melihat survei layanan kepuasan [akademik](jenis_survei)?
+      - Dimana mengakses survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Dimana melihat survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Akses survei layanan kepuasan [akademik](jenis_survei)?
+      - Apa link survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Apa link survei [kemahasiswaan](jenis_survei)?
+      - Apa nama website survei layanan kepuasan [kemahasiswaan](jenis_survei) unsri?
+      - web survei layanan [kemahasiswaan](jenis_survei)
 
 - synonym: auditorium
   examples: |
