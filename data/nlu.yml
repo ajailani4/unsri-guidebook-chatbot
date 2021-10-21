@@ -141,7 +141,7 @@ nlu:
   - intent: cdc
     examples: |
       - Apa itu CDC Unsri?
-      - Apa pusat karir Universitas Sriwijaya
+      - Apa pusat karir Universitas Sriwijaya?
       - Pusat pengembangan karir Unsri
       - Info pusat karir
       - Info pusat pengembangan karir
@@ -160,7 +160,7 @@ nlu:
   - intent: link_cdc
     examples: |
       - Apa link web CDC Unsri?
-      - Dimana platform dari CDC Universitas Sriwijaya
+      - Dimana platform dari CDC Universitas Sriwijaya?
       - Saya ingin mengunjungi website CDC Unsri
       - Ingin berkunjung ke situs pusat karir
       - Situs CDC
@@ -176,9 +176,9 @@ nlu:
   - intent: layanan_cdc
     examples: |
       - Layanan apa yang diperoleh dari CDC Unsri?
-      - Apa layanan yang diberikan CDC Universitas Sriwijaya
+      - Apa layanan yang diberikan CDC Universitas Sriwijaya?
       - Layanan CDC Universitas Sriwijaya
-      - Apa saja layanan Pusat Pengembangan Karakter dan Karir
+      - Apa saja layanan Pusat Pengembangan Karakter dan Karir?
       - Layanan CDC
       - Layanan pusat pengembangan karir
       - Layanan yang diberikan pusat karir Unsri
@@ -187,7 +187,7 @@ nlu:
       - Saya ingin mengetahui tentang Layanan Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya
       - Informasi layanan CDC Unsri
       - Informasi layanan pusat karir
-      - Layanan apa saja yang diberikan oleh CDC
+      - Layanan apa saja yang diberikan oleh CDC?
       - Layanan pusat karir dari Universitas Sriwijaya
       - Jenis layanan CDC Universitas Sriwijaya
       - Jenis-jenis layanan pusat karir unsri
