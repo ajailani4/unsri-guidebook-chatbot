@@ -60,3 +60,8 @@ rules:
     steps:
       - intent: platform_daftar_wisuda
       - action: utter_platform_daftar_wisuda
+
+  - rule: Jawab platform survei
+    steps:
+      - intent: platform_survei
+      - action: action_tampil_platform_survei
