@@ -46,3 +46,28 @@ class ActionTampilPlatformSurvei(Action):
         dispatcher.utter_message(text=message)
 
         return []
+
+class ActionTampilPakaianWisuda(Action):
+
+    def name(self) -> Text:
+        return "action_tampil_pakaian_wisuda"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        pakaian_wisuda = str(next(tracker.get_latest_entity_values("pakaian_wisuda"), None)).lower()
+        message = ""
+
+        if pakaian_wisuda == "mahasiswa":
+            message = "Mahasiswa peserta upacara wisuda Universitas Sriwijaya mengenakan pakaian wisuda berupa toga, topi wisuda, atribut atau kelengkapan lainnya yang ditetapkan."
+        elif pakaian_wisuda == "anggota senat":
+            message = "Anggota senat Universitas Sriwijaya mengenakan pakaian wisuda berupa toga, topi wisuda, atribut atau kelengkapan lainnya yang ditetapkan."
+        elif pakaian_wisuda == "panitia":
+            message = "Panitia pelaksana wisuda mengenakan pakaian sipil lengkap atau jas warna gelap."
+        elif pakaian_wisuda == "undangan":
+            message = "Undangan mengenakan pakaian sipil lengkap atau pakaian nasional (menyesuaikan)."
+
+        dispatcher.utter_message(text=message)
+
+        return []

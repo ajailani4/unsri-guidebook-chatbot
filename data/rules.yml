@@ -65,3 +65,8 @@ rules:
     steps:
       - intent: platform_survei
       - action: action_tampil_platform_survei
+
+  - rule: Jawab pakaian wisuda
+    steps:
+      - intent: pakaian_wisuda
+      - action: action_tampil_pakaian_wisuda

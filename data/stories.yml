@@ -91,3 +91,10 @@ stories:
       - action: utter_salam
       - intent: platform_survei
       - action: action_tampil_platform_survei
+
+  - story: tanya pakaian wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: pakaian_wisuda
+      - action: action_tampil_pakaian_wisuda
