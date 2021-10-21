@@ -7,6 +7,7 @@ intents:
   - jenis_kegiatan_minat_bakat
   - fasilitas_minat_bakat
   - daftar_layanan_sarana_akademik
+  - definisi_layanan_sarana_akademik
 
 actions:
   - action_tampil_fasilitas_minat_bakat
@@ -43,9 +44,12 @@ responses:
 slots:
   bidang_minat:
     type: text
+  sarana_akademik:
+    type: text
 
 entities:
   - bidang_minat
+  - sarana_akademik
 
 session_config:
   session_expiration_time: 60

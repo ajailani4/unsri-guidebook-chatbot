@@ -84,3 +84,24 @@ nlu:
     - Universitas Sriwijaya memiliki layanan akademik apa saja?
     - Unsri memiliki layanan akademik apa saja?
     - Di Universitas Sriwijaya memiliki layanan akademik apa?
+
+- intent: definisi_layanan_sarana_akademik
+  examples: |
+    - Apa itu [perpustakaan](sarana_akademik)?
+    - Apa itu [student center](sarana_akademik)?
+    - Apa itu [bus kampus](sarana_akademik)?
+    - Apa yang dimaksud [laboraturium dasar terpadu](sarana_akademik)?
+    - Apa yang dimaksud [auditorium](sarana_akademik)?
+    - Apa yang dimaksud [kafetaria](sarana_akademik)?
+    - [laboraturium komputer](sarana_akademik) adalah?
+    - [fasilitas lapangan](sarana_akademik) adalah?
+    - [pelayanan bank](sarana_akademik) adalah?
+    - [lembaga bahasa](sarana_akademik) ialah?
+    - [pelayanan kesehatan](sarana_akademik) ialah?
+    - [keamanan kampus](sarana_akademik) ialah?
+    - [asrama mahasiswa](sarana_akademik) merupakan?
+    - [pusat peribadatan](sarana_akademik) merupakan?
+
+- synonym: auditorium
+  examples: |
+    - gedung serbaguna
