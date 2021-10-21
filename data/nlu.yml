@@ -137,3 +137,59 @@ nlu:
       - Apa link survei [kemahasiswaan](jenis_survei)?
       - Apa nama website survei layanan kepuasan [kemahasiswaan](jenis_survei) unsri?
       - web survei layanan [kemahasiswaan](jenis_survei)
+  
+  - intent: cdc
+    examples: |
+      - Apa itu CDC Unsri?
+      - Apa pusat karir Universitas Sriwijaya?
+      - Pusat pengembangan karir Unsri
+      - Info pusat karir
+      - Info pusat pengembangan karir
+      - Info CDC
+      - Info tentang CDC Unsri
+      - CDC Unsri
+      - CDC Universitas Sriwijaya
+      - Pusat Pengembangan Karakter dan Karir
+      - Informasi Pusat Pengembangan Karakter dan Karir
+      - Informasi CDC Universitas Sriwijaya
+      - Jelaskan tentang CDC Unsri
+      - Saya ingin mengetahui tentang Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya
+      - Saya ingin tahu tentang pusat karir
+      - Berikan info tentang pusat pengembangan karir unsri
+
+  - intent: link_cdc
+    examples: |
+      - Apa link web CDC Unsri?
+      - Dimana platform dari CDC Universitas Sriwijaya?
+      - Saya ingin mengunjungi website CDC Unsri
+      - Ingin berkunjung ke situs pusat karir
+      - Situs CDC
+      - Situs pusat karir Universitas Sriwijaya
+      - Website Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya
+      - Web Pusat Pengembangan Karakter dan Karir Unsri
+      - Platform CDC Unsri
+      - Berikan link website CDC
+      - Minta link CDC Unsri
+      - Link pusat pengembangan karir
+      - Platform pusat pengembangan karir Universitas Sriwijaya
+  
+  - intent: layanan_cdc
+    examples: |
+      - Layanan apa yang diperoleh dari CDC Unsri?
+      - Apa layanan yang diberikan CDC Universitas Sriwijaya?
+      - Layanan CDC Universitas Sriwijaya
+      - Apa saja layanan Pusat Pengembangan Karakter dan Karir?
+      - Layanan CDC
+      - Layanan pusat pengembangan karir
+      - Layanan yang diberikan pusat karir Unsri
+      - Layanan dari pusat pengembangan karakter dan karir
+      - Berikan informasi layanan CDC Unsri
+      - Saya ingin mengetahui tentang Layanan Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya
+      - Informasi layanan CDC Unsri
+      - Informasi layanan pusat karir
+      - Layanan apa saja yang diberikan oleh CDC?
+      - Layanan pusat karir dari Universitas Sriwijaya
+      - Jenis layanan CDC Universitas Sriwijaya
+      - Jenis-jenis layanan pusat karir unsri
+      - Macam layanan yang diberikan pusat karir Universitas Sriwijaya
+      - Macam-macam layanan pusat pengembangan karir

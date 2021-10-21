@@ -10,6 +10,9 @@ intents:
   - unit_survei
   - komponen_survei_kemahasiswaan
   - platform_survei
+  - cdc
+  - link_cdc
+  - layanan_cdc
 
 actions:
   - action_tampil_fasilitas_minat_bakat
@@ -36,6 +39,15 @@ responses:
 
   utter_komponen_survei_kemahasiswaan:
     - text: "1. layanan minat bakat\n2. layanan softskill\n3. beasiswa\n4. klinik kesehatan\n5. lembaga bahasa\n6. perpustakaan\n7. sarana umum\n8. keuangan, wisuda\n9. penerimaan mahasiswa baru\n10. bimbingan konseling\n11. KKN/magang/PKL."
+
+  utter_cdc:
+    - text: "CDC-UNSRI merupakan UPT yang memberikan layanan kepada mahasiswa dan alumni Universitas Sriwijaya guna mengembangkan karakter dan karir."
+
+  utter_link_cdc:
+    - text: "Berikut link web CDC UNSRI (cdc.unsri.ac.id)"
+
+  utter_layanan_cdc:
+    - text: "Layanan yang diberikan oleh Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya diantaranya: \n1). Membantu mengembangkan softskill dan kepercayaan diri mahasiswa untuk menghadapi dunia kerja setelah lulus, \n2). Memberikan informasi lowongan kerja baik secara online (info lowongan kerja bisa dilihat di cdc.unsri.ac.id) maupun offline (jobfair/career/expo) sebagai jembatan antara dunia kerja dan dunia kampus, \n3). Melaksanakan tracer study yang mengacu pada indotrace dan survey kepuasan pengguna dalam upaya penyediaan data terkait alumni serta untuk perbaikan kurikulum, \n4). Menjadi mitra/partner dunia kerja dalam mempersiapkan alumni serta kebutuhan pengguna."
 
 slots:
   bidang_minat:
