@@ -35,13 +35,6 @@ stories:
     - action: utter_salam
     - intent: fasilitas_minat_bakat
     - action: action_tampil_fasilitas_minat_bakat
-
-  - story: tanya daftar layanan sarana akademik
-    steps:
-    - intent: salam
-    - action: utter_salam
-    - intent: daftar_layanan_sarana_akademik
-    - action: utter_daftar_layanan_sarana_akademik
   
   - story: tanya kegiatan minat dan bakat
     steps:
@@ -91,3 +84,17 @@ stories:
       - action: utter_salam
       - intent: platform_survei
       - action: action_tampil_platform_survei
+
+  - story: tanya daftar layanan sarana akademik
+    steps:
+    - intent: salam
+    - action: utter_salam
+    - intent: daftar_layanan_sarana_akademik
+    - action: utter_daftar_layanan_sarana_akademik
+
+  - story: tanya definisi layanan sarana akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: definisi_layanan_sarana_akademik
+      - action: action_tampil_definisi_sarana_akademik

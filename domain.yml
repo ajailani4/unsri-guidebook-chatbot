@@ -16,6 +16,7 @@ intents:
 actions:
   - action_tampil_fasilitas_minat_bakat
   - action_tampil_platform_survei
+  - action_tampil_definisi_sarana_akademik
 
 responses:
   utter_salam:
