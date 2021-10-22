@@ -98,3 +98,23 @@ stories:
       - action: utter_salam
       - intent: definisi_layanan_sarana_akademik
       - action: action_tampil_definisi_sarana_akademik
+  - story: tanya cdc unsri
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: cdc
+      - action: utter_cdc
+
+  - story: tanya link cdc
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: link_cdc
+      - action: utter_link_cdc
+
+  - story: tanya layanan cdc
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: layanan_cdc
+      - action: utter_layanan_cdc

@@ -70,3 +70,18 @@ rules:
     steps:
     - intent: definisi_layanan_sarana_akademik
     - action: action_tampil_definisi_sarana_akademik
+  - rule: Jawab cdc
+    steps:
+      - intent: cdc
+      - action: utter_cdc
+  
+  - rule: Jawab link cdc
+    steps:
+      - intent: link_cdc
+      - action: utter_link_cdc
+  
+  - rule: Jawab layanan cdc
+    steps:
+      - intent: layanan_cdc
+      - action: utter_layanan_cdc
+  
