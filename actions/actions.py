@@ -61,7 +61,24 @@ class ActionTampilDefinisiSaranaAkademik(Action):
           domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
     sarana_akademik = str(next(tracker.get_latest_entity_values("sarana_akademik"), None)).lower()
-    message = self.dao.get_desc(sarana_akademik)
+    message = self.dao.get_academic_fasil_desc(sarana_akademik)
+
+    dispatcher.utter_message(text=message)
+
+    return []
+
+class ActionTampilJadwalSaranaAkademik(Action):
+  dao = Dao()
+
+  def name(self) -> Text:
+    return "action_tampil_jadwal_sarana_akademik"
+
+  def run(self, dispatcher: CollectingDispatcher, 
+          tracker: Tracker,
+          domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+    sarana_akademik = str(next(tracker.get_latest_entity_values("sarana_akademik"), None)).lower()
+    message = self.dao.get_academic_fasil_schedule(sarana_akademik)
 
     dispatcher.utter_message(text=message)
 

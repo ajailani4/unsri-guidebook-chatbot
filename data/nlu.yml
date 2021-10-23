@@ -190,6 +190,21 @@ nlu:
       - Definisi [perpustakaan](sarana_akademik)
       - Definisi [gedung serbaguna](sarana_akademik)
       - Definisi [sc](sarana_akademik)
+
+  - intent: jadwal_layanan_sarana_akademik
+    examples: |
+      - Jam berapa pelayanan [perpustakaan](sarana_akademik)?
+      - Jam berapa pelayanan [bus kampus](sarana_akademik) dimulai?
+      - Jam berapa pelayanan [kesehatan](sarana_akademik) dimulai?
+      - Jam berapa [student center](sarana_akademik) dibuka?
+      - Jam berapa [laboraturium komputer](sarana_akademik) dibuka?
+      - Jam berapa [lembaga bahasa](sarana_akademik) dibuka?
+      - Jadwal layanan [laboraturium dasar terpadu](sarana_akademik)
+      - Jadwal layanan [bus kampus](sarana_akademik)
+      - Jadwal layanan [perpustakaan](sarana_akademik)
+      - [lembaga bahasa](sarana_akademik) buka jam berapa?
+      - [pelayanan kesehatan](sarana_akademik) buka jam berapa?
+      - [laboraturium komputer](sarana_akademik) buka jam berapa?
   
   - intent: cdc
     examples: |
@@ -254,3 +269,7 @@ nlu:
   - synonym: student center
     examples: |
       - SC
+
+  - synonym: kesehatan
+    examples: |
+      - klinik

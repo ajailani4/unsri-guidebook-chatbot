@@ -99,6 +99,13 @@ stories:
       - intent: definisi_layanan_sarana_akademik
       - action: action_tampil_definisi_sarana_akademik
 
+  - story: tanya jadwal layanan sarana akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: jadwal_layanan_sarana_akademik
+      - action: action_tampil_jadwal_sarana_akademik
+
   - story: tanya cdc unsri
     steps:
       - intent: salam

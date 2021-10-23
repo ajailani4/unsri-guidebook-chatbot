@@ -8,6 +8,7 @@ intents:
   - fasilitas_minat_bakat
   - daftar_layanan_sarana_akademik
   - definisi_layanan_sarana_akademik
+  - jadwal_layanan_sarana_akademik
   - komponen_survey_akademik
   - unit_survei
   - komponen_survei_kemahasiswaan
@@ -20,6 +21,7 @@ actions:
   - action_tampil_fasilitas_minat_bakat
   - action_tampil_platform_survei
   - action_tampil_definisi_sarana_akademik
+  - action_tampil_jadwal_sarana_akademik
 
 responses:
   utter_salam:
@@ -58,6 +60,7 @@ responses:
           12) Kafetaria\n
           13) Pelayanan Bank\n
           14) Keamanan Kampus"
+
   utter_cdc:
     - text: "CDC-UNSRI merupakan UPT yang memberikan layanan kepada mahasiswa dan alumni Universitas Sriwijaya guna mengembangkan karakter dan karir."
 
@@ -77,8 +80,8 @@ slots:
 
 entities:
   - bidang_minat
-  - jenis_survei
   - sarana_akademik
+  - jenis_survei
 
 session_config:
   session_expiration_time: 60

@@ -71,6 +71,11 @@ rules:
     - intent: definisi_layanan_sarana_akademik
     - action: action_tampil_definisi_sarana_akademik
 
+  - rule: Jawab jadwal layanan sarana akademik
+    steps:
+    - intent: jadwal_layanan_sarana_akademik
+    - action: action_tampil_jadwal_sarana_akademik
+
   - rule: Jawab cdc
     steps:
       - intent: cdc
