@@ -50,9 +50,23 @@ rules:
     steps:
       - intent: link_cdc
       - action: utter_link_cdc
-  
+
+  - rule: Jawab fungsi cdc
+    steps:
+      - intent: fungsi_cdc
+      - action: utter_fungsi_cdc
+
   - rule: Jawab layanan cdc
     steps:
       - intent: layanan_cdc
       - action: utter_layanan_cdc
   
+  - rule: Jawab acuan gelar akademik
+    steps:
+      - intent: acuan_gelar_akademik
+      - action: utter_acuan_gelar_akademik
+
+  - rule: Jawab gelar akademik
+    steps:
+      - intent: gelar_akademik
+      - action: utter_gelar_akademik

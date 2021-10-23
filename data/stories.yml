@@ -71,9 +71,30 @@ stories:
       - intent: link_cdc
       - action: utter_link_cdc
 
+  - story: tanya fungsi cdc
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: fungsi_cdc
+      - action: utter_fungsi_cdc
+
   - story: tanya layanan cdc
     steps:
       - intent: salam
       - action: utter_salam
       - intent: layanan_cdc
       - action: utter_layanan_cdc
+
+  - story: tanya acuan gelar akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: acuan_gelar_akademik
+      - action: utter_acuan_gelar_akademik
+
+  - story: tanya gelar akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: gelar_akademik
+      - action: utter_gelar_akademik

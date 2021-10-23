@@ -12,7 +12,10 @@ intents:
   - platform_survei
   - cdc
   - link_cdc
+  - fungsi_cdc
   - layanan_cdc
+  - acuan_gelar_akademik
+  - gelar_akademik
 
 actions:
   - action_tampil_fasilitas_minat_bakat
@@ -46,8 +49,27 @@ responses:
   utter_link_cdc:
     - text: "Berikut link web CDC UNSRI (cdc.unsri.ac.id)"
 
+  utter_fungsi_cdc:
+    - text: "Layanan yang diberikan oleh Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya diantaranya:\
+    \n1). Membantu mengembangkan softskill dan kepercayaan diri mahasiswa untuk menghadapi dunia kerja setelah lulus,\
+    \n2). Memberikan informasi lowongan kerja baik secara online (info lowongan kerja bisa dilihat di cdc.unsri.ac.id) maupun offline (jobfair/career/expo) sebagai jembatan antara dunia kerja dan dunia kampus,\
+    \n3). Melaksanakan tracer study yang mengacu pada indotrace dan survey kepuasan pengguna dalam upaya penyediaan data terkait alumni serta untuk perbaikan kurikulum,\
+    \n4). Menjadi mitra/partner dunia kerja dalam mempersiapkan alumni serta kebutuhan pengguna."
+
   utter_layanan_cdc:
-    - text: "Layanan yang diberikan oleh Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya diantaranya: \n1). Membantu mengembangkan softskill dan kepercayaan diri mahasiswa untuk menghadapi dunia kerja setelah lulus, \n2). Memberikan informasi lowongan kerja baik secara online (info lowongan kerja bisa dilihat di cdc.unsri.ac.id) maupun offline (jobfair/career/expo) sebagai jembatan antara dunia kerja dan dunia kampus, \n3). Melaksanakan tracer study yang mengacu pada indotrace dan survey kepuasan pengguna dalam upaya penyediaan data terkait alumni serta untuk perbaikan kurikulum, \n4). Menjadi mitra/partner dunia kerja dalam mempersiapkan alumni serta kebutuhan pengguna."
+    - text: "1). Mahasiswa dapat mengakses kegiatan pelatihan kompetensi softskill dan mendaftarkan diri sebagai peserta pelatihan di web cdc.unsri.ac.id sesuai tema dan waktu yang diinginkan mahasiswa, dengan mengisi formulir online sebagai peserta pelatihan,\
+    \n2). Mahasiswa dan alumni dapat berkonsultasi tentang karir melalui e-counseling di web cdc.unsri.ac.id dengan mengisi formulir konseling karir online yang dapat diunduh pada web tersebut dan menuliskan pertanyaan yang ingin diketahui jawabannya. CDC juga memberikan layanan konsultasi karir offline di kantor CDC Universitas Sriwijaya, Gedung Rektorat lantai 1. Beberapa konselor dijadwalkan memberikan konsultasi bagi mahasiswa yang memerlukan.\
+    \n3). Alumni yang akan diwisuda mendapatkan mentoring dari beberapa alumni atau perusahaan sebagai pembekalan pengenalan dunia kerja,\
+    \n4). Alumni mendapatkan layanan informasi lowongan kerja online atau offline serta rekrutmen online dan offline dari berbagai pencari kerja di web cdc.unsri.ac.id atau melalui kegiatan Universitas Sriwijaya Career Expo yang dilaksanakan 2 (dua) kali dalam setahun,\
+    \n5). Calon Alumni yang akan diwisuda, wajib melakukan registrasi online di web cdc.unsri.ac.id sebagai database alumni yang akan dilacak setelah 2 (dua) tahun lulus,\
+    \n6). Mahasiswa baru wajib mendaftarkan diri sebagai member pada web cdc.unsri.ac.id dan mengikuti assesmen psikologi secara online, untuk mempelajari karakter mahasiswa baru yang perlu dibina sebagai upaya mempersiapkan alumni memasuki dunia kerja."
+
+  utter_acuan_gelar_akademik:
+    - text: "Gelar sebutan yang diberikan kepada lulusan pendidikan akademik, pendidikan vokasi, pendidikan profesi, dan pendidikan spesialis mengacu pada Peraturan Menteri Riset, Teknologi, dan Pendidikan Tinggi Nomor 59 Tahun 2018 tentang Ijazah, Sertifikat Kompetensi, Sertifikat Profesi, Gelar, Dan Tata Cara Penulisan Gelar Di Perguruan Tinggi.\
+    \nhttps://pddikti.kemdikbud.go.id/asset/data/regulasi/Permenristekdikti-Nomor-59-Tahun-2018-1-1.pdf"
+
+  utter_gelar_akademik:
+    - text: "Gelar lulusan program studi di Universitas Sriwijaya dapat dilihat di BAB I dari Buku Pedoman Akademik pada Tabel 1.1."
 
 slots:
   bidang_minat:
