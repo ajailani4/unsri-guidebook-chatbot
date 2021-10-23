@@ -9,7 +9,7 @@ class Dao:
   def __init__(self):
     super().__init__()
 
-  def get_academic_fasil_desc(self, name):
+  def get_academic_facil_desc(self, name):
     try:
       self.cursor.execute("SELECT description FROM sarana_akademik WHERE name=" + "'" + name + "'")
       result = self.cursor.fetchone()
@@ -18,7 +18,7 @@ class Dao:
     except Exception as e:
       print(e)
 
-  def get_academic_fasil_schedule(self, name):
+  def get_academic_facil_schedule(self, name):
     try:
       self.cursor.execute("SELECT schedule FROM sarana_akademik WHERE name=" + "'" + name + "'")
       result = self.cursor.fetchone()
