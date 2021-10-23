@@ -70,6 +70,7 @@ rules:
     steps:
     - intent: definisi_layanan_sarana_akademik
     - action: action_tampil_definisi_sarana_akademik
+
   - rule: Jawab cdc
     steps:
       - intent: cdc
