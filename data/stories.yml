@@ -8,6 +8,34 @@ stories:
       - intent: sampai_jumpa
       - action: utter_sampai_jumpa
 
+  - story: salam dan sampai jumpa
+    steps:
+    - intent: salam
+    - action: utter_salam
+    - intent: sampai_jumpa
+    - action: utter_sampai_jumpa
+
+  - story: tanya kegiatan minat dan bakat
+    steps:
+    - intent: salam
+    - action: utter_salam
+    - intent: kegiatan_minat_bakat
+    - action: utter_kegiatan_minat_bakat
+
+  - story: tanya jenis kegiatan minat dan bakat
+    steps:
+    - intent: salam
+    - action: utter_salam
+    - intent: jenis_kegiatan_minat_bakat
+    - action: utter_jenis_kegiatan_minat_bakat
+
+  - story: tanya fasilitas kegiatan minat dan bakat
+    steps:
+    - intent: salam
+    - action: utter_salam
+    - intent: fasilitas_minat_bakat
+    - action: action_tampil_fasilitas_minat_bakat
+  
   - story: tanya kegiatan minat dan bakat
     steps:
       - intent: salam
@@ -56,6 +84,27 @@ stories:
       - action: utter_salam
       - intent: platform_survei
       - action: action_tampil_platform_survei
+
+  - story: tanya daftar layanan sarana akademik
+    steps:
+    - intent: salam
+    - action: utter_salam
+    - intent: daftar_layanan_sarana_akademik
+    - action: utter_daftar_layanan_sarana_akademik
+
+  - story: tanya definisi layanan sarana akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: definisi_layanan_sarana_akademik
+      - action: action_tampil_definisi_sarana_akademik
+
+  - story: tanya jadwal layanan sarana akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: jadwal_layanan_sarana_akademik
+      - action: action_tampil_jadwal_sarana_akademik
 
   - story: tanya cdc unsri
     steps:

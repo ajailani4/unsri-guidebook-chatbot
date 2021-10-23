@@ -6,6 +6,26 @@ rules:
       - intent: sampai_jumpa
       - action: utter_sampai_jumpa
 
+  - rule: Katakan sampai jumpa
+    steps:
+    - intent: sampai_jumpa
+    - action: utter_sampai_jumpa
+
+  - rule: Jawab kegiatan minat dan bakat
+    steps:
+    - intent: kegiatan_minat_bakat
+    - action: utter_kegiatan_minat_bakat
+
+  - rule: Jawab jenis kegiatan minat dan bakat
+    steps:
+    - intent: jenis_kegiatan_minat_bakat
+    - action: utter_jenis_kegiatan_minat_bakat
+
+  - rule: Jawab fasilitas kegiatan minat dan bakat
+    steps:
+    - intent: fasilitas_minat_bakat
+    - action: action_tampil_fasilitas_minat_bakat
+  
   - rule: Jawab kegiatan minat dan bakat
     steps:
       - intent: kegiatan_minat_bakat
@@ -40,6 +60,21 @@ rules:
     steps:
       - intent: platform_survei
       - action: action_tampil_platform_survei
+
+  - rule: Jawab daftar layanan sarana akademik
+    steps:
+    - intent: daftar_layanan_sarana_akademik
+    - action: utter_daftar_layanan_sarana_akademik
+
+  - rule: Jawab definisi layanan sarana akademik
+    steps:
+    - intent: definisi_layanan_sarana_akademik
+    - action: action_tampil_definisi_sarana_akademik
+
+  - rule: Jawab jadwal layanan sarana akademik
+    steps:
+    - intent: jadwal_layanan_sarana_akademik
+    - action: action_tampil_jadwal_sarana_akademik
 
   - rule: Jawab cdc
     steps:

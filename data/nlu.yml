@@ -73,6 +73,25 @@ nlu:
       - [kewirausahaan](bidang_minat) mendapatkan fasilitas apa?
       - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
 
+  - intent: fasilitas_minat_bakat
+    examples: |
+      - Apa fasilitas yang didapat dari kegiatan di bidang [olahraga](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [BEM](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [bem](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan [Badan Eksekutif Mahasiswa](bidang_minat)?
+      - Kegiatan di bidang [HIMA](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [hima](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [ukm](bidang_minat) mendapatkan fasilitas apa?
+      - Kegiatan [Himpunan Mahasiswa](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [kewirausahaan](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [olahraga](bidang_minat) mendapat fasilitas apa saja?
+      - Apa fasilitas yang didapat dari kegiatan [Unit Kegiatan Mahasiswa](bidang_minat)?
+      - [UKM](bidang_minat) mendapat fasilitas apa?
+      - [HIMA](bidang_minat) mendapatkan fasilitas apa?
+      - [BEM](bidang_minat) mendapatkan fasilitas apa?
+      - [kewirausahaan](bidang_minat) mendapatkan fasilitas apa?
+      - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
+
   - intent: komponen_survey_akademik
     examples: |
       - Apa saja survey yang dilakukan terhadap mahasiswa untuk mengukur kepuasan layanan akademik?
@@ -137,6 +156,55 @@ nlu:
       - Apa link survei [kemahasiswaan](jenis_survei)?
       - Apa nama website survei layanan kepuasan [kemahasiswaan](jenis_survei) unsri?
       - web survei layanan [kemahasiswaan](jenis_survei)
+
+  - intent: daftar_layanan_sarana_akademik
+    examples: |
+      - Apa saja layanan akademik di Universitas Sriwijaya?
+      - Apa saja layanan sarana akademik di Universitas Sriwijaya?
+      - Apa saja sarana akademik yang ada di Universitas Sriwijaya?
+      - Apa saja layanan akademik di Unsri?
+      - Layanan akademik apa saja yang ada di Universitas Sriwijaya?
+      - Layanan akademik apa yang ada di Universitas Sriwijaya?
+      - Universitas Sriwijaya memiliki layanan akademik apa saja?
+      - Unsri memiliki layanan akademik apa saja?
+      - Di Universitas Sriwijaya memiliki layanan akademik apa?
+      - Daftar layanan sarana akademik di Unsri
+      - Layanan sarana akademik di Unsri
+
+  - intent: definisi_layanan_sarana_akademik
+    examples: |
+      - Apa itu [perpustakaan](sarana_akademik)?
+      - Apa itu [student center](sarana_akademik)?
+      - Apa itu [bus kampus](sarana_akademik)?
+      - Apa yang dimaksud [laboraturium dasar terpadu](sarana_akademik)?
+      - Apa yang dimaksud [auditorium](sarana_akademik)?
+      - Apa yang dimaksud [kafetaria](sarana_akademik)?
+      - [laboraturium komputer](sarana_akademik) adalah
+      - [fasilitas lapangan](sarana_akademik) adalah
+      - [pelayanan bank](sarana_akademik) adalah
+      - [lembaga bahasa](sarana_akademik) ialah
+      - [pelayanan kesehatan](sarana_akademik) ialah
+      - [keamanan kampus](sarana_akademik) ialah
+      - [asrama mahasiswa](sarana_akademik) merupakan
+      - [pusat peribadatan](sarana_akademik) merupakan
+      - Definisi [perpustakaan](sarana_akademik)
+      - Definisi [gedung serbaguna](sarana_akademik)
+      - Definisi [sc](sarana_akademik)
+
+  - intent: jadwal_layanan_sarana_akademik
+    examples: |
+      - Jam berapa pelayanan [perpustakaan](sarana_akademik)?
+      - Jam berapa pelayanan [bus kampus](sarana_akademik) dimulai?
+      - Jam berapa pelayanan [kesehatan](sarana_akademik) dimulai?
+      - Jam berapa [student center](sarana_akademik) dibuka?
+      - Jam berapa [laboraturium komputer](sarana_akademik) dibuka?
+      - Jam berapa [lembaga bahasa](sarana_akademik) dibuka?
+      - Jadwal layanan [laboraturium dasar terpadu](sarana_akademik)
+      - Jadwal layanan [bus kampus](sarana_akademik)
+      - Jadwal layanan [perpustakaan](sarana_akademik)
+      - [lembaga bahasa](sarana_akademik) buka jam berapa?
+      - [pelayanan kesehatan](sarana_akademik) buka jam berapa?
+      - [laboraturium komputer](sarana_akademik) buka jam berapa?
   
   - intent: cdc
     examples: |
@@ -193,3 +261,15 @@ nlu:
       - Jenis-jenis layanan pusat karir unsri
       - Macam layanan yang diberikan pusat karir Universitas Sriwijaya
       - Macam-macam layanan pusat pengembangan karir
+
+  - synonym: auditorium
+    examples: |
+      - gedung serbaguna
+  
+  - synonym: student center
+    examples: |
+      - SC
+
+  - synonym: kesehatan
+    examples: |
+      - klinik

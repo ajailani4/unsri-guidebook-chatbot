@@ -6,6 +6,9 @@ intents:
   - kegiatan_minat_bakat
   - jenis_kegiatan_minat_bakat
   - fasilitas_minat_bakat
+  - daftar_layanan_sarana_akademik
+  - definisi_layanan_sarana_akademik
+  - jadwal_layanan_sarana_akademik
   - komponen_survey_akademik
   - unit_survei
   - komponen_survei_kemahasiswaan
@@ -17,6 +20,8 @@ intents:
 actions:
   - action_tampil_fasilitas_minat_bakat
   - action_tampil_platform_survei
+  - action_tampil_definisi_sarana_akademik
+  - action_tampil_jadwal_sarana_akademik
 
 responses:
   utter_salam:
@@ -40,6 +45,22 @@ responses:
   utter_komponen_survei_kemahasiswaan:
     - text: "1. layanan minat bakat\n2. layanan softskill\n3. beasiswa\n4. klinik kesehatan\n5. lembaga bahasa\n6. perpustakaan\n7. sarana umum\n8. keuangan, wisuda\n9. penerimaan mahasiswa baru\n10. bimbingan konseling\n11. KKN/magang/PKL."
 
+  utter_daftar_layanan_sarana_akademik:
+  - text: "1) Perpustakaan\n
+          2) Laboraturium Komputer\n
+          3) Laboraturium Dasar Terpadu\n
+          4) Lembaga Bahasa\n
+          5) Asrama Mahasiswa\n
+          6) Student Center\n
+          7) Auditorium dan Gedung Serbaguna\n
+          8) Fasilitas Lapangan\n
+          9) Pelayanan Kesehatan\n
+          10) Pusat Peribadatan\n
+          11) Bus Kampus\n
+          12) Kafetaria\n
+          13) Pelayanan Bank\n
+          14) Keamanan Kampus"
+
   utter_cdc:
     - text: "CDC-UNSRI merupakan UPT yang memberikan layanan kepada mahasiswa dan alumni Universitas Sriwijaya guna mengembangkan karakter dan karir."
 
@@ -52,11 +73,14 @@ responses:
 slots:
   bidang_minat:
     type: text
+  sarana_akademik:
+    type: text
   jenis_survei:
     type: text
 
 entities:
   - bidang_minat
+  - sarana_akademik
   - jenis_survei
 
 session_config:
