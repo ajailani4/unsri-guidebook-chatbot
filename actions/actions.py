@@ -2,6 +2,9 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from database.dao import Dao
+
+import asyncio
 
 class ActionTampilFasilitasMinatBakat(Action):
 
@@ -42,6 +45,40 @@ class ActionTampilPlatformSurvei(Action):
             message = "Survei layanan kemahasiswaan dapat diakses di web cdc.unsri.ac.id."
         elif jenis_survei == "akademik":
             message = "Survei layanan akademik dapat diakses di web lp3mp.unsri.ac.id"
+
+        dispatcher.utter_message(text=message)
+
+        return []
+
+class ActionTampilDefinisiSaranaAkademik(Action):
+    dao = Dao()
+
+    def name(self) -> Text:
+        return "action_tampil_definisi_sarana_akademik"
+
+    def run(self, dispatcher: CollectingDispatcher, 
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        sarana_akademik = str(next(tracker.get_latest_entity_values("sarana_akademik"), None)).lower()
+        message = self.dao.get_academic_facil_desc(sarana_akademik)
+
+        dispatcher.utter_message(text=message)
+
+        return []
+
+class ActionTampilJadwalSaranaAkademik(Action):
+    dao = Dao()
+
+    def name(self) -> Text:
+        return "action_tampil_jadwal_sarana_akademik"
+
+    def run(self, dispatcher: CollectingDispatcher, 
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        sarana_akademik = str(next(tracker.get_latest_entity_values("sarana_akademik"), None)).lower()
+        message = self.dao.get_academic_facil_schedule(sarana_akademik)
 
         dispatcher.utter_message(text=message)
 
