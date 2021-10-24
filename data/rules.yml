@@ -70,3 +70,18 @@ rules:
     steps:
       - intent: pakaian_wisuda
       - action: action_tampil_pakaian_wisuda
+
+  - rule: Jawab waktu tempat wisuda
+    steps:
+      - intent: waktu_tempat_wisuda
+      - action: action_tampil_waktu_tempat_wisuda
+
+  - rule: Jawab dokumen wisuda
+    steps:
+      - intent: dokumen_wisuda
+      - action: utter_dokumen_wisuda
+
+  - rule: Jawab kuantitas dokumen wisuda
+    steps:
+      - intent: kuantitas_dokumen_wisuda
+      - action: action_tampil_kuantitas_dokumen_wisuda

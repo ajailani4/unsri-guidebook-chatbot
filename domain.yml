@@ -16,11 +16,16 @@ intents:
   - platform_daftar_wisuda
   - platform_survei
   - pakaian_wisuda
+  - waktu_tempat_wisuda
+  - dokumen_wisuda
+  - kuantitas_dokumen_wisuda
 
 actions:
   - action_tampil_fasilitas_minat_bakat
   - action_tampil_platform_survei
   - action_tampil_pakaian_wisuda
+  - action_tampil_waktu_tempat_wisuda
+  - action_tampil_kuantitas_dokumen_wisuda
 
 responses:
   utter_salam:
@@ -59,6 +64,9 @@ responses:
   utter_platform_daftar_wisuda:
     - text: "Mahasiswa mendaftar secara online pada situs www.unsri.ac.id"
 
+  utter_dokumen_wisuda:
+    - text: "Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir, Menyerahkan bukti abstrak paper yang telah ditandatangani oleh pembimbing dan koordinator program studi, Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya), Menyerahkan/mengembalikan Kartu Pengenal Mahasiswa (KPM) Asli dan Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir, Menyerahkan bukti bayar SPP/UKT terbaru, Menyerahkan kartu bebas pustaka dan UPT Perpustakaan Universitas Sriwijaya"
+
 slots:
   bidang_minat:
     type: text
@@ -66,11 +74,17 @@ slots:
     type: text
   pakaian_wisuda:
     type: text
+  kata_tanya:
+    type: text
+  qty_dokumen_wisuda:
+    type: text
 
 entities:
   - bidang_minat
   - jenis_survei
   - pakaian_wisuda
+  - kata_tanya
+  - qty_dokumen_wisuda
 
 session_config:
   session_expiration_time: 60

@@ -92,9 +92,23 @@ stories:
       - intent: platform_survei
       - action: action_tampil_platform_survei
 
-  - story: tanya pakaian wisuda
+  - story: tanya waktu tempat wisuda
     steps:
       - intent: salam
       - action: utter_salam
-      - intent: pakaian_wisuda
-      - action: action_tampil_pakaian_wisuda
+      - intent: waktu_tempat_wisuda
+      - action: action_tampil_waktu_tempat_wisuda
+
+  - story: tanya dokumen wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: dokumen_wisuda
+      - action: utter_dokumen_wisuda
+
+  - story: tanya kuantitas dokumen wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: kuantitas_dokumen_wisuda
+      - action: action_tampil_kuantitas_dokumen_wisuda
