@@ -90,4 +90,9 @@ rules:
     steps:
       - intent: layanan_cdc
       - action: utter_layanan_cdc
+
+  - rule: Jawab materi ijazah
+    steps:
+      - intent: materi_ijazah
+      - action: utter_materi_ijazah
   

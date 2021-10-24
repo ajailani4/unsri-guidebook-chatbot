@@ -16,6 +16,7 @@ intents:
   - cdc
   - link_cdc
   - layanan_cdc
+  - materi_ijazah
 
 actions:
   - action_tampil_fasilitas_minat_bakat
@@ -69,6 +70,22 @@ responses:
 
   utter_layanan_cdc:
     - text: "Layanan yang diberikan oleh Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya diantaranya: \n1). Membantu mengembangkan softskill dan kepercayaan diri mahasiswa untuk menghadapi dunia kerja setelah lulus, \n2). Memberikan informasi lowongan kerja baik secara online (info lowongan kerja bisa dilihat di cdc.unsri.ac.id) maupun offline (jobfair/career/expo) sebagai jembatan antara dunia kerja dan dunia kampus, \n3). Melaksanakan tracer study yang mengacu pada indotrace dan survey kepuasan pengguna dalam upaya penyediaan data terkait alumni serta untuk perbaikan kurikulum, \n4). Menjadi mitra/partner dunia kerja dalam mempersiapkan alumni serta kebutuhan pengguna."
+
+  utter_materi_ijazah:
+    - text: "Materi/redaksi Ijazah Universitas Sriwijaya terdiri dari:\n
+            1. Nomor Ijazah, pada sudut kanan atas.\n
+            2. Nama Perguruan Tinggi “UNIVERSITAS SRIWIJAYA” yang dicetak dengan menggunakan tinta OVI berwarna biru yang akan berubah warna menjadi ungu apabila dilihat dari sudut pandang yang berbeda.\n
+            3. Nama, tempat, dan tanggal lahir lulusan penerima gelar/sebutan profesional yang ditulis lengkap sesuai dengan akta kelahiran atau sama dengan yang tertera pada ijazah terakhir.\n
+            4. Nomor Induk Mahasiswa (NIM) yang ditetapkan Universitas Sriwijaya.\n
+            5. Nama Fakultas.\n
+            6. Nama Program Studi.\n
+            7. Nama gelar/sebutan profesional dan singkatannya.\n
+            8. Tanggal pada ijazah yaitu tanggal pelaksanaan wisuda.\n
+            9. Pasfoto berukuran 3 x 4 cm hitam putih (Pria pakai jas, wanita pakai kebaya).\n
+            10. Tanda tangan dan nama terang Rektor, Dekan Fakultas atau Direktur Program.\n
+            11. Tanda tangan alumnus yang bersangkutan.\n
+            12. Cap/stempel Rektor Universitas Sriwijaya yang mengenai pasfoto alumnus dan tanda tangan Rektor.\n
+            13. Nomor Seri Ijazah terdiri dari huruf dan angka yang menunjukkan kode pembuatan."
 
 slots:
   bidang_minat:
