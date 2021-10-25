@@ -36,6 +36,10 @@ nlu:
       - sore
       - selamat malam
       - malam
+      - mantap
+      - terimakasih
+      - makasih
+      - dadah
 
   - intent: kegiatan_minat_bakat
     examples: |
@@ -425,6 +429,43 @@ nlu:
       - Jenis-jenis layanan pusat karir unsri
       - Macam layanan yang diberikan pusat karir Universitas Sriwijaya
       - Macam-macam layanan pusat pengembangan karir
+
+  - intent: materi_ijazah
+    examples: |
+      - Apa redaksi atau materi pada ijazah Universitas Sriwijaya?
+      - Ijazah Universitas Sriwijaya berisi apa saja?
+      - Ijazah Unsri berisi apa?
+      - Apa warna pada tulisan "UNIVERSITAS SRIWIJAYA" pada ijazah?
+      - Apa tinta yang digunakan untuk mencetak Nama Perguruan Tinggi “UNIVERSITAS SRIWIJAYA”?
+      - Apa nomor seri pada ijazah Universitas Sriwijaya?
+      - Apa ukuran pasfoto pada ijazah Universitas Sriwijaya?
+      - Apa tanggal yang tertera pada ijazah Universitas Sriwijaya?
+      - Apa warna untuk pasfoto pada ijazah Universitas Sriwijaya?
+      - Apa ketentuan pakaian pada pasfoto untuk ijazah Universitas Sriwijaya?
+      - Apakah Biodata penerima gelar sesuai dengan akte kelahiran?
+      - Dimana letak nomor ijazah?
+      - Siapa yang menandatangani ijazah Universitas Sriwijaya?
+      - Bagaimana cap di tempel pada ijazah Universitas Sriwijaya?
+      - Redaksi pada ijazah Universitas Sriwijaya
+      - Materi pada ijazah Universitas Sriwijaya
+      - Materi pada ijazah Unsri
+      - Apa saja isi ijazah Unsri
+      - Isi ijazah Universitas Sriwijaya
+
+  - intent: contoh_ijazah
+    examples: |
+      - Bagaimana tampilan pada ijazah Universitas Sriwijaya?
+      - Bagaimana contoh tampilan ijazah Universitas Sriwijaya?
+      - Bagaimana contoh tampilan ijazah Unsri?
+      - Contoh ijazah Universitas Sriwijaya
+      - Contoh tampilan ijazah Universitas Sriwijaya
+      - Bentuk ijazah Unsri
+      - Tampilan ijazah Unsri
+      - Tampilan pada ijazah Universitas Sriwijaya
+      - Contoh ijazah
+      - Contoh tampilan ijazah
+      - Bentuk ijazah
+      - Tampilan ijazah
 
   - synonym: auditorium
     examples: |

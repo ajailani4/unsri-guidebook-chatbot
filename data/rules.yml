@@ -6,11 +6,6 @@ rules:
       - intent: sampai_jumpa
       - action: utter_sampai_jumpa
 
-  - rule: Katakan sampai jumpa
-    steps:
-      - intent: sampai_jumpa
-      - action: utter_sampai_jumpa
-
   - rule: Jawab kegiatan minat dan bakat
     steps:
       - intent: kegiatan_minat_bakat
@@ -134,3 +129,14 @@ rules:
     steps:
       - intent: layanan_cdc
       - action: utter_layanan_cdc
+
+  - rule: Jawab materi ijazah
+    steps:
+      - intent: materi_ijazah
+      - action: utter_materi_ijazah
+
+  - rule: Jawab contoh ijazah
+    steps:
+      - intent: contoh_ijazah
+      - action: utter_contoh_ijazah
+  

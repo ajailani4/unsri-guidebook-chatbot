@@ -8,13 +8,6 @@ stories:
       - intent: sampai_jumpa
       - action: utter_sampai_jumpa
 
-  - story: salam dan sampai jumpa
-    steps:
-      - intent: salam
-      - action: utter_salam
-      - intent: sampai_jumpa
-      - action: utter_sampai_jumpa
-
   - story: tanya kegiatan minat dan bakat
     steps:
       - intent: salam
@@ -140,6 +133,7 @@ stories:
       - action: utter_salam
       - intent: kuantitas_dokumen_wisuda
       - action: action_tampil_kuantitas_dokumen_wisuda
+      
   - story: tanya daftar layanan sarana akademik
     steps:
       - intent: salam
@@ -181,3 +175,17 @@ stories:
       - action: utter_salam
       - intent: layanan_cdc
       - action: utter_layanan_cdc
+
+  - story: tanya materi ijazah
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: materi_ijazah
+      - action: utter_materi_ijazah
+
+  - story: tanya contoh ijazah
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: contoh_ijazah
+      - action: utter_contoh_ijazah
