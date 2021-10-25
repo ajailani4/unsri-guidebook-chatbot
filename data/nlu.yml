@@ -288,6 +288,20 @@ nlu:
       - Apa saja isi ijazah Unsri
       - Isi ijazah Universitas Sriwijaya
 
+  - intent: contoh_ijazah
+    examples: |
+      - Bagaimana tampilan pada ijazah Universitas Sriwijaya?
+      - Bagaimana contoh tampilan ijazah Universitas Sriwijaya?
+      - Bagaimana contoh tampilan ijazah Unsri?
+      - Contoh ijazah Universitas Sriwijaya
+      - Contoh tampilan ijazah Universitas Sriwijaya
+      - Bentuk ijazah Unsri
+      - Tampilan ijazah Unsri
+      - Tampilan pada ijazah Universitas Sriwijaya
+      - Contoh ijazah
+      - Contoh tampilan ijazah
+      - Bentuk ijazah
+      - Tampilan ijazah
 
   - synonym: auditorium
     examples: |

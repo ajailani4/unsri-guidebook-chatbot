@@ -17,6 +17,7 @@ intents:
   - link_cdc
   - layanan_cdc
   - materi_ijazah
+  - contoh_ijazah
 
 actions:
   - action_tampil_fasilitas_minat_bakat
@@ -86,6 +87,10 @@ responses:
             11. Tanda tangan alumnus yang bersangkutan.\n
             12. Cap/stempel Rektor Universitas Sriwijaya yang mengenai pasfoto alumnus dan tanda tangan Rektor.\n
             13. Nomor Seri Ijazah terdiri dari huruf dan angka yang menunjukkan kode pembuatan."
+
+  utter_contoh_ijazah:
+    - text: "Contoh ijazah Universitas Sriwijaya"
+      image: "https://bit.ly/ContohIjazahUnsri"
 
 slots:
   bidang_minat:

@@ -126,3 +126,10 @@ stories:
       - action: utter_salam
       - intent: materi_ijazah
       - action: utter_materi_ijazah
+
+  - story: tanya contoh ijazah
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: contoh_ijazah
+      - action: utter_contoh_ijazah

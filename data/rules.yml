@@ -95,4 +95,9 @@ rules:
     steps:
       - intent: materi_ijazah
       - action: utter_materi_ijazah
+
+  - rule: Jawab contoh ijazah
+    steps:
+      - intent: contoh_ijazah
+      - action: utter_contoh_ijazah
   
