@@ -6,20 +6,39 @@ intents:
   - kegiatan_minat_bakat
   - jenis_kegiatan_minat_bakat
   - fasilitas_minat_bakat
+  - daftar_layanan_sarana_akademik
+  - definisi_layanan_sarana_akademik
+  - jadwal_layanan_sarana_akademik
   - komponen_survey_akademik
   - unit_survei
   - komponen_survei_kemahasiswaan
+  - peserta_wisuda
+  - pendaftaran_biaya
+  - persyaratan_wisuda
+  - ukuran_pasfoto_wisuda
+  - platform_daftar_wisuda
   - platform_survei
+  - pakaian_wisuda
+  - waktu_tempat_wisuda
+  - dokumen_wisuda
+  - kuantitas_dokumen_wisuda
   - cdc
   - link_cdc
   - fungsi_cdc
   - layanan_cdc
   - acuan_gelar_akademik
   - gelar_akademik
+  - materi_ijazah
+  - contoh_ijazah
 
 actions:
   - action_tampil_fasilitas_minat_bakat
   - action_tampil_platform_survei
+  - action_tampil_pakaian_wisuda
+  - action_tampil_waktu_tempat_wisuda
+  - action_tampil_kuantitas_dokumen_wisuda
+  - action_tampil_definisi_sarana_akademik
+  - action_tampil_jadwal_sarana_akademik
 
 responses:
   utter_salam:
@@ -42,6 +61,40 @@ responses:
 
   utter_komponen_survei_kemahasiswaan:
     - text: "1. layanan minat bakat\n2. layanan softskill\n3. beasiswa\n4. klinik kesehatan\n5. lembaga bahasa\n6. perpustakaan\n7. sarana umum\n8. keuangan, wisuda\n9. penerimaan mahasiswa baru\n10. bimbingan konseling\n11. KKN/magang/PKL."
+
+  utter_peserta_wisuda:
+    - text: "1. Mahasiswa Universitas Sriwijaya yang telah diyudisium dan telah memenuhi seluruh persyaratan yang ditetapkan oleh Fakultas/Program dan Universitas Sriwijaya.\n2. Anggota Senat Universitas Sriwijaya. \n3. Panitia pelaksana wisuda yang ditetapkan dengan SK Rektor Universitas Sriwijaya.\n4. Undangan."
+
+  utter_pendaftaran_biaya:
+    - text: "Seluruh mahasiswa yang akan mengikuti upacara wisuda diwajibkan untuk mendaftarkan diri melalui web/aplikasi yang ditetapkan BAK, serta menyerahkan berkas pendaftaran ke BAK. \nMahasiswa yang telah membayar UKT tidak perlu lagi membayar biaya wisuda. \nPendaftaran dilakukan selambat-lambatnya 2 (dua) minggu sebelum wisuda dilaksanakan."
+
+  utter_persyaratan_wisuda:
+    - text: "Persyaratan untuk mendaftar wisuda diantaranya adalah:\n1. Mahasiswa mendaftar secara online pada situs www.unsri.ac.id\n2. Wajib mengisi survei kepuasan layanan kemahasiswaan secara online di bit.ly/3SKLK_CDCUNSRI dan melakukan pendaftaran anggota (member) CDC Unsri di bit.ly/MC_CDCUNSRI\n3. Telah lulus dan telah mengikuti yudisium di fakultas masing masing\n4. Menyerahkan 1 (satu) lembar fotokopi ijazah terakhir\n5. Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir\n6. Menyerahkan bukti abstrak paper yang telah ditandatangani oleh pembimbing dan koordinator program studi\n7. Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)\n8. Menyerahkan/mengembalikan Kartu Pengenal Mahasiswa (KPM) AslI dan Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir"
+
+  utter_ukuran_pasfoto_wisuda:
+    - text: "Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)"
+
+  utter_platform_daftar_wisuda:
+    - text: "Mahasiswa mendaftar secara online pada situs www.unsri.ac.id"
+
+  utter_dokumen_wisuda:
+    - text: "Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir, Menyerahkan bukti abstrak paper yang telah ditandatangani oleh pembimbing dan koordinator program studi, Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya), Menyerahkan/mengembalikan Kartu Pengenal Mahasiswa (KPM) Asli dan Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir, Menyerahkan bukti bayar SPP/UKT terbaru, Menyerahkan kartu bebas pustaka dan UPT Perpustakaan Universitas Sriwijaya"
+  
+  utter_daftar_layanan_sarana_akademik:
+    - text: "1) Perpustakaan\n
+        2) Laboraturium Komputer\n
+        3) Laboraturium Dasar Terpadu\n
+        4) Lembaga Bahasa\n
+        5) Asrama Mahasiswa\n
+        6) Student Center\n
+        7) Auditorium dan Gedung Serbaguna\n
+        8) Fasilitas Lapangan\n
+        9) Pelayanan Kesehatan\n
+        10) Pusat Peribadatan\n
+        11) Bus Kampus\n
+        12) Kafetaria\n
+        13) Pelayanan Bank\n
+        14) Keamanan Kampus"
 
   utter_cdc:
     - text: "CDC-UNSRI merupakan UPT yang memberikan layanan kepada mahasiswa dan alumni Universitas Sriwijaya guna mengembangkan karakter dan karir."
@@ -71,15 +124,47 @@ responses:
   utter_gelar_akademik:
     - text: "Gelar lulusan program studi di Universitas Sriwijaya dapat dilihat di BAB I dari Buku Pedoman Akademik pada Tabel 1.1."
 
+  utter_materi_ijazah:
+    - text: "Materi/redaksi Ijazah Universitas Sriwijaya terdiri dari:\n
+            1. Nomor Ijazah, pada sudut kanan atas.\n
+            2. Nama Perguruan Tinggi “UNIVERSITAS SRIWIJAYA” yang dicetak dengan menggunakan tinta OVI berwarna biru yang akan berubah warna menjadi ungu apabila dilihat dari sudut pandang yang berbeda.\n
+            3. Nama, tempat, dan tanggal lahir lulusan penerima gelar/sebutan profesional yang ditulis lengkap sesuai dengan akta kelahiran atau sama dengan yang tertera pada ijazah terakhir.\n
+            4. Nomor Induk Mahasiswa (NIM) yang ditetapkan Universitas Sriwijaya.\n
+            5. Nama Fakultas.\n
+            6. Nama Program Studi.\n
+            7. Nama gelar/sebutan profesional dan singkatannya.\n
+            8. Tanggal pada ijazah yaitu tanggal pelaksanaan wisuda.\n
+            9. Pasfoto berukuran 3 x 4 cm hitam putih (Pria pakai jas, wanita pakai kebaya).\n
+            10. Tanda tangan dan nama terang Rektor, Dekan Fakultas atau Direktur Program.\n
+            11. Tanda tangan alumnus yang bersangkutan.\n
+            12. Cap/stempel Rektor Universitas Sriwijaya yang mengenai pasfoto alumnus dan tanda tangan Rektor.\n
+            13. Nomor Seri Ijazah terdiri dari huruf dan angka yang menunjukkan kode pembuatan."
+
+  utter_contoh_ijazah:
+    - text: "Contoh ijazah Universitas Sriwijaya"
+      image: "https://bit.ly/ContohIjazahUnsri"
+
 slots:
   bidang_minat:
     type: text
+  sarana_akademik:
+    type: text
   jenis_survei:
+    type: text
+  pakaian_wisuda:
+    type: text
+  kata_tanya:
+    type: text
+  qty_dokumen_wisuda:
     type: text
 
 entities:
   - bidang_minat
+  - sarana_akademik
   - jenis_survei
+  - pakaian_wisuda
+  - kata_tanya
+  - qty_dokumen_wisuda
 
 session_config:
   session_expiration_time: 60

@@ -8,6 +8,7 @@ pipeline:
     case_sensitive: False
     use_lookup_tables: True
     use_regexes: True
+  - name: RegexEntityExtractor
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
