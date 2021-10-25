@@ -408,6 +408,26 @@ nlu:
       - Minta link CDC Unsri
       - Link pusat pengembangan karir
       - Platform pusat pengembangan karir Universitas Sriwijaya
+  
+  - intent: fungsi_cdc
+    examples: |
+      - Keuntungan apa yang diperoleh dari layanan CDC Unsri?
+      - Apa fungsi dari layanan Pusat Pengembangan Karakter dan Karir Unsri?
+      - Apa guna Pusat Pengembangan Karakter dan Karir Unsri?
+      - Apa tugas dari CDC Universitas Sriwijaya?
+      - Mengapa diperlukan pusat karir unsri?
+      - Pusat Karir Universitas Sriwijaya bertugas sebagai apa?
+      - Apa saja yang diperoleh dari layanan pusat karir unsri?
+      - Fungsi CDC bagi mahasiswa unsri apa saja?
+      - Manfaat apa saja yang didapat mahasiswa dan alumni dari layanan CDC Universitas Sriwijaya?
+      - Apa saja yang diberikan Pusat Pengembangan Karir Unsri?
+      - Fungsi pusat karir unsri
+      - Layanan pusat karir Unsri berguna bagaimana?
+      - Jelaskan manfaat CDC Universitas Sriwijaya bagi mahasiswa dan alumni
+      - Saya ingin tahu manfaat layanan CDC
+      - Fungsi layanan CDC Universitas Sriwijaya
+      - Manfaat layanan pusat karir
+      - Kegunaan pusat karir
 
   - intent: layanan_cdc
     examples: |
@@ -429,6 +449,45 @@ nlu:
       - Jenis-jenis layanan pusat karir unsri
       - Macam layanan yang diberikan pusat karir Universitas Sriwijaya
       - Macam-macam layanan pusat pengembangan karir
+      - Jelaskan layanan pusat karir
+      - Jelaskan layanan CDC Unsri
+
+  - intent: acuan_gelar_akademik
+    examples: |
+      - Apa landasan hukum yang mengatur tentang pemberian gelar dan sebutan akademik?
+      - Apa acuan dari pemberian gelar dan sebutan akademik?
+      - Apa dasar pemberian gelar dan sebutan akademik di Universitas Sriwijaya?
+      - Apa yang mengatur pemberian gelar dan sebutan akademik di Unsri?
+      - Hukum apa yang menjadi acuan dalam pemberian gelar sebutan akademik?
+      - Bagaimana hukum yang mengatur pemberian gelar dan sebutan akademik?
+      - Bagaimana gelar dan sebutan akademik diberikan?
+      - Dasar apa yang digunakan untuk pemberian gelar sebutan?
+      - Berikan saya dasar hukum dari pemberian gelar dan sebutan akademik
+      - Saya ingin tahu dasar dari pemberian gelar di Unsri
+      - Hukum pemberian gelar dan sebutan akademik
+      - Dasar pemberian gelar dan sebutan akademik yang digunakan di Universitas Sriwijaya
+      - Hukum gelar dan sebutan
+      - Acuan gelar dan sebutan akademik Universitas Sriwijaya
+
+  - intent: gelar_akademik
+    examples: |
+      - Apa gelar atau sebutan akademik bagi lulusan program?
+      - Gelar apa yang diberikan bagi lulusan program?
+      - Gelar dan sebutan akademik yang diberikan kepada lulusan?
+      - Gelar apa yang akan didapat lulusan?
+      - Saya ingin tahu gelar yang akan didapat oleh lulusan
+      - Saya lulusan program, ingin mengetahui gelar dan sebutan yang diberikan
+      - Jika saya lulus program, gelar atau sebutan apa yang akan saya terima?
+      - Lulusan program mendapat gelar apa?
+      - Mahasiswa yang memilih program akan mendapat gelar apa?
+      - Saya ingin tahu lulusan program dan gelar sebutan akademik yang didapat
+      - Gelar sebutan lulusan program
+      - Gelar dan sebutan program
+      - Gelar yang didapatkan
+      - Gelar akademik
+      - Gelar sebutan
+      - Gelar dan sebutan akademik
+      - Program dan gelar sebutannya
 
   - intent: materi_ijazah
     examples: |

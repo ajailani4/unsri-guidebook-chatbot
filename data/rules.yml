@@ -125,6 +125,11 @@ rules:
       - intent: link_cdc
       - action: utter_link_cdc
 
+  - rule: Jawab fungsi cdc
+    steps:
+      - intent: fungsi_cdc
+      - action: utter_fungsi_cdc
+
   - rule: Jawab layanan cdc
     steps:
       - intent: layanan_cdc
@@ -140,3 +145,12 @@ rules:
       - intent: contoh_ijazah
       - action: utter_contoh_ijazah
   
+  - rule: Jawab acuan gelar akademik
+    steps:
+      - intent: acuan_gelar_akademik
+      - action: utter_acuan_gelar_akademik
+
+  - rule: Jawab gelar akademik
+    steps:
+      - intent: gelar_akademik
+      - action: utter_gelar_akademik
