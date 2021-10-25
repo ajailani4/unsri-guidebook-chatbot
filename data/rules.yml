@@ -6,26 +6,21 @@ rules:
       - intent: sampai_jumpa
       - action: utter_sampai_jumpa
 
-  - rule: Katakan sampai jumpa
-    steps:
-    - intent: sampai_jumpa
-    - action: utter_sampai_jumpa
-
   - rule: Jawab kegiatan minat dan bakat
     steps:
-    - intent: kegiatan_minat_bakat
-    - action: utter_kegiatan_minat_bakat
+      - intent: kegiatan_minat_bakat
+      - action: utter_kegiatan_minat_bakat
 
   - rule: Jawab jenis kegiatan minat dan bakat
     steps:
-    - intent: jenis_kegiatan_minat_bakat
-    - action: utter_jenis_kegiatan_minat_bakat
+      - intent: jenis_kegiatan_minat_bakat
+      - action: utter_jenis_kegiatan_minat_bakat
 
   - rule: Jawab fasilitas kegiatan minat dan bakat
     steps:
-    - intent: fasilitas_minat_bakat
-    - action: action_tampil_fasilitas_minat_bakat
-  
+      - intent: fasilitas_minat_bakat
+      - action: action_tampil_fasilitas_minat_bakat
+
   - rule: Jawab kegiatan minat dan bakat
     steps:
       - intent: kegiatan_minat_bakat
@@ -56,36 +51,80 @@ rules:
       - intent: komponen_survei_kemahasiswaan
       - action: utter_komponen_survei_kemahasiswaan
 
+  - rule: Jawab peserta wisuda
+    steps:
+      - intent: peserta_wisuda
+      - action: utter_peserta_wisuda
+
+  - rule: Jawab pendaftaran biaya
+    steps:
+      - intent: pendaftaran_biaya
+      - action: utter_pendaftaran_biaya
+
+  - rule: Jawab persyaratan wisuda
+    steps:
+      - intent: persyaratan_wisuda
+      - action: utter_persyaratan_wisuda
+
+  - rule: Jawab ukuran pasfoto wisuda
+    steps:
+      - intent: ukuran_pasfoto_wisuda
+      - action: utter_ukuran_pasfoto_wisuda
+
+  - rule: Jawab platform daftar wisuda
+    steps:
+      - intent: platform_daftar_wisuda
+      - action: utter_platform_daftar_wisuda
+
   - rule: Jawab platform survei
     steps:
       - intent: platform_survei
       - action: action_tampil_platform_survei
 
+  - rule: Jawab pakaian wisuda
+    steps:
+      - intent: pakaian_wisuda
+      - action: action_tampil_pakaian_wisuda
+
+  - rule: Jawab waktu tempat wisuda
+    steps:
+      - intent: waktu_tempat_wisuda
+      - action: action_tampil_waktu_tempat_wisuda
+
+  - rule: Jawab dokumen wisuda
+    steps:
+      - intent: dokumen_wisuda
+      - action: utter_dokumen_wisuda
+
+  - rule: Jawab kuantitas dokumen wisuda
+    steps:
+      - intent: kuantitas_dokumen_wisuda
+      - action: action_tampil_kuantitas_dokumen_wisuda
   - rule: Jawab daftar layanan sarana akademik
     steps:
-    - intent: daftar_layanan_sarana_akademik
-    - action: utter_daftar_layanan_sarana_akademik
+      - intent: daftar_layanan_sarana_akademik
+      - action: utter_daftar_layanan_sarana_akademik
 
   - rule: Jawab definisi layanan sarana akademik
     steps:
-    - intent: definisi_layanan_sarana_akademik
-    - action: action_tampil_definisi_sarana_akademik
+      - intent: definisi_layanan_sarana_akademik
+      - action: action_tampil_definisi_sarana_akademik
 
   - rule: Jawab jadwal layanan sarana akademik
     steps:
-    - intent: jadwal_layanan_sarana_akademik
-    - action: action_tampil_jadwal_sarana_akademik
+      - intent: jadwal_layanan_sarana_akademik
+      - action: action_tampil_jadwal_sarana_akademik
 
   - rule: Jawab cdc
     steps:
       - intent: cdc
       - action: utter_cdc
-  
+
   - rule: Jawab link cdc
     steps:
       - intent: link_cdc
       - action: utter_link_cdc
-  
+
   - rule: Jawab layanan cdc
     steps:
       - intent: layanan_cdc

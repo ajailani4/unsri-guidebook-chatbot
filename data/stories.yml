@@ -3,32 +3,32 @@ version: "2.0"
 stories:
   - story: salam dan sampai jumpa
     steps:
-    - intent: salam
-    - action: utter_salam
-    - intent: sampai_jumpa
-    - action: utter_sampai_jumpa
+      - intent: salam
+      - action: utter_salam
+      - intent: sampai_jumpa
+      - action: utter_sampai_jumpa
 
   - story: tanya kegiatan minat dan bakat
     steps:
-    - intent: salam
-    - action: utter_salam
-    - intent: kegiatan_minat_bakat
-    - action: utter_kegiatan_minat_bakat
+      - intent: salam
+      - action: utter_salam
+      - intent: kegiatan_minat_bakat
+      - action: utter_kegiatan_minat_bakat
 
   - story: tanya jenis kegiatan minat dan bakat
     steps:
-    - intent: salam
-    - action: utter_salam
-    - intent: jenis_kegiatan_minat_bakat
-    - action: utter_jenis_kegiatan_minat_bakat
+      - intent: salam
+      - action: utter_salam
+      - intent: jenis_kegiatan_minat_bakat
+      - action: utter_jenis_kegiatan_minat_bakat
 
   - story: tanya fasilitas kegiatan minat dan bakat
     steps:
-    - intent: salam
-    - action: utter_salam
-    - intent: fasilitas_minat_bakat
-    - action: action_tampil_fasilitas_minat_bakat
-  
+      - intent: salam
+      - action: utter_salam
+      - intent: fasilitas_minat_bakat
+      - action: action_tampil_fasilitas_minat_bakat
+
   - story: tanya kegiatan minat dan bakat
     steps:
       - intent: salam
@@ -71,6 +71,41 @@ stories:
       - intent: komponen_survei_kemahasiswaan
       - action: utter_komponen_survei_kemahasiswaan
 
+  - story: tanya peserta wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: peserta_wisuda
+      - action: utter_peserta_wisuda
+
+  - story: tanya pendaftaran biaya
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: pendaftaran_biaya
+      - action: utter_pendaftaran_biaya
+
+  - story: tanya persyaratan wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: persyaratan_wisuda
+      - action: utter_persyaratan_wisuda
+
+  - story: tanya ukuran pasfoto wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: ukuran_pasfoto_wisuda
+      - action: utter_ukuran_pasfoto_wisuda
+
+  - story: tanya platform daftar wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: platform_daftar_wisuda
+      - action: utter_platform_daftar_wisuda
+
   - story: tanya platform survei
     steps:
       - intent: salam
@@ -78,12 +113,33 @@ stories:
       - intent: platform_survei
       - action: action_tampil_platform_survei
 
+  - story: tanya waktu tempat wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: waktu_tempat_wisuda
+      - action: action_tampil_waktu_tempat_wisuda
+
+  - story: tanya dokumen wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: dokumen_wisuda
+      - action: utter_dokumen_wisuda
+
+  - story: tanya kuantitas dokumen wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: kuantitas_dokumen_wisuda
+      - action: action_tampil_kuantitas_dokumen_wisuda
+      
   - story: tanya daftar layanan sarana akademik
     steps:
-    - intent: salam
-    - action: utter_salam
-    - intent: daftar_layanan_sarana_akademik
-    - action: utter_daftar_layanan_sarana_akademik
+      - intent: salam
+      - action: utter_salam
+      - intent: daftar_layanan_sarana_akademik
+      - action: utter_daftar_layanan_sarana_akademik
 
   - story: tanya definisi layanan sarana akademik
     steps:

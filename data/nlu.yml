@@ -161,6 +161,170 @@ nlu:
       - Apa nama website survei layanan kepuasan [kemahasiswaan](jenis_survei) unsri?
       - web survei layanan [kemahasiswaan](jenis_survei)
 
+  - intent: peserta_wisuda
+    examples: |
+      - Siapa saja peserta wisuda?
+      - Siapa saja yang menjadi peserta wisuda?
+      - Siapa saja yang boleh mengikuti acara wisuda?
+      - Siapa yang diperkenankan menghadiri wisuda?
+      - Siapa yang berhak menjadi peserta wisuda?
+      - Siapa yang menjadi peserta wisuda?
+      - Siapa yang diperbolehkan menghadiri wisuda?
+      - Siapa yang diizinkan menjadii peserta wisuda?
+      - Apa saja syarat peserta wisuda?
+      - Apa ketentuan menjadi peserta wisuda?
+      - Terdiri dari siapa saja peserta wisuda?
+      - sebutkan persyaratan menjadi perserta wisuda
+      - peserta wisuda
+
+  - intent: pendaftaran_biaya
+    examples: |
+      - Bagaimana pendaftaran dan biaya wisuda?
+      - Apa persyaratan pendaftaran dan biaya wisuda?
+      - Hal yang perlu dilakukan untuk pendaftaran wisuda?
+      - Sebutkan yang menjadi aturan pendaftaran dan biaya wisuda?
+      - Apa saja yang harus dilakukan mahasiswa untuk pendaftaran wisuda?
+      - pendaftaran wisuda
+      - biaya wisuda
+
+  - intent: persyaratan_wisuda
+    examples: |
+      - Apa persyaratan Wisuda Universitas Sriwijaya ?
+      - Apa saja yang harus dilengkapi untuk syarat Wisuda Universitas Sriwijaya ?
+      - Apa syarat yang harus diisi untuk syarat Wisuda Universitas Sriwijaya ?
+      - Apa syarat kelulusan apa saja yang harus dipenuhi pada wisuda Universitas Sriwijaya ?
+      - Apa syarat wisuda
+      - Persyaratan wisuda Universitas Sriwijaya
+      - Persyaratan wisuda UNSRI
+
+  - intent: ukuran_pasfoto_wisuda
+    examples: |
+      - Berapa ukuran foto pada persyaratan dokumen untuk syarat wisuda Universitas ?
+      - Berapa pasfoto terbaru yang harus diserahkan untuk syarat wisuda Universitas ?
+      - Apa warna pasfoto yang akan diserahkan untuk syarat wisuda Universitas ?
+      - Apa pakaian yang dikenakan pada pasfoto untuk syarat wisuda Universitas ?
+      - Ukuran pasfoto wisuda 
+      - Berapa lembar pasfoto yang diberikan
+
+  - intent: platform_daftar_wisuda
+    examples: |
+      - Apa situs pendaftaran online untuk wisuda Universitas sriwijaya ?
+      - Apa platform pendaftaran online untuk wisuda Universitas sriwijaya ?
+      - Dimana halaman website pendaftaran online wisuda Universitas Sriwijaya ?
+      - Link pendaftaran wisuda UNSRI
+      - Website pendaftaran wisuda Universitas Sriwijaya ?
+      - Dimana bisa mendaftar wisuda ?
+      - Tempat untuk mendaftar wisuda ?
+
+  - intent: pakaian_wisuda
+    examples: |
+      - Apa pakaian yang dikenakan oleh [panitia](pakaian_wisuda) saat wisuda?
+      - Apa pakaian yang dikenakan oleh [mahasiswa](pakaian_wisuda) saat wisuda?
+      - Apa pakaian yang dikenakan oleh [anggota senat](pakaian_wisuda) saat wisuda?
+      - Apa pakaian yang dikenakan oleh [undangan](pakaian_wisuda) saat wisuda?
+      - Apa syarat pakaian wisuda [panitia](pakaian_wisuda)?
+      - Apa syarat pakaian wisuda [undangan](pakaian_wisuda)?
+      - Apa syarat pakaian wisuda [senat](pakaian_wisuda)?
+      - Apa syarat pakaian wisuda [mahasiswa](pakaian_wisuda)?
+      - Pakaian yang dipakai [anggota senat](pakaian_wisda) saat wisuda ?
+      - Pakaian yang dipakai [mahasiswa](pakaian_wisda) saat wisuda ?
+      - Pakaian yang dipakai [panitia](pakaian_wisda) saat wisuda ?
+      - Bagaimana pakaian peserta wisuda [mahasiswa](pakaian_wisuda)?
+      - Bagaimana pakaian peserta wisuda [anggota senat](pakaian_wisuda)?
+      - Pakaian seperti apa yang harus dikenakan saat wisuda [undangan](pakaian_wisuda)?
+      - Pakaian seperti apa yang harus dikenakan saat wisuda [mahasiswa](pakaian_wisuda)?
+      - Bagaimana pakaian peserta wisuda [anggota senat](pakaian_wisuda)?
+      - Bagaimana pakaian peserta wisuda [mahasiswa](pakaian_wisuda)?
+      - Bagaimana [mahasiswa](pakaian_wisuda) berpakaian saat wisuda ?
+      - Bagaimana [panitia](pakaian_wisuda) berpakaian saat wisuda ?
+      - Apa baju yang digunakan [undangan](pakaian_wisuda) saat acara wisuda ?
+      - Apa baju yang digunakan [mahasiswa](pakaian_wisuda) saat acara wisuda ?
+      - Apa aturan berpakaian peserta wisuda [panitia](pakaian_wisuda)?
+      - Apa saja yang harus dikenakan peserta wisuda [undangan](pakaian_wisuda)?
+      - Apa saja kelengkapan pakaian peserta wisuda [mahasiswa](pakaian_wisuda)?
+      - Sebutkan kelengkapan berpakaian peserta wisuda [anggota senat](pakaian_wisuda)
+      - Sebutkan persyaratan berpakaian peserta wisuda [panitia](pakaian_wisuda)
+      - Pakaian wisuda untuk [mahasiswa](pakaian_wisuda)
+      - Pakaian wisuda untuk [anggota senat](pakaian_wisuda)
+      - Apa pakaian yang dikenakan oleh [mahasiswa](pakaian_wisuda) saat wisuda ?
+      - Apa pakaian yang dikenakan oleh [anggota senat](pakaian_wisuda) saat wisuda ?
+      - [mahasiswa](pakaian_wisuda) menggunakan pakaian apa saat wisuda ?
+      - [panitia](pakaian_wisuda) menggunakan pakaian apa saat wisuda ?
+      - [senat](pakaian_wisuda) menggunakan pakaian apa saat wisuda ?
+      - Pakaian [mahasiswa](pakaian_wisuda) untuk wisuda apa saja ?
+      - Syarat pakaian [mahasiswa](pakaian_wisuda) untuk wisuda ?
+      - Pakaian [mahasiswa](pakaian_wisuda) untuk wisuda apa ?
+      - Pakaian [panitia](pakaian_wisuda) untuk wisuda apa ?
+      - Bagaimana [mahasiswa](pakaian_wisuda) berpakaian untuk wisuda ?
+      - Bagaimana [panitia](pakaian_wisuda) berpakaian untuk wisuda ?
+      - Pakaian [anggota senat](pakaian_wisuda) untuk wisuda
+
+  - intent: waktu_tempat_wisuda
+    examples: |
+      - [Kapan](kata_tanya) wisuda?
+      - [Dimana](kata_tanya) wisuda?
+      - [Kapan](kata_tanya) upacara wisuda dilaksanakan?
+      - [Dimana](kata_tanya) upacara wisuda dilaksanakan?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda?
+      - [dimana](kata_tanya) dilaksanakannya wisuda?
+      - [dimana](kata_tanya) dilaksanakannya wisuda?
+      - [dimana](kata_tanya) upacara wisuda dilaksanakan?
+      - [Dimana](kata_tanya) wisuda?
+      - [Kapan](kata_tanya) wisuda unsri?
+      - [Kapan](kata_tanya) upacara wisuda dilaksanakan unsri?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda unsri?
+      - [dimana](kata_tanya) dilaksanakannya wisuda unsri?
+      - [dimana](kata_tanya) upacara wisuda dilaksanakan unsri?
+      - [dimana](kata_tanya) wisuda unsri?
+      - [Kapan](kata_tanya) wisuda Universitas Sriwijaya?
+      - [Kapan](kata_tanya) upacara wisuda dilaksanakan Universitas Sriwijaya?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda Universitas Sriwijaya?
+      - [Dimana](kata_tanya) dilaksanakannya wisuda Universitas Sriwijaya?
+      - [Dimana](kata_tanya) upacara wisuda dilaksanakan Universitas?
+      - [Dimana](kata_tanya) wisuda Universitas Sriwijaya?
+      - [Kapan](kata_tanya) wisuda mahasiswa?
+      - [Kapan](kata_tanya) upacara wisuda mahasasiswa dilaksanakan?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda mahasiswa?
+      - [Dimana](kata_tanya) dilaksanakannya wisuda mahasiswa?
+      - [Dimana](kata_tanya) upacara wisuda mahasiswa dilaksanakan ?
+      - [Dimana](kata_tanya) wisuda mahasiswa unsri?
+      - [Kapan](kata_tanya) wisuda mahasiswa unsri?
+      - [Kapan](kata_tanya) upacara wisuda mahasasiswa dilaksanakan unsri?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda mahasiswa unsri?
+      - [Dimana](kata_tanya) dilaksanakannya wisuda mahasiswa unsri?
+      - [Dimana](kata_tanya) upacara wisuda mahasiswa dilaksanakan unsri ?
+      - [Dimana](kata_tanya) wisuda mahasiswa unsri?
+      - [Kapan](kata_tanya) wisuda mahasiswa Universitas Sriwijaya?
+      - [Kapan](kata_tanya) upacara wisuda mahasasiswa dilaksanakan Universitas Sriwijaya?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda mahasiswa Universitas Sriwijaya?
+      - [Dimana](kata_tanya) dilaksanakannya wisuda mahasiswa Universitas Sriwijaya?
+      - [Dimana](kata_tanya) upacara wisuda mahasiswa dilaksanakan Universitas Sriwijaya?
+      - [Dimana](kata_tanya) wisuda mahasiswa Sriwijaya?
+      - Unsri wisuda [dimana](kata_tanya) ?
+      - UNSRI [kapan](kata_tanya) wisuda ?
+      - UNSRI wisuda [dimana][kata_tanya] ?
+
+  - intent: dokumen_wisuda
+    examples: |
+      - Apa dokumen-dokumen yang harus dilengkapi untuk syarat wisuda Universitas Sriwijaya ?
+      - Dokumen yang harus dilengkapi untuk syarat wisuda UNSRI apa saja ?
+      - Dokumen yang harus dilengkapi untuk syarat wisuda di UNSRI ?
+      - Dokumen untuk syarat wisuda di UNSRI ?
+      - Apa saja dokumen yang diperlukan sebagai syarat wisuda di UNSRI ?
+      - Dokumen syarat wisuda di UNSRI ?
+
+  - intent: kuantitas_dokumen_wisuda
+    examples: |
+      - Berapa fotokopi [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
+      - Berapa fotokopi [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
+      - Berapa fotokopi [ijazah](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
+      - Berapa fotokopi [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
+      - Berapa fotokopi [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda) yang harus di serahkan untuk syarat wisuda Universitas Sriwijaya ?
+      - Jumlah fotokopi [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan
+      - Jumlah fotokopi [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan
+      - Berapa [pasfoto](qty_dokumen_wisuda) terbaru yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
+      - Berapa [pengesahan tugas akhir](qty_dokumen_wisuda) terbaru yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
+      - Berapa [bukti kelulusan ujian bahasa](qty_dokumen_wisuda) terbaru yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
   - intent: daftar_layanan_sarana_akademik
     examples: |
       - Apa saja layanan akademik di Universitas Sriwijaya?
@@ -209,7 +373,7 @@ nlu:
       - [lembaga bahasa](sarana_akademik) buka jam berapa?
       - [pelayanan kesehatan](sarana_akademik) buka jam berapa?
       - [laboraturium komputer](sarana_akademik) buka jam berapa?
-  
+
   - intent: cdc
     examples: |
       - Apa itu CDC Unsri?
@@ -244,7 +408,7 @@ nlu:
       - Minta link CDC Unsri
       - Link pusat pengembangan karir
       - Platform pusat pengembangan karir Universitas Sriwijaya
-  
+
   - intent: layanan_cdc
     examples: |
       - Layanan apa yang diperoleh dari CDC Unsri?
@@ -306,7 +470,7 @@ nlu:
   - synonym: auditorium
     examples: |
       - gedung serbaguna
-  
+
   - synonym: student center
     examples: |
       - SC
