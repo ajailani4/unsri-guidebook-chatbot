@@ -144,7 +144,7 @@ rules:
     steps:
       - intent: contoh_ijazah
       - action: utter_contoh_ijazah
-  
+
   - rule: Jawab acuan gelar akademik
     steps:
       - intent: acuan_gelar_akademik
@@ -154,3 +154,8 @@ rules:
     steps:
       - intent: gelar_akademik
       - action: utter_gelar_akademik
+
+  - rule: Jawab materi transkrip
+    steps:
+      - intent: materi_transkrip
+      - action: utter_materi_transkrip

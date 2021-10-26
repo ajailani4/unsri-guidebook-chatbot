@@ -408,7 +408,7 @@ nlu:
       - Minta link CDC Unsri
       - Link pusat pengembangan karir
       - Platform pusat pengembangan karir Universitas Sriwijaya
-  
+
   - intent: fungsi_cdc
     examples: |
       - Keuntungan apa yang diperoleh dari layanan CDC Unsri?
@@ -525,6 +525,22 @@ nlu:
       - Contoh tampilan ijazah
       - Bentuk ijazah
       - Tampilan ijazah
+
+  - intent: materi_transkrip
+    examples: |
+      - Apa Redaksi atau Materi pada Transkrip Universitas Sriwijaya ?
+      - Apa warna nomor seri pada Transkrip Universitas Sriwijaya ?
+      - Apa teknik yang digunakan untuk mencetak  nomor seri Transkrip Universitas Sriwijaya ?
+      - Apa isi tabel pada daftar nilai biasanya di isi ?
+      - Apa warna pasfoto untuk Transkrip Universitas Sriwijaya ?
+      - Apa ketentuan pakaian pada pasfoto untuk Transkrip Universitas Sriwijaya ?
+      - Dimana letak nomor seri pada Transkrip Universitas Sriwijaya ?
+      - Berapa nomor seri biasanya di isi ?
+      - Berapa ukuran pasfoto untuk Transkrip Universitas Sriwijaya ?
+      - Ada berapa kolom tabel pada daftar nilai di Transkrip Universitas Sriwijaya ?
+      - Bagaimana perhitungan di daftar nilai pada Transkrip Universitas Sriwijaya ?
+      - Bagaimana cap di tempel pada Transkrip Universitas Sriwijaya ?
+      - Siapa yang menandatangani Transkrip Universitas Sriwijaya ?
 
   - synonym: auditorium
     examples: |
