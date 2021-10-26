@@ -133,7 +133,7 @@ stories:
       - action: utter_salam
       - intent: kuantitas_dokumen_wisuda
       - action: action_tampil_kuantitas_dokumen_wisuda
-      
+
   - story: tanya daftar layanan sarana akademik
     steps:
       - intent: salam
@@ -209,3 +209,10 @@ stories:
       - action: utter_salam
       - intent: contoh_ijazah
       - action: utter_contoh_ijazah
+
+  - story: tanya materi transkrip
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: materi_transkrip
+      - action: utter_materi_transkrip
