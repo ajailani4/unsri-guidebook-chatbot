@@ -216,3 +216,10 @@ stories:
       - action: utter_salam
       - intent: materi_transkrip
       - action: utter_materi_transkrip
+
+  - story: tanya syarat predikat program
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: syarat_predikat_program
+      - action: action_tampil_syarat_predikat_program

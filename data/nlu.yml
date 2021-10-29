@@ -542,6 +542,105 @@ nlu:
       - Bagaimana cap di tempel pada Transkrip Universitas Sriwijaya ?
       - Siapa yang menandatangani Transkrip Universitas Sriwijaya ?
 
+  - intent: syarat_predikat_program
+    examples: |
+      - Apa syarat untuk memperoleh predikat kelulusan [memuaskan](predikat) untuk program [Pendidikan spesialis](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [memuaskan](predikat) untuk program [Magister](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [memuaskan](predikat) untuk program [Doktor](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [sangat memuaskan](predikat) untuk program [Pendidikan spesialis](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [sangat memuaskan](predikat) untuk program [Magister](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [sangat memuaskan](predikat) untuk program [Doktor](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [pujian](predikat) untuk program [Pendidikan spesialis](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [pujian](predikat) untuk program [Magister](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [pujian](predikat) untuk program [Doktor](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [cumlaude](predikat) untuk program [Pendidikan spesialis](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [cumlaude](predikat) untuk program [Magister](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [cumlaude](predikat) untuk program [Doktor](program)?
+      - Bagaimana cara memperoleh predikat [memuaskan](predikat) dari program [Pendidikan spesialis](program)?
+      - Bagaimana cara memperoleh predikat [memuaskan](predikat) dari program [Magister](program)?
+      - Bagaimana cara memperoleh predikat [memuaskan](predikat) dari program [Doktor](program)?
+      - Bagaimana cara memperoleh predikat [sangat memuaskan](predikat) dari program [Pendidikan spesialis](program)?
+      - Bagaimana cara memperoleh predikat [sangat memuaskan](predikat) dari program [Magister](program)?
+      - Bagaimana cara memperoleh predikat [sangat memuaskan](predikat) dari program [Doktor](program)?
+      - Bagaimana cara memperoleh predikat [pujian](predikat) dari program [Pendidikan spesialis](program)?
+      - Bagaimana cara memperoleh predikat [pujian](predikat) dari program [Magister](program)?
+      - Bagaimana cara memperoleh predikat [pujian](predikat) dari program [Doktor](program)?
+      - Bagaimana cara memperoleh predikat [cumlaude](predikat) dari program [Pendidikan spesialis](program)?
+      - Bagaimana cara memperoleh predikat [cumlaude](predikat) dari program [Magister](program)?
+      - Bagaimana cara memperoleh predikat [cumlaude](predikat) dari program [Doktor](program)?
+      - Cara mendapatkan [memuaskan](predikat) program [Pendidikan spesialis](program) bagaimana?
+      - Cara mendapatkan [memuaskan](predikat) program [Magister](program) bagaimana?
+      - Cara mendapatkan [memuaskan](predikat) program [Doktor](program) bagaimana?
+      - Cara mendapatkan [sangat memuaskan](predikat) program [Pendidikan spesialis](program) bagaimana?
+      - Cara mendapatkan [sangat memuaskan](predikat) program [Magister](program) bagaimana?
+      - Cara mendapatkan [sangat memuaskan](predikat) program [Doktor](program) bagaimana?
+      - Cara mendapatkan [pujian](predikat) program [Pendidikan spesialis](program) bagaimana?
+      - Cara mendapatkan [pujian](predikat) program [Magister](program) bagaimana?
+      - Cara mendapatkan [pujian](predikat) program [Doktor](program) bagaimana?
+      - Cara mendapatkan [cumlaude](predikat) program [Pendidikan spesialis](program) bagaimana?
+      - Cara mendapatkan [cumlaude](predikat) program [Magister](program) bagaimana?
+      - Cara mendapatkan [cumlaude](predikat) program [Doktor](program) bagaimana?
+      - Apa saja syarat lulus secara [memuaskan](predikat) untuk mahasiswa program [Pendidikan spesialis](program)?
+      - Apa saja syarat lulus secara [memuaskan](predikat) untuk mahasiswa program [Magister](program)?
+      - Apa saja syarat lulus secara [memuaskan](predikat) untuk mahasiswa program [Doktor](program)?
+      - Apa saja syarat lulus secara [sangat memuaskan](predikat) untuk mahasiswa program [Pendidikan spesialis](program)?
+      - Apa saja syarat lulus secara [sangat memuaskan](predikat) untuk mahasiswa program [Magister](program)?
+      - Apa saja syarat lulus secara [sangat memuaskan](predikat) untuk mahasiswa program [Doktor](program)?
+      - Apa saja syarat lulus secara [pujian](predikat) untuk mahasiswa program [Pendidikan spesialis](program)?
+      - Apa saja syarat lulus secara [pujian](predikat) untuk mahasiswa program [Magister](program)?
+      - Apa saja syarat lulus secara [pujian](predikat) untuk mahasiswa program [Doktor](program)?
+      - Apa saja syarat lulus secara [cumlaude](predikat) untuk mahasiswa program [Pendidikan spesialis](program)?
+      - Apa saja syarat lulus secara [cumlaude](predikat) untuk mahasiswa program [Magister](program)?
+      - Apa saja syarat lulus secara [cumlaude](predikat) untuk mahasiswa program [Doktor](program)?
+      - Apa yang diperlukan mahasiswa [Pendidikan spesialis](program) supaya lulus [memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Magister](program) supaya lulus [memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Doktor](program) supaya lulus [memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Pendidikan spesialis](program) supaya lulus [sangat memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Magister](program) supaya lulus [sangat memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Doktor](program) supaya lulus [sangat memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Pendidikan spesialis](program) supaya lulus [pujian](predikat)?
+      - Apa yang diperlukan mahasiswa [Magister](program) supaya lulus [pujian](predikat)?
+      - Apa yang diperlukan mahasiswa [Doktor](program) supaya lulus [pujian](predikat)?
+      - Apa yang diperlukan mahasiswa [Pendidikan spesialis](program) supaya lulus [cumlaude](predikat)?
+      - Apa yang diperlukan mahasiswa [Magister](program) supaya lulus [cumlaude](predikat)?
+      - Apa yang diperlukan mahasiswa [Doktor](program) supaya lulus [cumlaude](predikat)?
+      - Syarat [memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Syarat [memuaskan](predikat) program [Magister](program)
+      - Syarat [memuaskan](predikat) program [Doktor](program)
+      - Syarat [sangat memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Syarat [sangat memuaskan](predikat) program [Magister](program)
+      - Syarat [sangat memuaskan](predikat) program [Doktor](program)
+      - Syarat [pujian](predikat) program [Pendidikan spesialis](program)
+      - Syarat [pujian](predikat) program [Magister](program)
+      - Syarat [pujian](predikat) program [Doktor](program)
+      - Syarat [cumlaude](predikat) program [Pendidikan spesialis](program)
+      - Syarat [cumlaude](predikat) program [Magister](program)
+      - Syarat [cumlaude](predikat) program [Doktor](program)
+      - Lulus [memuaskan](predikat) untuk program [Pendidikan spesialis](program)
+      - Lulus [memuaskan](predikat) untuk program [Magister](program)
+      - Lulus [memuaskan](predikat) untuk program [Doktor](program)
+      - Lulus [sangat memuaskan](predikat) untuk program [Pendidikan spesialis](program)
+      - Lulus [sangat memuaskan](predikat) untuk program [Magister](program)
+      - Lulus [sangat memuaskan](predikat) untuk program [Doktor](program)
+      - Lulus [pujian](predikat) untuk program [Pendidikan spesialis](program)
+      - Lulus [pujian](predikat) untuk program [Magister](program)
+      - Lulus [pujian](predikat) untuk program [Doktor](program)
+      - Lulus [cumlaude](predikat) untuk program [Pendidikan spesialis](program)
+      - Lulus [cumlaude](predikat) untuk program [Magister](program)
+      - Lulus [cumlaude](predikat) untuk program [Doktor](program)
+      - Predikat [memuaskan](predikat) untuk program [Pendidikan spesialis](program)
+      - Predikat [memuaskan](predikat) untuk program [Magister](program)
+      - Predikat [memuaskan](predikat) untuk program [Doktor](program)
+      - Predikat [sangat memuaskan](predikat) untuk program [Pendidikan spesialis](program)
+      - Predikat [sangat memuaskan](predikat) untuk program [Magister](program)
+      - Predikat [sangat memuaskan](predikat) untuk program [Doktor](program)
+      - Predikat [pujian](predikat) untuk program [Pendidikan spesialis](program)
+      - Predikat [pujian](predikat) untuk program [Magister](program)
+      - Predikat [pujian](predikat) untuk program [Doktor](program)
+      - Predikat [cumlaude](predikat) untuk program [Pendidikan spesialis](program)
+      - Predikat [cumlaude](predikat) untuk program [Magister](program)
+      - Predikat [cumlaude](predikat) untuk program [Doktor](program)
+
   - synonym: auditorium
     examples: |
       - gedung serbaguna
@@ -553,3 +652,7 @@ nlu:
   - synonym: kesehatan
     examples: |
       - klinik
+
+  - synonym: pujian
+    examples: |
+      - cumlaude

@@ -158,3 +158,27 @@ class ActionTampilKuantitasDokumenWisuda(Action):
         dispatcher.utter_message(text=message)
 
         return []
+
+class ActionTampilSyaratPredikatProgram(Action):
+    dao = Dao()
+
+    def name(self) -> Text:
+        return "action_tampil_syarat_predikat_program"
+
+    def run(self, dispatcher: CollectingDispatcher, 
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        predikat = str(next(tracker.get_latest_entity_values("predikat"), None)).lower()
+        program = str(next(tracker.get_latest_entity_values("program"), None)).lower()
+        
+        reqs = self.dao.get_predicate_requirements(predikat, program)
+        reqs = reqs.replace(r'\n', '\n')
+        if reqs == "":
+            message = "Tidak terdapat predikat "+ predikat + " untuk program " + program
+        else:
+            message = "Syarat untuk memperoleh predikat " + predikat + " untuk mahasiswa program " + program + " yaitu:\n" + reqs
+
+        dispatcher.utter_message(text=message)
+
+        return []
