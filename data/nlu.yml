@@ -640,6 +640,78 @@ nlu:
       - Predikat [cumlaude](predikat) untuk program [Pendidikan spesialis](program)
       - Predikat [cumlaude](predikat) untuk program [Magister](program)
       - Predikat [cumlaude](predikat) untuk program [Doktor](program)
+      - Berapa ipk yang diperoleh predikat kelulusan [memuaskan](predikat) dari program [Pendidikan spesialis](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [memuaskan](predikat) dari program [Magister](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [memuaskan](predikat) dari program [Doktor](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [sangat memuaskan](predikat) dari program [Pendidikan spesialis](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [sangat memuaskan](predikat) dari program [Magister](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [sangat memuaskan](predikat) dari program [Doktor](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [pujian](predikat) dari program [Pendidikan spesialis](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [pujian](predikat) dari program [Magister](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [pujian](predikat) dari program [Doktor](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [cumlaude](predikat) dari program [Pendidikan spesialis](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [cumlaude](predikat) dari program [Magister](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [cumlaude](predikat) dari program [Doktor](program)?
+      - Berapa ipk yang diperlukan mahasiswa program [Pendidikan spesialis](program) untuk lulus secara [memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Magister](program) untuk lulus secara [memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Doktor](program) untuk lulus secara [memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Pendidikan spesialis](program) untuk lulus secara [sangat memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Magister](program) untuk lulus secara [sangat memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Doktor](program) untuk lulus secara [sangat memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Pendidikan spesialis](program) untuk lulus secara [pujian](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Magister](program) untuk lulus secara [pujian](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Doktor](program) untuk lulus secara [pujian](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Pendidikan spesialis](program) untuk lulus secara [cumlaude](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Magister](program) untuk lulus secara [cumlaude](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Doktor](program) untuk lulus secara [cumlaude](predikat)?
+      - Berapa minimal ipk untuk mendapatkan predikat [memuaskan](predikat) di program [Pendidikan spesialis](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [memuaskan](predikat) di program [Magister](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [memuaskan](predikat) di program [Doktor](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [sangat memuaskan](predikat) di program [Pendidikan spesialis](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [sangat memuaskan](predikat) di program [Magister](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [sangat memuaskan](predikat) di program [Doktor](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [pujian](predikat) di program [Pendidikan spesialis](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [pujian](predikat) di program [Magister](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [pujian](predikat) di program [Doktor](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [cumlaude](predikat) di program [Pendidikan spesialis](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [cumlaude](predikat) di program [Magister](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [cumlaude](predikat) di program [Doktor](program)?
+      - Minimal ipk predikat [memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Minimal ipk predikat [memuaskan](predikat) program [Magister](program)
+      - Minimal ipk predikat [memuaskan](predikat) program [Doktor](program)
+      - Minimal ipk predikat [sangat memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Minimal ipk predikat [sangat memuaskan](predikat) program [Magister](program)
+      - Minimal ipk predikat [sangat memuaskan](predikat) program [Doktor](program)
+      - Minimal ipk predikat [pujian](predikat) program [Pendidikan spesialis](program)
+      - Minimal ipk predikat [pujian](predikat) program [Magister](program)
+      - Minimal ipk predikat [pujian](predikat) program [Doktor](program)
+      - Minimal ipk predikat [cumlaude](predikat) program [Pendidikan spesialis](program)
+      - Minimal ipk predikat [cumlaude](predikat) program [Magister](program)
+      - Minimal ipk predikat [cumlaude](predikat) program [Doktor](program)
+      - Batas ipk [memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Batas ipk [memuaskan](predikat) program [Magister](program)
+      - Batas ipk [memuaskan](predikat) program [Doktor](program)
+      - Batas ipk [sangat memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Batas ipk [sangat memuaskan](predikat) program [Magister](program)
+      - Batas ipk [sangat memuaskan](predikat) program [Doktor](program)
+      - Batas ipk [pujian](predikat) program [Pendidikan spesialis](program)
+      - Batas ipk [pujian](predikat) program [Magister](program)
+      - Batas ipk [pujian](predikat) program [Doktor](program)
+      - Batas ipk [cumlaude](predikat) program [Pendidikan spesialis](program)
+      - Batas ipk [cumlaude](predikat) program [Magister](program)
+      - Batas ipk [cumlaude](predikat) program [Doktor](program)
+      - Ipk mahasiswa [Pendidikan spesialis](program) [memuaskan](predikat)
+      - Ipk mahasiswa [Magister](program) [memuaskan](predikat)
+      - Ipk mahasiswa [Doktor](program) [memuaskan](predikat)
+      - Ipk mahasiswa [Pendidikan spesialis](program) [sangat memuaskan](predikat)
+      - Ipk mahasiswa [Magister](program) [sangat memuaskan](predikat)
+      - Ipk mahasiswa [Doktor](program) [sangat memuaskan](predikat)
+      - Ipk mahasiswa [Pendidikan spesialis](program) [pujian](predikat)
+      - Ipk mahasiswa [Magister](program) [pujian](predikat)
+      - Ipk mahasiswa [Doktor](program) [pujian](predikat)
+      - Ipk mahasiswa [Pendidikan spesialis](program) [cumlaude](predikat)
+      - Ipk mahasiswa [Magister](program) [cumlaude](predikat)
+      - Ipk mahasiswa [Doktor](program) [cumlaude](predikat)
 
   - synonym: auditorium
     examples: |
