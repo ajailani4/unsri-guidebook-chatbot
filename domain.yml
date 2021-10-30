@@ -31,6 +31,7 @@ intents:
   - materi_ijazah
   - materi_transkrip
   - contoh_ijazah
+  - syarat_predikat_program
 
 actions:
   - action_tampil_fasilitas_minat_bakat
@@ -40,6 +41,7 @@ actions:
   - action_tampil_kuantitas_dokumen_wisuda
   - action_tampil_definisi_sarana_akademik
   - action_tampil_jadwal_sarana_akademik
+  - action_tampil_syarat_predikat_program
 
 responses:
   utter_salam:
@@ -163,6 +165,10 @@ slots:
     type: text
   qty_dokumen_wisuda:
     type: text
+  predikat:
+    type: text
+  program:
+    type: text
 
 entities:
   - bidang_minat
@@ -171,6 +177,8 @@ entities:
   - pakaian_wisuda
   - kata_tanya
   - qty_dokumen_wisuda
+  - predikat
+  - program
 
 session_config:
   session_expiration_time: 60

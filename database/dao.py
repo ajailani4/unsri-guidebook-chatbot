@@ -26,3 +26,16 @@ class Dao:
       return str(result[0])
     except Exception as e:
       print(e)
+
+  def get_predicate_requirements(self, predikat, program):
+    try:
+      self.cursor.execute("SELECT syarat FROM predikat_kelulusan WHERE predikat=" + "'" + predikat + "'" + "AND program=" + "'" + program + "'")
+      result = self.cursor.fetchone()
+
+      if result is None:
+        return ""
+      else:
+        return str(result[0])
+      
+    except Exception as e:
+      print(e)
