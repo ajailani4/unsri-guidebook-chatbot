@@ -1,248 +1,185 @@
-version: '2.0'
-config:
-  store_entities_as_slots: true
+version: "2.0"
+
+intents:
+  - salam
+  - sampai_jumpa
+  - kegiatan_minat_bakat
+  - jenis_kegiatan_minat_bakat
+  - fasilitas_minat_bakat
+  - daftar_layanan_sarana_akademik
+  - definisi_layanan_sarana_akademik
+  - jadwal_layanan_sarana_akademik
+  - komponen_survey_akademik
+  - unit_survei
+  - komponen_survei_kemahasiswaan
+  - peserta_wisuda
+  - pendaftaran_biaya
+  - persyaratan_wisuda
+  - ukuran_pasfoto_wisuda
+  - platform_daftar_wisuda
+  - platform_survei
+  - pakaian_wisuda
+  - waktu_tempat_wisuda
+  - dokumen_wisuda
+  - kuantitas_dokumen_wisuda
+  - cdc
+  - link_cdc
+  - fungsi_cdc
+  - layanan_cdc
+  - acuan_gelar_akademik
+  - gelar_akademik
+  - materi_ijazah
+  - materi_transkrip
+  - contoh_ijazah
+  - syarat_predikat_program
+
+actions:
+  - action_tampil_fasilitas_minat_bakat
+  - action_tampil_platform_survei
+  - action_tampil_pakaian_wisuda
+  - action_tampil_waktu_tempat_wisuda
+  - action_tampil_kuantitas_dokumen_wisuda
+  - action_tampil_definisi_sarana_akademik
+  - action_tampil_jadwal_sarana_akademik
+  - action_tampil_syarat_predikat_program
+
+responses:
+  utter_salam:
+    - text: "Halo. Ada yang ingin ditanyakan?"
+
+  utter_sampai_jumpa:
+    - text: "Silahkan mampir kembali jika masih ada yang ingin ditanyakan, ya! :)"
+
+  utter_kegiatan_minat_bakat:
+    - text: "Di Universitas Sriwijaya ada kegiatan di bidang olahraga seperti volley, futsal, sepak bola, dll, kegiatan di bidang kewirausahaan, dan juga adanya kegiatan praktikum, praktek lapangan atupun kegiatan fieldtrip sesuai bidang ilmu yang ditempuh, serta adanya kegiatan pengabdian pada masyarakat."
+
+  utter_jenis_kegiatan_minat_bakat:
+    - text: "Di Universitas Sriwijaya ada kegiatan BEM, HIMA dan Unit Kegiatan Mahasiswa (UKM) seperti UKM Wahana Dakwah Islamiyah “NADWAH”, UKM SRCT/SAR, UKM Paduan Suara “Belisario”, UKM Lembaga Pers Mahasiswa “Gelora Sriwijaya”, UKM Seni dan Teater “GABI” Pecinta Alam “Sabak” dan UKM Olahraga."
+
+  utter_komponen_survey_akademik:
+    - text: "1) pengukuran komponen pedagogik\n2) kompetensi profesional dosen\n3) kompetensi kepribadian dosen\n4) kompetensi sosial dosen."
+
+  utter_unit_survei:
+    - text: "Unit LP3MP"
+
+  utter_komponen_survei_kemahasiswaan:
+    - text: "1. layanan minat bakat\n2. layanan softskill\n3. beasiswa\n4. klinik kesehatan\n5. lembaga bahasa\n6. perpustakaan\n7. sarana umum\n8. keuangan, wisuda\n9. penerimaan mahasiswa baru\n10. bimbingan konseling\n11. KKN/magang/PKL."
+
+  utter_peserta_wisuda:
+    - text: "1. Mahasiswa Universitas Sriwijaya yang telah diyudisium dan telah memenuhi seluruh persyaratan yang ditetapkan oleh Fakultas/Program dan Universitas Sriwijaya.\n2. Anggota Senat Universitas Sriwijaya. \n3. Panitia pelaksana wisuda yang ditetapkan dengan SK Rektor Universitas Sriwijaya.\n4. Undangan."
+
+  utter_pendaftaran_biaya:
+    - text: "Seluruh mahasiswa yang akan mengikuti upacara wisuda diwajibkan untuk mendaftarkan diri melalui web/aplikasi yang ditetapkan BAK, serta menyerahkan berkas pendaftaran ke BAK. \nMahasiswa yang telah membayar UKT tidak perlu lagi membayar biaya wisuda. \nPendaftaran dilakukan selambat-lambatnya 2 (dua) minggu sebelum wisuda dilaksanakan."
+
+  utter_persyaratan_wisuda:
+    - text: "Persyaratan untuk mendaftar wisuda diantaranya adalah:\n1. Mahasiswa mendaftar secara online pada situs www.unsri.ac.id\n2. Wajib mengisi survei kepuasan layanan kemahasiswaan secara online di bit.ly/3SKLK_CDCUNSRI dan melakukan pendaftaran anggota (member) CDC Unsri di bit.ly/MC_CDCUNSRI\n3. Telah lulus dan telah mengikuti yudisium di fakultas masing masing\n4. Menyerahkan 1 (satu) lembar fotokopi ijazah terakhir\n5. Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir\n6. Menyerahkan bukti abstrak paper yang telah ditandatangani oleh pembimbing dan koordinator program studi\n7. Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)\n8. Menyerahkan/mengembalikan Kartu Pengenal Mahasiswa (KPM) AslI dan Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir"
+
+  utter_ukuran_pasfoto_wisuda:
+    - text: "Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)"
+
+  utter_platform_daftar_wisuda:
+    - text: "Mahasiswa mendaftar secara online pada situs www.unsri.ac.id"
+
+  utter_dokumen_wisuda:
+    - text: "Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir, Menyerahkan bukti abstrak paper yang telah ditandatangani oleh pembimbing dan koordinator program studi, Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya), Menyerahkan/mengembalikan Kartu Pengenal Mahasiswa (KPM) Asli dan Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir, Menyerahkan bukti bayar SPP/UKT terbaru, Menyerahkan kartu bebas pustaka dan UPT Perpustakaan Universitas Sriwijaya"
+
+  utter_daftar_layanan_sarana_akademik:
+    - text: "1) Perpustakaan\n
+        2) Laboraturium Komputer\n
+        3) Laboraturium Dasar Terpadu\n
+        4) Lembaga Bahasa\n
+        5) Asrama Mahasiswa\n
+        6) Student Center\n
+        7) Auditorium dan Gedung Serbaguna\n
+        8) Fasilitas Lapangan\n
+        9) Pelayanan Kesehatan\n
+        10) Pusat Peribadatan\n
+        11) Bus Kampus\n
+        12) Kafetaria\n
+        13) Pelayanan Bank\n
+        14) Keamanan Kampus"
+
+  utter_cdc:
+    - text: "CDC-UNSRI merupakan UPT yang memberikan layanan kepada mahasiswa dan alumni Universitas Sriwijaya guna mengembangkan karakter dan karir."
+
+  utter_link_cdc:
+    - text: "Berikut link web CDC UNSRI (cdc.unsri.ac.id)"
+
+  utter_fungsi_cdc:
+    - text:
+        "Layanan yang diberikan oleh Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya diantaranya:\
+        \n1). Membantu mengembangkan softskill dan kepercayaan diri mahasiswa untuk menghadapi dunia kerja setelah lulus,\
+        \n2). Memberikan informasi lowongan kerja baik secara online (info lowongan kerja bisa dilihat di cdc.unsri.ac.id) maupun offline (jobfair/career/expo) sebagai jembatan antara dunia kerja dan dunia kampus,\
+        \n3). Melaksanakan tracer study yang mengacu pada indotrace dan survey kepuasan pengguna dalam upaya penyediaan data terkait alumni serta untuk perbaikan kurikulum,\
+        \n4). Menjadi mitra/partner dunia kerja dalam mempersiapkan alumni serta kebutuhan pengguna."
+
+  utter_layanan_cdc:
+    - text:
+        "1). Mahasiswa dapat mengakses kegiatan pelatihan kompetensi softskill dan mendaftarkan diri sebagai peserta pelatihan di web cdc.unsri.ac.id sesuai tema dan waktu yang diinginkan mahasiswa, dengan mengisi formulir online sebagai peserta pelatihan,\
+        \n2). Mahasiswa dan alumni dapat berkonsultasi tentang karir melalui e-counseling di web cdc.unsri.ac.id dengan mengisi formulir konseling karir online yang dapat diunduh pada web tersebut dan menuliskan pertanyaan yang ingin diketahui jawabannya. CDC juga memberikan layanan konsultasi karir offline di kantor CDC Universitas Sriwijaya, Gedung Rektorat lantai 1. Beberapa konselor dijadwalkan memberikan konsultasi bagi mahasiswa yang memerlukan.\
+        \n3). Alumni yang akan diwisuda mendapatkan mentoring dari beberapa alumni atau perusahaan sebagai pembekalan pengenalan dunia kerja,\
+        \n4). Alumni mendapatkan layanan informasi lowongan kerja online atau offline serta rekrutmen online dan offline dari berbagai pencari kerja di web cdc.unsri.ac.id atau melalui kegiatan Universitas Sriwijaya Career Expo yang dilaksanakan 2 (dua) kali dalam setahun,\
+        \n5). Calon Alumni yang akan diwisuda, wajib melakukan registrasi online di web cdc.unsri.ac.id sebagai database alumni yang akan dilacak setelah 2 (dua) tahun lulus,\
+        \n6). Mahasiswa baru wajib mendaftarkan diri sebagai member pada web cdc.unsri.ac.id dan mengikuti assesmen psikologi secara online, untuk mempelajari karakter mahasiswa baru yang perlu dibina sebagai upaya mempersiapkan alumni memasuki dunia kerja."
+
+  utter_acuan_gelar_akademik:
+    - text:
+        "Gelar sebutan yang diberikan kepada lulusan pendidikan akademik, pendidikan vokasi, pendidikan profesi, dan pendidikan spesialis mengacu pada Peraturan Menteri Riset, Teknologi, dan Pendidikan Tinggi Nomor 59 Tahun 2018 tentang Ijazah, Sertifikat Kompetensi, Sertifikat Profesi, Gelar, Dan Tata Cara Penulisan Gelar Di Perguruan Tinggi.\
+        \nhttps://pddikti.kemdikbud.go.id/asset/data/regulasi/Permenristekdikti-Nomor-59-Tahun-2018-1-1.pdf"
+
+  utter_gelar_akademik:
+    - text: "Gelar lulusan program studi di Universitas Sriwijaya dapat dilihat di BAB I dari Buku Pedoman Akademik pada Tabel 1.1."
+
+  utter_materi_ijazah:
+    - text: "Materi/redaksi Ijazah Universitas Sriwijaya terdiri dari:\n
+        1. Nomor Ijazah, pada sudut kanan atas.\n
+        2. Nama Perguruan Tinggi “UNIVERSITAS SRIWIJAYA” yang dicetak dengan menggunakan tinta OVI berwarna biru yang akan berubah warna menjadi ungu apabila dilihat dari sudut pandang yang berbeda.\n
+        3. Nama, tempat, dan tanggal lahir lulusan penerima gelar/sebutan profesional yang ditulis lengkap sesuai dengan akta kelahiran atau sama dengan yang tertera pada ijazah terakhir.\n
+        4. Nomor Induk Mahasiswa (NIM) yang ditetapkan Universitas Sriwijaya.\n
+        5. Nama Fakultas.\n
+        6. Nama Program Studi.\n
+        7. Nama gelar/sebutan profesional dan singkatannya.\n
+        8. Tanggal pada ijazah yaitu tanggal pelaksanaan wisuda.\n
+        9. Pasfoto berukuran 3 x 4 cm hitam putih (Pria pakai jas, wanita pakai kebaya).\n
+        10. Tanda tangan dan nama terang Rektor, Dekan Fakultas atau Direktur Program.\n
+        11. Tanda tangan alumnus yang bersangkutan.\n
+        12. Cap/stempel Rektor Universitas Sriwijaya yang mengenai pasfoto alumnus dan tanda tangan Rektor.\n
+        13. Nomor Seri Ijazah terdiri dari huruf dan angka yang menunjukkan kode pembuatan."
+  utter_materi_transkrip:
+    - text: "Materi/redaksi Transkrip Universitas Sriwijaya terdiri dari:\n1. Nomor Seri pada sudut kanan atas yang dicetak dengan teknik letter press berwarna hitam, terdiri dari dua huruf dan lima digit angka.\n2. Kop Fakultas, Logo Universitas Sriwijaya dan Nomor Transkrip.\n3. Nama, tempat dan tanggal lahir, Nomor Induk Mahasiswa (NIM), Nama Fakultas, \n4. Program Pendidikan, Jurusan, Program Studi, Tanggal Lulus, dan Masa Studi dalam tahun dan bulan.\n5. Daftar Nilai Akademik, berupa tabel yang terdiri dari 7 kolom, masing-masing berupa No., Kode Mata Kuliah, Nama Mata Kuliah, sks (K), Nilai, Bobot (B), dan K x B.\n6. Perhitungan Indeks Prestasi Kumulatif (IPK), sesuai rumus yang ditetapkan, serta IPK yang ditulis dalam dua digit angka.\n7. Predikat Kelulusan sesuai ketentuan.\n8. Judul Skripsi/Tesis/Disertasi dan Nama dan gelar pembimbingnya.\n9. Tanda tangan pengesahan oleh Ketua Jurusan di sebelah kiri dan Dekan/Direktur Program di sebelah kanan.\n10. Pasfoto berukuran 3 x 4 cm hitam putih (pria pakai jas, wanita pakai kebaya).\n11. Cap/stempel Fakultas yang mengenai pasfoto dan tanda tangan Dekan Fakultas."
+
+  utter_contoh_ijazah:
+    - text: "Contoh ijazah Universitas Sriwijaya"
+      image: "https://bit.ly/ContohIjazahUnsri"
+
+slots:
+  bidang_minat:
+    type: text
+  sarana_akademik:
+    type: text
+  jenis_survei:
+    type: text
+  pakaian_wisuda:
+    type: text
+  kata_tanya:
+    type: text
+  qty_dokumen_wisuda:
+    type: text
+  predikat:
+    type: text
+  program:
+    type: text
+
+entities:
+  - bidang_minat
+  - sarana_akademik
+  - jenis_survei
+  - pakaian_wisuda
+  - kata_tanya
+  - qty_dokumen_wisuda
+  - predikat
+  - program
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-intents:
-- salam:
-    use_entities: true
-- sampai_jumpa:
-    use_entities: true
-- kegiatan_minat_bakat:
-    use_entities: true
-- jenis_kegiatan_minat_bakat:
-    use_entities: true
-- fasilitas_minat_bakat:
-    use_entities: true
-- daftar_layanan_sarana_akademik:
-    use_entities: true
-- definisi_layanan_sarana_akademik:
-    use_entities: true
-- jadwal_layanan_sarana_akademik:
-    use_entities: true
-- komponen_survey_akademik:
-    use_entities: true
-- unit_survei:
-    use_entities: true
-- komponen_survei_kemahasiswaan:
-    use_entities: true
-- peserta_wisuda:
-    use_entities: true
-- pendaftaran_biaya:
-    use_entities: true
-- persyaratan_wisuda:
-    use_entities: true
-- ukuran_pasfoto_wisuda:
-    use_entities: true
-- platform_daftar_wisuda:
-    use_entities: true
-- platform_survei:
-    use_entities: true
-- pakaian_wisuda:
-    use_entities: true
-- waktu_tempat_wisuda:
-    use_entities: true
-- dokumen_wisuda:
-    use_entities: true
-- kuantitas_dokumen_wisuda:
-    use_entities: true
-- cdc:
-    use_entities: true
-- link_cdc:
-    use_entities: true
-- fungsi_cdc:
-    use_entities: true
-- layanan_cdc:
-    use_entities: true
-- acuan_gelar_akademik:
-    use_entities: true
-- gelar_akademik:
-    use_entities: true
-- materi_ijazah:
-    use_entities: true
-- materi_transkrip:
-    use_entities: true
-- contoh_ijazah:
-    use_entities: true
-entities:
-- bidang_minat
-- sarana_akademik
-- jenis_survei
-- pakaian_wisuda
-- kata_tanya
-- qty_dokumen_wisuda
-- pakaian_wisda
-slots:
-  bidang_minat:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: true
-  sarana_akademik:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: true
-  jenis_survei:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: true
-  pakaian_wisuda:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: true
-  kata_tanya:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: true
-  qty_dokumen_wisuda:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: true
-responses:
-  utter_salam:
-  - text: Halo. Ada yang ingin ditanyakan?
-  utter_sampai_jumpa:
-  - text: Silahkan mampir kembali jika masih ada yang ingin ditanyakan, ya! :)
-  utter_kegiatan_minat_bakat:
-  - text: Di Universitas Sriwijaya ada kegiatan di bidang olahraga seperti volley, futsal, sepak bola, dll, kegiatan di bidang kewirausahaan, dan juga adanya kegiatan praktikum, praktek lapangan atupun kegiatan fieldtrip sesuai bidang ilmu yang ditempuh, serta adanya kegiatan pengabdian pada masyarakat.
-  utter_jenis_kegiatan_minat_bakat:
-  - text: Di Universitas Sriwijaya ada kegiatan BEM, HIMA dan Unit Kegiatan Mahasiswa (UKM) seperti UKM Wahana Dakwah Islamiyah “NADWAH”, UKM SRCT/SAR, UKM Paduan Suara “Belisario”, UKM Lembaga Pers Mahasiswa “Gelora Sriwijaya”, UKM Seni dan Teater “GABI” Pecinta Alam “Sabak” dan UKM Olahraga.
-  utter_komponen_survey_akademik:
-  - text: |-
-      1) pengukuran komponen pedagogik
-      2) kompetensi profesional dosen
-      3) kompetensi kepribadian dosen
-      4) kompetensi sosial dosen.
-  utter_unit_survei:
-  - text: Unit LP3MP
-  utter_komponen_survei_kemahasiswaan:
-  - text: |-
-      1. layanan minat bakat
-      2. layanan softskill
-      3. beasiswa
-      4. klinik kesehatan
-      5. lembaga bahasa
-      6. perpustakaan
-      7. sarana umum
-      8. keuangan, wisuda
-      9. penerimaan mahasiswa baru
-      10. bimbingan konseling
-      11. KKN/magang/PKL.
-  utter_peserta_wisuda:
-  - text: |-
-      1. Mahasiswa Universitas Sriwijaya yang telah diyudisium dan telah memenuhi seluruh persyaratan yang ditetapkan oleh Fakultas/Program dan Universitas Sriwijaya.
-      2. Anggota Senat Universitas Sriwijaya. 
-      3. Panitia pelaksana wisuda yang ditetapkan dengan SK Rektor Universitas Sriwijaya.
-      4. Undangan.
-  utter_pendaftaran_biaya:
-  - text: |-
-      Seluruh mahasiswa yang akan mengikuti upacara wisuda diwajibkan untuk mendaftarkan diri melalui web/aplikasi yang ditetapkan BAK, serta menyerahkan berkas pendaftaran ke BAK. 
-      Mahasiswa yang telah membayar UKT tidak perlu lagi membayar biaya wisuda. 
-      Pendaftaran dilakukan selambat-lambatnya 2 (dua) minggu sebelum wisuda dilaksanakan.
-  utter_persyaratan_wisuda:
-  - text: |-
-      Persyaratan untuk mendaftar wisuda diantaranya adalah:
-      1. Mahasiswa mendaftar secara online pada situs www.unsri.ac.id
-      2. Wajib mengisi survei kepuasan layanan kemahasiswaan secara online di bit.ly/3SKLK_CDCUNSRI dan melakukan pendaftaran anggota (member) CDC Unsri di bit.ly/MC_CDCUNSRI
-      3. Telah lulus dan telah mengikuti yudisium di fakultas masing masing
-      4. Menyerahkan 1 (satu) lembar fotokopi ijazah terakhir
-      5. Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir
-      6. Menyerahkan bukti abstrak paper yang telah ditandatangani oleh pembimbing dan koordinator program studi
-      7. Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)
-      8. Menyerahkan/mengembalikan Kartu Pengenal Mahasiswa (KPM) AslI dan Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir
-  utter_ukuran_pasfoto_wisuda:
-  - text: Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)
-  utter_platform_daftar_wisuda:
-  - text: Mahasiswa mendaftar secara online pada situs www.unsri.ac.id
-  utter_dokumen_wisuda:
-  - text: Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir, Menyerahkan bukti abstrak paper yang telah ditandatangani oleh pembimbing dan koordinator program studi, Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya), Menyerahkan/mengembalikan Kartu Pengenal Mahasiswa (KPM) Asli dan Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir, Menyerahkan bukti bayar SPP/UKT terbaru, Menyerahkan kartu bebas pustaka dan UPT Perpustakaan Universitas Sriwijaya
-  utter_daftar_layanan_sarana_akademik:
-  - text: |-
-      1) Perpustakaan
-       2) Laboraturium Komputer
-       3) Laboraturium Dasar Terpadu
-       4) Lembaga Bahasa
-       5) Asrama Mahasiswa
-       6) Student Center
-       7) Auditorium dan Gedung Serbaguna
-       8) Fasilitas Lapangan
-       9) Pelayanan Kesehatan
-       10) Pusat Peribadatan
-       11) Bus Kampus
-       12) Kafetaria
-       13) Pelayanan Bank
-       14) Keamanan Kampus
-  utter_cdc:
-  - text: CDC-UNSRI merupakan UPT yang memberikan layanan kepada mahasiswa dan alumni Universitas Sriwijaya guna mengembangkan karakter dan karir.
-  utter_link_cdc:
-  - text: Berikut link web CDC UNSRI (cdc.unsri.ac.id)
-  utter_fungsi_cdc:
-  - text: |-
-      Layanan yang diberikan oleh Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya diantaranya:
-      1). Membantu mengembangkan softskill dan kepercayaan diri mahasiswa untuk menghadapi dunia kerja setelah lulus,
-      2). Memberikan informasi lowongan kerja baik secara online (info lowongan kerja bisa dilihat di cdc.unsri.ac.id) maupun offline (jobfair/career/expo) sebagai jembatan antara dunia kerja dan dunia kampus,
-      3). Melaksanakan tracer study yang mengacu pada indotrace dan survey kepuasan pengguna dalam upaya penyediaan data terkait alumni serta untuk perbaikan kurikulum,
-      4). Menjadi mitra/partner dunia kerja dalam mempersiapkan alumni serta kebutuhan pengguna.
-  utter_layanan_cdc:
-  - text: |-
-      1). Mahasiswa dapat mengakses kegiatan pelatihan kompetensi softskill dan mendaftarkan diri sebagai peserta pelatihan di web cdc.unsri.ac.id sesuai tema dan waktu yang diinginkan mahasiswa, dengan mengisi formulir online sebagai peserta pelatihan,
-      2). Mahasiswa dan alumni dapat berkonsultasi tentang karir melalui e-counseling di web cdc.unsri.ac.id dengan mengisi formulir konseling karir online yang dapat diunduh pada web tersebut dan menuliskan pertanyaan yang ingin diketahui jawabannya. CDC juga memberikan layanan konsultasi karir offline di kantor CDC Universitas Sriwijaya, Gedung Rektorat lantai 1. Beberapa konselor dijadwalkan memberikan konsultasi bagi mahasiswa yang memerlukan.
-      3). Alumni yang akan diwisuda mendapatkan mentoring dari beberapa alumni atau perusahaan sebagai pembekalan pengenalan dunia kerja,
-      4). Alumni mendapatkan layanan informasi lowongan kerja online atau offline serta rekrutmen online dan offline dari berbagai pencari kerja di web cdc.unsri.ac.id atau melalui kegiatan Universitas Sriwijaya Career Expo yang dilaksanakan 2 (dua) kali dalam setahun,
-      5). Calon Alumni yang akan diwisuda, wajib melakukan registrasi online di web cdc.unsri.ac.id sebagai database alumni yang akan dilacak setelah 2 (dua) tahun lulus,
-      6). Mahasiswa baru wajib mendaftarkan diri sebagai member pada web cdc.unsri.ac.id dan mengikuti assesmen psikologi secara online, untuk mempelajari karakter mahasiswa baru yang perlu dibina sebagai upaya mempersiapkan alumni memasuki dunia kerja.
-  utter_acuan_gelar_akademik:
-  - text: |-
-      Gelar sebutan yang diberikan kepada lulusan pendidikan akademik, pendidikan vokasi, pendidikan profesi, dan pendidikan spesialis mengacu pada Peraturan Menteri Riset, Teknologi, dan Pendidikan Tinggi Nomor 59 Tahun 2018 tentang Ijazah, Sertifikat Kompetensi, Sertifikat Profesi, Gelar, Dan Tata Cara Penulisan Gelar Di Perguruan Tinggi.
-      https://pddikti.kemdikbud.go.id/asset/data/regulasi/Permenristekdikti-Nomor-59-Tahun-2018-1-1.pdf
-  utter_gelar_akademik:
-  - text: Gelar lulusan program studi di Universitas Sriwijaya dapat dilihat di BAB I dari Buku Pedoman Akademik pada Tabel 1.1.
-  utter_materi_ijazah:
-  - text: |-
-      Materi/redaksi Ijazah Universitas Sriwijaya terdiri dari:
-       1. Nomor Ijazah, pada sudut kanan atas.
-       2. Nama Perguruan Tinggi “UNIVERSITAS SRIWIJAYA” yang dicetak dengan menggunakan tinta OVI berwarna biru yang akan berubah warna menjadi ungu apabila dilihat dari sudut pandang yang berbeda.
-       3. Nama, tempat, dan tanggal lahir lulusan penerima gelar/sebutan profesional yang ditulis lengkap sesuai dengan akta kelahiran atau sama dengan yang tertera pada ijazah terakhir.
-       4. Nomor Induk Mahasiswa (NIM) yang ditetapkan Universitas Sriwijaya.
-       5. Nama Fakultas.
-       6. Nama Program Studi.
-       7. Nama gelar/sebutan profesional dan singkatannya.
-       8. Tanggal pada ijazah yaitu tanggal pelaksanaan wisuda.
-       9. Pasfoto berukuran 3 x 4 cm hitam putih (Pria pakai jas, wanita pakai kebaya).
-       10. Tanda tangan dan nama terang Rektor, Dekan Fakultas atau Direktur Program.
-       11. Tanda tangan alumnus yang bersangkutan.
-       12. Cap/stempel Rektor Universitas Sriwijaya yang mengenai pasfoto alumnus dan tanda tangan Rektor.
-       13. Nomor Seri Ijazah terdiri dari huruf dan angka yang menunjukkan kode pembuatan.
-  utter_materi_transkrip:
-  - text: |-
-      Materi/redaksi Transkrip Universitas Sriwijaya terdiri dari:
-      1. Nomor Seri pada sudut kanan atas yang dicetak dengan teknik letter press berwarna hitam, terdiri dari dua huruf dan lima digit angka.
-      2. Kop Fakultas, Logo Universitas Sriwijaya dan Nomor Transkrip.
-      3. Nama, tempat dan tanggal lahir, Nomor Induk Mahasiswa (NIM), Nama Fakultas, 
-      4. Program Pendidikan, Jurusan, Program Studi, Tanggal Lulus, dan Masa Studi dalam tahun dan bulan.
-      5. Daftar Nilai Akademik, berupa tabel yang terdiri dari 7 kolom, masing-masing berupa No., Kode Mata Kuliah, Nama Mata Kuliah, sks (K), Nilai, Bobot (B), dan K x B.
-      6. Perhitungan Indeks Prestasi Kumulatif (IPK), sesuai rumus yang ditetapkan, serta IPK yang ditulis dalam dua digit angka.
-      7. Predikat Kelulusan sesuai ketentuan.
-      8. Judul Skripsi/Tesis/Disertasi dan Nama dan gelar pembimbingnya.
-      9. Tanda tangan pengesahan oleh Ketua Jurusan di sebelah kiri dan Dekan/Direktur Program di sebelah kanan.
-      10. Pasfoto berukuran 3 x 4 cm hitam putih (pria pakai jas, wanita pakai kebaya).
-      11. Cap/stempel Fakultas yang mengenai pasfoto dan tanda tangan Dekan Fakultas.
-  utter_contoh_ijazah:
-  - image: https://bit.ly/ContohIjazahUnsri
-    text: Contoh ijazah Universitas Sriwijaya
-actions:
-- action_tampil_fasilitas_minat_bakat
-- action_tampil_platform_survei
-- action_tampil_pakaian_wisuda
-- action_tampil_waktu_tempat_wisuda
-- action_tampil_kuantitas_dokumen_wisuda
-- action_tampil_definisi_sarana_akademik
-- action_tampil_jadwal_sarana_akademik
-forms: {}
-e2e_actions: []
