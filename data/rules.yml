@@ -159,3 +159,8 @@ rules:
     steps:
       - intent: materi_transkrip
       - action: utter_materi_transkrip
+
+  - rule: Jawab syarat predikat program
+    steps:
+      - intent: syarat_predikat_program
+      - action: action_tampil_syarat_predikat_program
