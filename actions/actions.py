@@ -150,7 +150,7 @@ class ActionTampilKuantitasDokumenWisuda(Action):
             message = "Menyerahkan 1 (satu) lembar fotokopi ijazah terakhir"
         elif qty_dokumen_wisuda == "pengesahan tugas akhir":
             message = "Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir"
-        elif qty_dokumen_wisuda == "bukti kelulusan ujian penguasaan bahasa inggris" or qty_dokumen_wisuda == "bukti kelulusan ujian bahasa" or qty_dokumen_wisuda == "bukti kelulusan ujian bahasa inggris":
+        elif qty_dokumen_wisuda == "bukti kelulusan ujian bahasa inggris":
             message = "Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir"
         elif qty_dokumen_wisuda == "pasfoto":
             message = "Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)"
