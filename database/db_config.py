@@ -11,7 +11,7 @@ class DbConfig:
         port = "5432",
         database="unsri_guidebook",
         user="postgres",
-        password="admin123"
+        password="12345678"
       )
 
     return db
