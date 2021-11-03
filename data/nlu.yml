@@ -341,28 +341,33 @@ nlu:
       - Jumlah dokumen [ijazah terakhir](qty_dokumen_wisuda) yang diberikan
       - [pasfoto](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
       - [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
+      - [pas foto](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
       - [ijazah](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
       - Lembaran dokumen [pasfoto](qty_dokumen_wisuda) yang diserahkan untuk wisuda
       - Lembaran dokumen [ijazah terakhir](qty_dokumen_wisuda) yang diserahkan untuk wisuda
       - Dokumen [ijazah] yang harus diserahkan?
       - Dokumen [pasfoto] yang harus diserahkan?
+      - Dokumen [pas foto] yang harus diserahkan?
       - Jumlah dokumen [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda)
       - Jumlah dokumen [pengesahan tugas akhir](qty_dokumen_wisuda)
       - Jumlah dokumen [ijazah terakhir](qty_dokumen_wisuda)
       - Jumlah dokumen [pasfoto](qty_dokumen_wisuda)
       - Jumlah dokumen [SULIET](qty_dokumen_wisuda)
       - Jumlah dokumen [ijazah](qty_dokumen_wisuda)
+      - Jumlah dokumen [pas foto](qty_dokumen_wisuda)
       - Jumlah dokumen [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda)
       - Syarat jumlah dokumen [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan?
       - Syarat jumlah dokumen [pasfoto](qty_dokumen_wisuda) yang harus diserahkan?
       - Syarat jumlah dokumen [ijazah](qty_dokumen_wisuda) yang harus diserahkan?
-      - Ketentuan dokumen untuk [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan ?
-      - Ketentuan dokumen untuk [ijazah](qty_dokumen_wisuda) yang harus diserahkan ?
-      - Ketentuan dokumen untuk [pasfoto](qty_dokumen_wisuda) yang harus diserahkan ?
+      - Syarat jumlah dokumen [pas foto](qty_dokumen_wisuda) yang harus diserahkan?
+      - Ketentuan jumlah dokumen untuk [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan ?
+      - Ketentuan jumlah dokumen untuk [ijazah](qty_dokumen_wisuda) yang harus diserahkan ?
+      - Ketentuan jumlah dokumen untuk [pasfoto](qty_dokumen_wisuda) yang harus diserahkan ?
       - [pasfoto](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
       - [ijazah terakhir](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
       - [bukti kelulusan ujian bahasa](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
       - [SULIET](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+      - [pas foto](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
 
   - intent: daftar_layanan_sarana_akademik
     examples: |

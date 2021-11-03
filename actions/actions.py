@@ -122,7 +122,7 @@ class ActionTampilKuantitasDokumenWisuda(Action):
         message = ""
         print(qty_dokumen_wisuda)
 
-        if qty_dokumen_wisuda in "ijazah terakhir":
+        if qty_dokumen_wisuda in "ijazah":
             message = "Menyerahkan 1 (satu) lembar fotokopi ijazah terakhir"
         elif qty_dokumen_wisuda == "pengesahan tugas akhir":
             message = "Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir"
