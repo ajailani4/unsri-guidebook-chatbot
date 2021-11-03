@@ -15,7 +15,9 @@ pipeline:
     analyzer: "char_wb"
     min_ngram: 1
     max_ngram: 4
+  - name: CRFEntityExtractor
   - name: DIETClassifier
+    entity_recognition: False
     number_of_transformer_layers: 0
     weight_sparsity: 0.0
     epochs: 100
