@@ -9,3 +9,5 @@ models/*
 !models/.gitkeep 
 results
 story_graph.dot
+
+.env
