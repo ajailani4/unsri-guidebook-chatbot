@@ -197,15 +197,6 @@ nlu:
       - Persyaratan wisuda Universitas Sriwijaya
       - Persyaratan wisuda UNSRI
 
-  - intent: ukuran_pasfoto_wisuda
-    examples: |
-      - Berapa ukuran foto pada persyaratan dokumen untuk syarat wisuda Universitas ?
-      - Berapa pasfoto terbaru yang harus diserahkan untuk syarat wisuda Universitas ?
-      - Apa warna pasfoto yang akan diserahkan untuk syarat wisuda Universitas ?
-      - Apa pakaian yang dikenakan pada pasfoto untuk syarat wisuda Universitas ?
-      - Ukuran pasfoto wisuda 
-      - Berapa lembar pasfoto yang diberikan
-
   - intent: platform_daftar_wisuda
     examples: |
       - Apa situs pendaftaran online untuk wisuda Universitas sriwijaya ?
@@ -240,9 +231,11 @@ nlu:
       - Apa baju yang digunakan [undangan](pakaian_wisuda) saat acara wisuda ?
       - Apa baju yang digunakan [mahasiswa](pakaian_wisuda) saat acara wisuda ?
       - Apa aturan berpakaian peserta wisuda [panitia](pakaian_wisuda)?
+      - Apa aturan berpakaian peserta wisuda [mahasiswa](pakaian_wisuda)?
       - Apa saja yang harus dikenakan peserta wisuda [undangan](pakaian_wisuda)?
       - Apa saja kelengkapan pakaian peserta wisuda [mahasiswa](pakaian_wisuda)?
       - Sebutkan kelengkapan berpakaian peserta wisuda [anggota senat](pakaian_wisuda)
+      - Sebutkan kelengkapan berpakaian peserta wisuda [mahasiswa](pakaian_wisuda)
       - Sebutkan persyaratan berpakaian peserta wisuda [panitia](pakaian_wisuda)
       - Pakaian wisuda untuk [mahasiswa](pakaian_wisuda)
       - Pakaian wisuda untuk [anggota senat](pakaian_wisuda)
@@ -258,6 +251,10 @@ nlu:
       - Bagaimana [mahasiswa](pakaian_wisuda) berpakaian untuk wisuda ?
       - Bagaimana [panitia](pakaian_wisuda) berpakaian untuk wisuda ?
       - Pakaian [anggota senat](pakaian_wisuda) untuk wisuda
+
+  - intent: jenis_pakaian_wisuda
+    examples: |
+      - [mahasiswa](pakaian_wisuda)
 
   - intent: waktu_tempat_wisuda
     examples: |
@@ -315,20 +312,58 @@ nlu:
 
   - intent: kuantitas_dokumen_wisuda
     examples: |
-      - Berapa fotokopi [ijazah](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
-      - Berapa fotokopi [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
-      - Berapa fotokopi [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
-      - Jumlah fotokopi [ijazah](qty_dokumen_wisuda) yang harus diserahkan
-      - Jumlah fotokopi [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan
-      - Jumlah [pasfoto](qty_dokumen_wisuda) yang harus diserahkan
-      - Berapa [pasfoto](qty_dokumen_wisuda) terbaru yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
-      - Berapa [pengesahan tugas akhir](qty_dokumen_wisuda) terbaru yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
-      - Berapa [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) terbaru yang harus diserahkan untuk syarat wisuda Universitas Sriwijaya ?
-      - Berapa fotokopi [ijazah](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda?
-      - Berapa fotokopi [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda?
-      - Berapa fotokopi [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan untuk syarat wisuda Unsri?
-      - Berapa [pasfoto](qty_dokumen_wisuda) terbaru yang harus diserahkan untuk syarat wisuda?
-  
+      - Berapa jumlah fotocopy [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Berapa jumlah fotocopy [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Berapa jumlah fotocopy [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Berapa jumlah fotocopy [ijazah](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Berapa jumlah fotocopy [SULIET](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Jumlah fotocopy dokumen [pasfoto](qty_dokumen_wisuda) yang harus diserahkan
+      - Jumlah fotocopy dokumen [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diserahkan
+      - Berapa lembar [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [bukti kelulusan ujian bahasa ](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [pasfoto](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [SULIET](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [ijazah](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [ijazah terakhir](qty_dokumen_wisuda) yang harus diberikan ?
+      - Kuantitas [pengesahan tugas akhir](qty_dokumen_wisuda)
+      - Kuantitas [ijazah terakhir](qty_dokumen_wisuda)
+      - Kuantitas [pasfoto](qty_dokumen_wisuda)
+      - Kuantitas [ijazah](qty_dokumen_wisuda)
+      - Kuantitas [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda) yang harus diberikan sebagai syarat wisuda ?
+      - Kuantitas [bukti kelulusan ujian bahasa](qty_dokumen_wisuda) yang harus diberikan sebagai syarat wisuda ?
+      - Kuantitas [ijazah terakhir](qty_dokumen_wisuda) yang harus diberikan sebagai syarat wisuda ?
+      - Berapa lembar fotocopy [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diberikan untuk mendaftar wisuda ?
+      - Berapa lembar fotocopy [ijazah terakhir](qty_dokumen_wisuda) yang harus diberikan untuk mendaftar wisuda ?
+      - Berapa lembar fotocopy [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang harus diberikan untuk mendaftar wisuda ?
+      - Berapa lembar fotocopy [pasfoto](qty_dokumen_wisuda) yang harus diberikan untuk mendaftar wisuda ?
+      - Jumlah dokumen [pasfoto](qty_dokumen_wisuda) yang diberikan
+      - Jumlah dokumen [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang diberikan
+      - Jumlah dokumen [ijazah terakhir](qty_dokumen_wisuda) yang diberikan
+      - [pasfoto](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
+      - [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
+      - [ijazah](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
+      - Lembaran dokumen [pasfoto](qty_dokumen_wisuda) yang diserahkan untuk wisuda
+      - Lembaran dokumen [ijazah terakhir](qty_dokumen_wisuda) yang diserahkan untuk wisuda
+      - Dokumen [ijazah] yang harus diserahkan?
+      - Dokumen [pasfoto] yang harus diserahkan?
+      - Jumlah dokumen [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda)
+      - Jumlah dokumen [pengesahan tugas akhir](qty_dokumen_wisuda)
+      - Jumlah dokumen [ijazah terakhir](qty_dokumen_wisuda)
+      - Jumlah dokumen [pasfoto](qty_dokumen_wisuda)
+      - Jumlah dokumen [SULIET](qty_dokumen_wisuda)
+      - Jumlah dokumen [ijazah](qty_dokumen_wisuda)
+      - Jumlah dokumen [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda)
+      - Syarat jumlah dokumen [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan?
+      - Syarat jumlah dokumen [pasfoto](qty_dokumen_wisuda) yang harus diserahkan?
+      - Syarat jumlah dokumen [ijazah](qty_dokumen_wisuda) yang harus diserahkan?
+      - Ketentuan dokumen untuk [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan ?
+      - Ketentuan dokumen untuk [ijazah](qty_dokumen_wisuda) yang harus diserahkan ?
+      - Ketentuan dokumen untuk [pasfoto](qty_dokumen_wisuda) yang harus diserahkan ?
+      - [pasfoto](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+      - [ijazah terakhir](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+      - [bukti kelulusan ujian bahasa](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+      - [SULIET](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+
   - intent: daftar_layanan_sarana_akademik
     examples: |
       - Apa saja layanan akademik di Universitas Sriwijaya?
@@ -732,13 +767,14 @@ nlu:
   - synonym: ijazah
     examples: |
       - ijazah terakhir
+      - ijazah
 
   - synonym: bukti kelulusan ujian bahasa inggris
     examples: |
       - bukti kelulusan ujian penguasaan bahasa inggris
       - bukti kelulusan ujian bahasa
       - SULIET
-  
+
   - synonym: pasfoto
     examples: |
       - pas foto

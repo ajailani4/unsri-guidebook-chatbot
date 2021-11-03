@@ -66,11 +66,6 @@ rules:
       - intent: persyaratan_wisuda
       - action: utter_persyaratan_wisuda
 
-  - rule: Jawab ukuran pasfoto wisuda
-    steps:
-      - intent: ukuran_pasfoto_wisuda
-      - action: utter_ukuran_pasfoto_wisuda
-
   - rule: Jawab platform daftar wisuda
     steps:
       - intent: platform_daftar_wisuda
@@ -100,6 +95,7 @@ rules:
     steps:
       - intent: kuantitas_dokumen_wisuda
       - action: action_tampil_kuantitas_dokumen_wisuda
+
   - rule: Jawab daftar layanan sarana akademik
     steps:
       - intent: daftar_layanan_sarana_akademik

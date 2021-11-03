@@ -15,13 +15,12 @@ intents:
   - peserta_wisuda
   - pendaftaran_biaya
   - persyaratan_wisuda
-  - ukuran_pasfoto_wisuda
+  - kuantitas_dokumen_wisuda
   - platform_daftar_wisuda
   - platform_survei
   - pakaian_wisuda
   - waktu_tempat_wisuda
   - dokumen_wisuda
-  - kuantitas_dokumen_wisuda
   - cdc
   - link_cdc
   - fungsi_cdc
@@ -37,8 +36,8 @@ actions:
   - action_tampil_fasilitas_minat_bakat
   - action_tampil_platform_survei
   - action_tampil_pakaian_wisuda
-  - action_tampil_waktu_tempat_wisuda
   - action_tampil_kuantitas_dokumen_wisuda
+  - action_tampil_waktu_tempat_wisuda
   - action_tampil_definisi_sarana_akademik
   - action_tampil_jadwal_sarana_akademik
   - action_tampil_syarat_predikat_program
@@ -73,9 +72,6 @@ responses:
 
   utter_persyaratan_wisuda:
     - text: "Persyaratan untuk mendaftar wisuda diantaranya adalah:\n1. Mahasiswa mendaftar secara online pada situs www.unsri.ac.id\n2. Wajib mengisi survei kepuasan layanan kemahasiswaan secara online di bit.ly/3SKLK_CDCUNSRI dan melakukan pendaftaran anggota (member) CDC Unsri di bit.ly/MC_CDCUNSRI\n3. Telah lulus dan telah mengikuti yudisium di fakultas masing masing\n4. Menyerahkan 1 (satu) lembar fotokopi ijazah terakhir\n5. Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir\n6. Menyerahkan bukti abstrak paper yang telah ditandatangani oleh pembimbing dan koordinator program studi\n7. Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)\n8. Menyerahkan/mengembalikan Kartu Pengenal Mahasiswa (KPM) AslI dan Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir"
-
-  utter_ukuran_pasfoto_wisuda:
-    - text: "Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)"
 
   utter_platform_daftar_wisuda:
     - text: "Mahasiswa mendaftar secara online pada situs www.unsri.ac.id"
@@ -163,11 +159,11 @@ slots:
     type: text
   kata_tanya:
     type: text
-  qty_dokumen_wisuda:
-    type: text
   predikat:
     type: text
   program:
+    type: text
+  qty_dokumen_wisuda:
     type: text
 
 entities:
@@ -176,9 +172,9 @@ entities:
   - jenis_survei
   - pakaian_wisuda
   - kata_tanya
-  - qty_dokumen_wisuda
   - predikat
   - program
+  - qty_dokumen_wisuda
 
 session_config:
   session_expiration_time: 60

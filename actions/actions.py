@@ -104,8 +104,32 @@ class ActionTampilPakaianWisuda(Action):
             message = "Panitia pelaksana wisuda mengenakan pakaian sipil lengkap atau jas warna gelap."
         elif pakaian_wisuda == "undangan":
             message = "Undangan mengenakan pakaian sipil lengkap atau pakaian nasional (menyesuaikan)."
-        else:
-            message = "Silahkan input ulang pertanyaan anda"
+
+        dispatcher.utter_message(text=message)
+
+        return []
+
+class ActionTampilKuantitasDokumenWisuda(Action):
+
+    def name(self) -> Text:
+        return "action_tampil_kuantitas_dokumen_wisuda"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        qty_dokumen_wisuda = str(next(tracker.get_latest_entity_values("qty_dokumen_wisuda"), None)).lower()
+        message = ""
+        print(qty_dokumen_wisuda)
+
+        if qty_dokumen_wisuda in "ijazah terakhir":
+            message = "Menyerahkan 1 (satu) lembar fotokopi ijazah terakhir"
+        elif qty_dokumen_wisuda == "pengesahan tugas akhir":
+            message = "Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir"
+        elif qty_dokumen_wisuda in "bukti kelulusan ujian bahasa inggris":
+            message = "Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir"
+        elif qty_dokumen_wisuda == "pasfoto":
+            message = "Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)"
 
         dispatcher.utter_message(text=message)
 
@@ -128,32 +152,6 @@ class ActionTampilWaktuTempatWisuda(Action):
             message = "Wisuda dilaksanakan pada waktu yang ditetapkan dalam Kalender Akademik Universitas Sriwijaya. kalender_akademik_ta_2021_-_2022.pdf (unsrittomohon.ac.id)."
         elif kata_tanya == "Dimana" or kata_tanya == "dimana":
             message = "Tempat pelaksanaan wisuda adalah Auditorium Universitas Sriwijaya atau tempat lain yang ditetapkan dan Peserta wisuda menempati tempat yang ditetapkan oleh panitia wisuda."
-
-        dispatcher.utter_message(text=message)
-
-        return []
-
-class ActionTampilKuantitasDokumenWisuda(Action):
-
-    def name(self) -> Text:
-        return "action_tampil_kuantitas_dokumen_wisuda"
-
-    def run(self, dispatcher: CollectingDispatcher,
-            tracker: Tracker,
-            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        qty_dokumen_wisuda = str(next(tracker.get_latest_entity_values("qty_dokumen_wisuda"), None)).lower()
-        print(qty_dokumen_wisuda)
-        message = ""
-
-        if qty_dokumen_wisuda == "ijazah terakhir" or qty_dokumen_wisuda == "ijazah":
-            message = "Menyerahkan 1 (satu) lembar fotokopi ijazah terakhir"
-        elif qty_dokumen_wisuda == "pengesahan tugas akhir":
-            message = "Menyerahkan 1 (satu) lembar fotokopi pengesahan tugas akhir"
-        elif qty_dokumen_wisuda == "bukti kelulusan ujian bahasa inggris":
-            message = "Menyerahkan bukti lulus ujian penguasaan Bahasa Inggris yang diakui 1 (satu) lembar fotokopi yang telah dilegalisir"
-        elif qty_dokumen_wisuda == "pasfoto":
-            message = "Menyerahkan 4 (empat) lembar pasfoto terbaru hitam putih ukuran 3 x 4 cm (laki laki pakai jas, wanita pakai kebaya)"
 
         dispatcher.utter_message(text=message)
 

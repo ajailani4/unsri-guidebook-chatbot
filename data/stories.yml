@@ -92,13 +92,6 @@ stories:
       - intent: persyaratan_wisuda
       - action: utter_persyaratan_wisuda
 
-  - story: tanya ukuran pasfoto wisuda
-    steps:
-      - intent: salam
-      - action: utter_salam
-      - intent: ukuran_pasfoto_wisuda
-      - action: utter_ukuran_pasfoto_wisuda
-
   - story: tanya platform daftar wisuda
     steps:
       - intent: salam
