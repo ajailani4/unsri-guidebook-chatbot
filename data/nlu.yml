@@ -348,17 +348,29 @@ nlu:
       - Apa itu [perpustakaan](sarana_akademik)?
       - Apa itu [student center](sarana_akademik)?
       - Apa itu [bus kampus](sarana_akademik)?
-      - Apa yang dimaksud [laboraturium dasar terpadu](sarana_akademik)?
+      - Apa itu [bus](sarana_akademik)?
+      - Apa itu [laboratorium dasar](sarana_akademik)?
+      - Apa itu [lab dasar](sarana_akademik)?
+      - Apa itu pelayanan [kesehatan](sarana_akademik)?
+      - Apa yang dimaksud [laboratorium dasar](sarana_akademik)?
+      - Apa yang dimaksud [laboratorium dasar terpadu](sarana_akademik)?
       - Apa yang dimaksud [auditorium](sarana_akademik)?
       - Apa yang dimaksud [kafetaria](sarana_akademik)?
-      - [laboraturium komputer](sarana_akademik) adalah
+      - [laboratorium komputer](sarana_akademik) adalah
+      - [lab komputer](sarana_akademik) adalah
       - [fasilitas lapangan](sarana_akademik) adalah
-      - [pelayanan bank](sarana_akademik) adalah
+      - [lapangan](sarana_akademik) adalah
+      - [bank](sarana_akademik) adalah
       - [lembaga bahasa](sarana_akademik) ialah
-      - [pelayanan kesehatan](sarana_akademik) ialah
+      - Pelayanan [kesehatan](sarana_akademik) ialah
       - [keamanan kampus](sarana_akademik) ialah
+      - [bis kampus](sarana_akademik) ialah
+      - [bis](sarana_akademik) ialah
+      - [asrama](sarana_akademik) merupakan
       - [asrama mahasiswa](sarana_akademik) merupakan
-      - [pusat peribadatan](sarana_akademik) merupakan
+      - [tempat peribadatan](sarana_akademik) merupakan
+      - [laboratorium dasar](sarana_akademik) merupakan
+      - [lab dasar terpadu](sarana_akademik) merupakan
       - Definisi [perpustakaan](sarana_akademik)
       - Definisi [gedung serbaguna](sarana_akademik)
       - Definisi [sc](sarana_akademik)
@@ -368,14 +380,21 @@ nlu:
       - Jam berapa pelayanan [perpustakaan](sarana_akademik)?
       - Jam berapa pelayanan [bus kampus](sarana_akademik) dimulai?
       - Jam berapa pelayanan [kesehatan](sarana_akademik) dimulai?
+      - Jam berapa pelayanan [bus](sarana_akademik) dimulai?
+      - Jam berapa pelayanan [bis](sarana_akademik) dimulai?
       - Jam berapa [student center](sarana_akademik) dibuka?
       - Jam berapa [laboraturium komputer](sarana_akademik) dibuka?
+      - Jam berapa [lab komputer](sarana_akademik) dibuka?
       - Jam berapa [lembaga bahasa](sarana_akademik) dibuka?
+      - Jam berapa [bank](sarana_akademik) dibuka?
+      - Jadwal layanan [laboraturium dasar](sarana_akademik)
+      - Jadwal layanan [lab dasar](sarana_akademik)
       - Jadwal layanan [laboraturium dasar terpadu](sarana_akademik)
       - Jadwal layanan [bus kampus](sarana_akademik)
+      - Jadwal layanan [bis kampus](sarana_akademik)
       - Jadwal layanan [perpustakaan](sarana_akademik)
+      - [lab dasar terpadu](sarana_akademik) buka jam berapa?
       - [lembaga bahasa](sarana_akademik) buka jam berapa?
-      - [pelayanan kesehatan](sarana_akademik) buka jam berapa?
       - [laboraturium komputer](sarana_akademik) buka jam berapa?
 
   - intent: cdc
@@ -716,6 +735,30 @@ nlu:
       - Ipk mahasiswa [Pendidikan spesialis](program) [cumlaude](predikat)
       - Ipk mahasiswa [Magister](program) [cumlaude](predikat)
       - Ipk mahasiswa [Doktor](program) [cumlaude](predikat)
+
+  - synonym: laboratorium komputer
+    examples: |
+      - lab komputer
+
+  - synonym: laboratorium dasar
+    examples: |
+      - laboratorium dasar terpadu
+      - lab dasar terpadu
+      - lab dasar
+
+  - synonym: fasilitas lapangan
+    examples: |
+      - lapangan
+
+  - synonym: asrama
+    examples: |
+      - asrama mahasiswa
+
+  - synonym: bus kampus
+    examples: |
+      - bis kampus
+      - bus
+      - bis
 
   - synonym: auditorium
     examples: |
