@@ -320,7 +320,7 @@ nlu:
       - Jumlah fotocopy dokumen [pasfoto](qty_dokumen_wisuda) yang harus diserahkan
       - Jumlah fotocopy dokumen [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diserahkan
       - Berapa lembar [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda) yang harus diberikan ?
-      - Berapa lembar [bukti kelulusan ujian bahasa ](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [bukti kelulusan ujian bahasa](qty_dokumen_wisuda) yang harus diberikan ?
       - Berapa lembar [pasfoto](qty_dokumen_wisuda) yang harus diberikan ?
       - Berapa lembar [SULIET](qty_dokumen_wisuda) yang harus diberikan ?
       - Berapa lembar [ijazah](qty_dokumen_wisuda) yang harus diberikan ?

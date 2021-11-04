@@ -120,7 +120,6 @@ class ActionTampilKuantitasDokumenWisuda(Action):
 
         qty_dokumen_wisuda = str(next(tracker.get_latest_entity_values("qty_dokumen_wisuda"), None)).lower()
         message = ""
-        print(qty_dokumen_wisuda)
 
         if qty_dokumen_wisuda in "ijazah":
             message = "Menyerahkan 1 (satu) lembar fotokopi ijazah terakhir"
@@ -145,7 +144,6 @@ class ActionTampilWaktuTempatWisuda(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         kata_tanya = str(next(tracker.get_latest_entity_values("kata_tanya"), None)).lower()
-        print(kata_tanya)
         message = ""
 
         if kata_tanya == "Kapan" or kata_tanya == "kapan":
