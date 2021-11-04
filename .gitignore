@@ -4,10 +4,10 @@ __pycache__
 
 # Rasa files
 # exclude everything from models folder
-models/*
-# except for .gitkeep, so that folder itself is included
-!models/.gitkeep 
-results
-story_graph.dot
+# models/*
+# # except for .gitkeep, so that folder itself is included
+# !models/.gitkeep 
+# results
+# story_graph.dot
 
 .env
