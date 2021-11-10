@@ -80,6 +80,9 @@ class ActionTampilJadwalSaranaAkademik(Action):
         sarana_akademik = str(next(tracker.get_latest_entity_values("sarana_akademik"), None)).lower()
         message = self.dao.get_academic_facil_schedule(sarana_akademik)
 
+        if message == None:
+            message = "Sarana ini tidak ada jadwal layanan"
+
         dispatcher.utter_message(text=message)
 
         return []

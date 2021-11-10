@@ -1,5 +1,3 @@
-import psycopg2
-import asyncio
 from database.db_config import DbConfig
 
 class Dao:
