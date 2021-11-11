@@ -1,6 +1,7 @@
 version: "2.0"
 
 intents:
+  - start
   - salam
   - sampai_jumpa
   - kegiatan_minat_bakat
