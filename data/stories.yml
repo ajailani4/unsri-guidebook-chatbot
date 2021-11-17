@@ -1,30 +1,218 @@
 version: "2.0"
 
 stories:
+  - story: salam dan sampai jumpa
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: sampai_jumpa
+      - action: utter_sampai_jumpa
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: tanya kegiatan minat dan bakat
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: kegiatan_minat_bakat
+      - action: utter_kegiatan_minat_bakat
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: tanya jenis kegiatan minat dan bakat
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: jenis_kegiatan_minat_bakat
+      - action: utter_jenis_kegiatan_minat_bakat
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: tanya fasilitas kegiatan minat dan bakat
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: fasilitas_minat_bakat
+      - action: action_tampil_fasilitas_minat_bakat
+
+  - story: tanya kegiatan minat dan bakat
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: kegiatan_minat_bakat
+      - action: utter_kegiatan_minat_bakat
+
+  - story: tanya jenis kegiatan minat dan bakat
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: jenis_kegiatan_minat_bakat
+      - action: utter_jenis_kegiatan_minat_bakat
+
+  - story: tanya fasilitas kegiatan minat dan bakat
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: fasilitas_minat_bakat
+      - action: action_tampil_fasilitas_minat_bakat
+
+  - story: tanya komponen survey akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: komponen_survey_akademik
+      - action: utter_komponen_survey_akademik
+
+  - story: tanya unit survei
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: unit_survei
+      - action: utter_unit_survei
+
+  - story: tanya komponen survei kemahasiswaan
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: komponen_survei_kemahasiswaan
+      - action: utter_komponen_survei_kemahasiswaan
+
+  - story: tanya peserta wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: peserta_wisuda
+      - action: utter_peserta_wisuda
+
+  - story: tanya pendaftaran biaya
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: pendaftaran_biaya
+      - action: utter_pendaftaran_biaya
+
+  - story: tanya persyaratan wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: persyaratan_wisuda
+      - action: utter_persyaratan_wisuda
+
+  - story: tanya platform daftar wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: platform_daftar_wisuda
+      - action: utter_platform_daftar_wisuda
+
+  - story: tanya platform survei
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: platform_survei
+      - action: action_tampil_platform_survei
+
+  - story: tanya waktu tempat wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: waktu_tempat_wisuda
+      - action: action_tampil_waktu_tempat_wisuda
+
+  - story: tanya dokumen wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: dokumen_wisuda
+      - action: utter_dokumen_wisuda
+
+  - story: tanya kuantitas dokumen wisuda
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: kuantitas_dokumen_wisuda
+      - action: action_tampil_kuantitas_dokumen_wisuda
+
+  - story: tanya daftar layanan sarana akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: daftar_layanan_sarana_akademik
+      - action: utter_daftar_layanan_sarana_akademik
+
+  - story: tanya definisi layanan sarana akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: definisi_layanan_sarana_akademik
+      - action: action_tampil_definisi_sarana_akademik
+
+  - story: tanya jadwal layanan sarana akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: jadwal_layanan_sarana_akademik
+      - action: action_tampil_jadwal_sarana_akademik
+
+  - story: tanya cdc unsri
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: cdc
+      - action: utter_cdc
+
+  - story: tanya link cdc
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: link_cdc
+      - action: utter_link_cdc
+
+  - story: tanya fungsi cdc
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: fungsi_cdc
+      - action: utter_fungsi_cdc
+
+  - story: tanya layanan cdc
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: layanan_cdc
+      - action: utter_layanan_cdc
+
+  - story: tanya acuan gelar akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: acuan_gelar_akademik
+      - action: utter_acuan_gelar_akademik
+
+  - story: tanya gelar akademik
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: gelar_akademik
+      - action: utter_gelar_akademik
+  - story: tanya materi ijazah
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: materi_ijazah
+      - action: utter_materi_ijazah
+
+  - story: tanya contoh ijazah
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: contoh_ijazah
+      - action: utter_contoh_ijazah
+
+  - story: tanya materi transkrip
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: materi_transkrip
+      - action: utter_materi_transkrip
+
+  - story: tanya syarat predikat program
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: syarat_predikat_program
+      - action: action_tampil_syarat_predikat_program

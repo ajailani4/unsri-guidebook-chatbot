@@ -1,92 +1,833 @@
 version: "2.0"
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: salam
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hai
+      - halo
+      - hey
+      - selamat pagi
+      - pagi
+      - selamat siang
+      - siang
+      - selamat sore
+      - sore
+      - selamat malam
+      - malam
+      - halo yang di sana
+      - hai bro
 
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: sampai_jumpa
+    examples: |
+      - bye
+      - good bye
+      - see you
+      - sampai jumpa
+      - sampai berjumpa lagi
+      - selamat tinggal
+      - selamat pagi
+      - pagi
+      - selamat siang
+      - siang
+      - selamat sore
+      - sore
+      - selamat malam
+      - malam
+      - mantap
+      - terimakasih
+      - makasih
+      - dadah
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: kegiatan_minat_bakat
+    examples: |
+      - Apa saja kegiatan minat dan bakat yang ada di Universitas Sriwijaya?
+      - Kegiatan minat dan bakat apa saja yang ada di Universitas Sriwijaya?
+      - Universitas Sriwijaya memiliki kegiatan minat dan bakat apa saja?
+      - Kegiatan apa saja yang ada di Universitas Sriwijaya?
+      - Kegiatan seperti apa yang ada di Universitas Sriwijaya?
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: jenis_kegiatan_minat_bakat
+    examples: |
+      - Apa saja BEM, HIMA, dan Unit Kegiatan Mahasiswa yang ada di Universitas Sriwijaya?
+      - BEM apa saja yang ada di Universitas Sriwijaya?
+      - HIMA apa saja yang ada di Universitas Sriwijaya?
+      - Unit Kegiatan Mahasiswa apa saja yang ada di Universitas Sriwijaya?
+      - UKM apa saja yang ada di Universitas Sriwijaya?
+      - Organisasi apa saja yang ada di Universitas Sriwijaya?
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+  - intent: fasilitas_minat_bakat
+    examples: |
+      - Apa fasilitas yang didapat dari kegiatan di bidang [olahraga](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [BEM](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [bem](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan [Badan Eksekutif Mahasiswa](bidang_minat)?
+      - Kegiatan di bidang [HIMA](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [hima](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [ukm](bidang_minat) mendapatkan fasilitas apa?
+      - Kegiatan [Himpunan Mahasiswa](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [kewirausahaan](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [olahraga](bidang_minat) mendapat fasilitas apa saja?
+      - Apa fasilitas yang didapat dari kegiatan [Unit Kegiatan Mahasiswa](bidang_minat)?
+      - [UKM](bidang_minat) mendapat fasilitas apa?
+      - [HIMA](bidang_minat) mendapatkan fasilitas apa?
+      - [BEM](bidang_minat) mendapatkan fasilitas apa?
+      - [kewirausahaan](bidang_minat) mendapatkan fasilitas apa?
+      - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
 
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+  - intent: fasilitas_minat_bakat
+    examples: |
+      - Apa fasilitas yang didapat dari kegiatan di bidang [olahraga](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [BEM](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan di bidang [bem](bidang_minat)?
+      - Fasilitas apa saja yang didapat dari kegiatan [Badan Eksekutif Mahasiswa](bidang_minat)?
+      - Kegiatan di bidang [HIMA](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [hima](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan di bidang [ukm](bidang_minat) mendapatkan fasilitas apa?
+      - Kegiatan [Himpunan Mahasiswa](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [kewirausahaan](bidang_minat) mendapat fasilitas apa saja?
+      - Kegiatan [olahraga](bidang_minat) mendapat fasilitas apa saja?
+      - Apa fasilitas yang didapat dari kegiatan [Unit Kegiatan Mahasiswa](bidang_minat)?
+      - [UKM](bidang_minat) mendapat fasilitas apa?
+      - [HIMA](bidang_minat) mendapatkan fasilitas apa?
+      - [BEM](bidang_minat) mendapatkan fasilitas apa?
+      - [kewirausahaan](bidang_minat) mendapatkan fasilitas apa?
+      - Fasilitas apa yang didapat jika mengikuti kegiatan [kewirausahaan](bidang_minat)?
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: komponen_survey_akademik
+    examples: |
+      - Apa saja survey yang dilakukan terhadap mahasiswa untuk mengukur kepuasan layanan akademik?
+      - Apa komponen survei yang mengukur kepuasan layanan akademik terutama proses Belajar Mengajar yang diberikan oleh dosen?
+      - Apa komponen survey layanan akademik di universitas sriwijaya?
+      - Apa komponen survei layanan akademik?
+      - Sebutkan komponen yang mengukur kepuasan layanan akademik
+      - Sebutkan komponen yang mengukur kepuasan layanan akademik terutama Proses Belajar Mengajar yang diberikan oleh dosen
+      - Sebutkan apa saja yang menjadi komponen survei layanan akademik unsri?
+      - Komponen apa saja yang digunakan untuk mengukur kepuasan layanan akademik?
+      - Hal apa saja yang menjadi komponen survei layanan akademik unsri?
+
+  - intent: unit_survei
+    examples: |
+      - Siapa unit yang melakukan survei?
+      - Unit mana yang melakukan survei layanan akademik?
+      - Apa nama unit yang melakukan survei layanan akademik?
+      - Unit survei layanan akademik
+
+  - intent: komponen_survei_kemahasiswaan
+    examples: |
+      - Apa saja yang menjadi tolak ukur kepuasan layanan kemahasiswaan?
+      - Apa saja yang menjadi penilaian kepuasan layanan kemahasiswaan?
+      - Hal apa saja yang menjadi presepsi kepuasan layanan kemahasiswaan?
+      - Apa saja komponen yang survei kemahasiswaan?
+      - Apa saja komponen penilaian untuk survei layanan kemahasiswaan?
+      - Sebutkan komponen survei kepuasan layanan kemahasiswaan
+      - Sebutkan yang menjadi tolak ukur kepuasan layanan kemahasiswaan
+      - Sebutkan yang menjadi penilaian kepuasan layanan kemahasiswaan
+      - Tolak ukur kepuasan layanan kemahasiswaan
+      - Komponen kepuasan layanan kemahasiswaan
+
+  - intent: platform_survei
+    examples: |
+      - Apa platform survei layanan kepuasan [akademik](jenis_survei)?
+      - Apa platform survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Platform survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Platform survei layanan kepuasan [akademik](jenis_survei)?
+      - Survei layanan kepuasan [akademik](jenis_survei)?
+      - Survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Apa platform survei layanan kepuasan [akademik](jenis_survei) Universitas Sriwijaya?
+      - Apa platform survei layanan kepuasan [kemahasiswaan](jenis_survei) Universitas Sriwijaya?
+      - Platform survei layanan kepuasan [kemahasiswaan](jenis_survei) Universitas Sriwijaya?
+      - Platform survei layanan kepuasan [akademik](jenis_survei) Universitas Sriwijaya?
+      - Dimana mahasiswa dapat mengakses survei layanan kepuasan [akademik](jenis_survei)?
+      - Dimana mahasiswa dapat mengakses survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Dimana website untuk mengakses survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Dimana website untuk mengakses survei layanan kepuasan [akademik](jenis_survei)?
+      - Link survei layanan layanan [akademik](jenis_survei)?
+      - Link survei layanan layanan [kemahasiswaan](jenis_survei)?
+      - Apa link survei layanan kepuasan [akademik](jenis_survei)?
+      - Apa link survei [akademik](jenis_survei)?
+      - Apa nama website survei layanan kepuasan [akademik](jenis_survei) unsri?
+      - Apa platform survei layanan [kemahasiswaan](jenis_survei)?
+      - Apa platform survei layanan kepuasan [kemahasiswaan](jenis_survei) Universitas Sriwijaya?
+      - Dimana melihat survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Dimana melihat survei layanan kepuasan [akademik](jenis_survei)?
+      - Dimana mengakses survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Dimana melihat survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Akses survei layanan kepuasan [akademik](jenis_survei)?
+      - Apa link survei layanan kepuasan [kemahasiswaan](jenis_survei)?
+      - Apa link survei [kemahasiswaan](jenis_survei)?
+      - Apa nama website survei layanan kepuasan [kemahasiswaan](jenis_survei) unsri?
+      - web survei layanan [kemahasiswaan](jenis_survei)
+
+  - intent: peserta_wisuda
+    examples: |
+      - Siapa saja peserta wisuda?
+      - Siapa saja yang menjadi peserta wisuda?
+      - Siapa saja yang boleh mengikuti acara wisuda?
+      - Siapa yang diperkenankan menghadiri wisuda?
+      - Siapa yang berhak menjadi peserta wisuda?
+      - Siapa yang menjadi peserta wisuda?
+      - Siapa yang diperbolehkan menghadiri wisuda?
+      - Siapa yang diizinkan menjadii peserta wisuda?
+      - Apa saja syarat peserta wisuda?
+      - Apa ketentuan menjadi peserta wisuda?
+      - Terdiri dari siapa saja peserta wisuda?
+      - sebutkan persyaratan menjadi perserta wisuda
+      - peserta wisuda
+
+  - intent: pendaftaran_biaya
+    examples: |
+      - Bagaimana pendaftaran dan biaya wisuda?
+      - Apa persyaratan pendaftaran dan biaya wisuda?
+      - Hal yang perlu dilakukan untuk pendaftaran wisuda?
+      - Sebutkan yang menjadi aturan pendaftaran dan biaya wisuda?
+      - Apa saja yang harus dilakukan mahasiswa untuk pendaftaran wisuda?
+      - pendaftaran wisuda
+      - biaya wisuda
+
+  - intent: persyaratan_wisuda
+    examples: |
+      - Apa persyaratan Wisuda Universitas Sriwijaya ?
+      - Apa saja yang harus dilengkapi untuk syarat Wisuda Universitas Sriwijaya ?
+      - Apa syarat yang harus diisi untuk syarat Wisuda Universitas Sriwijaya ?
+      - Apa syarat kelulusan apa saja yang harus dipenuhi pada wisuda Universitas Sriwijaya ?
+      - Apa syarat wisuda
+      - Persyaratan wisuda Universitas Sriwijaya
+      - Persyaratan wisuda UNSRI
+
+  - intent: platform_daftar_wisuda
+    examples: |
+      - Apa situs pendaftaran online untuk wisuda Universitas sriwijaya ?
+      - Apa platform pendaftaran online untuk wisuda Universitas sriwijaya ?
+      - Dimana halaman website pendaftaran online wisuda Universitas Sriwijaya ?
+      - Link pendaftaran wisuda UNSRI
+      - Website pendaftaran wisuda Universitas Sriwijaya ?
+      - Dimana bisa mendaftar wisuda ?
+      - Tempat untuk mendaftar wisuda ?
+
+  - intent: pakaian_wisuda
+    examples: |
+      - Apa pakaian yang dikenakan oleh [panitia](pakaian_wisuda) saat wisuda?
+      - Apa pakaian yang dikenakan oleh [mahasiswa](pakaian_wisuda) saat wisuda?
+      - Apa pakaian yang dikenakan oleh [anggota senat](pakaian_wisuda) saat wisuda?
+      - Apa pakaian yang dikenakan oleh [undangan](pakaian_wisuda) saat wisuda?
+      - Apa syarat pakaian wisuda [panitia](pakaian_wisuda)?
+      - Apa syarat pakaian wisuda [undangan](pakaian_wisuda)?
+      - Apa syarat pakaian wisuda [senat](pakaian_wisuda)?
+      - Apa syarat pakaian wisuda [mahasiswa](pakaian_wisuda)?
+      - Pakaian yang dipakai [anggota senat](pakaian_wisuda) saat wisuda ?
+      - Pakaian yang dipakai [mahasiswa](pakaian_wisuda) saat wisuda ?
+      - Pakaian yang dipakai [panitia](pakaian_wisuda) saat wisuda ?
+      - Bagaimana pakaian peserta wisuda [mahasiswa](pakaian_wisuda)?
+      - Bagaimana pakaian peserta wisuda [anggota senat](pakaian_wisuda)?
+      - Pakaian seperti apa yang harus dikenakan saat wisuda [undangan](pakaian_wisuda)?
+      - Pakaian seperti apa yang harus dikenakan saat wisuda [mahasiswa](pakaian_wisuda)?
+      - Bagaimana pakaian peserta wisuda [anggota senat](pakaian_wisuda)?
+      - Bagaimana pakaian peserta wisuda [mahasiswa](pakaian_wisuda)?
+      - Bagaimana [mahasiswa](pakaian_wisuda) berpakaian saat wisuda ?
+      - Bagaimana [panitia](pakaian_wisuda) berpakaian saat wisuda ?
+      - Apa baju yang digunakan [undangan](pakaian_wisuda) saat acara wisuda ?
+      - Apa baju yang digunakan [mahasiswa](pakaian_wisuda) saat acara wisuda ?
+      - Apa aturan berpakaian peserta wisuda [panitia](pakaian_wisuda)?
+      - Apa aturan berpakaian peserta wisuda [mahasiswa](pakaian_wisuda)?
+      - Apa saja yang harus dikenakan peserta wisuda [undangan](pakaian_wisuda)?
+      - Apa saja kelengkapan pakaian peserta wisuda [mahasiswa](pakaian_wisuda)?
+      - Sebutkan kelengkapan berpakaian peserta wisuda [anggota senat](pakaian_wisuda)
+      - Sebutkan kelengkapan berpakaian peserta wisuda [mahasiswa](pakaian_wisuda)
+      - Sebutkan persyaratan berpakaian peserta wisuda [panitia](pakaian_wisuda)
+      - Pakaian wisuda untuk [mahasiswa](pakaian_wisuda)
+      - Pakaian wisuda untuk [anggota senat](pakaian_wisuda)
+      - Apa pakaian yang dikenakan oleh [mahasiswa](pakaian_wisuda) saat wisuda ?
+      - Apa pakaian yang dikenakan oleh [anggota senat](pakaian_wisuda) saat wisuda ?
+      - [mahasiswa](pakaian_wisuda) menggunakan pakaian apa saat wisuda ?
+      - [panitia](pakaian_wisuda) menggunakan pakaian apa saat wisuda ?
+      - [senat](pakaian_wisuda) menggunakan pakaian apa saat wisuda ?
+      - Pakaian [mahasiswa](pakaian_wisuda) untuk wisuda apa saja ?
+      - Syarat pakaian [mahasiswa](pakaian_wisuda) untuk wisuda ?
+      - Pakaian [mahasiswa](pakaian_wisuda) untuk wisuda apa ?
+      - Pakaian [panitia](pakaian_wisuda) untuk wisuda apa ?
+      - Bagaimana [mahasiswa](pakaian_wisuda) berpakaian untuk wisuda ?
+      - Bagaimana [panitia](pakaian_wisuda) berpakaian untuk wisuda ?
+      - Pakaian [anggota senat](pakaian_wisuda) untuk wisuda
+
+  - intent: jenis_pakaian_wisuda
+    examples: |
+      - [mahasiswa](pakaian_wisuda)
+
+  - intent: waktu_tempat_wisuda
+    examples: |
+      - [Kapan](kata_tanya) wisuda?
+      - [Dimana](kata_tanya) wisuda?
+      - [Kapan](kata_tanya) upacara wisuda dilaksanakan?
+      - [Dimana](kata_tanya) upacara wisuda dilaksanakan?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda?
+      - [dimana](kata_tanya) dilaksanakannya wisuda?
+      - [dimana](kata_tanya) dilaksanakannya wisuda?
+      - [dimana](kata_tanya) upacara wisuda dilaksanakan?
+      - [Dimana](kata_tanya) wisuda?
+      - [Kapan](kata_tanya) wisuda unsri?
+      - [Kapan](kata_tanya) upacara wisuda dilaksanakan unsri?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda unsri?
+      - [dimana](kata_tanya) dilaksanakannya wisuda unsri?
+      - [dimana](kata_tanya) upacara wisuda dilaksanakan unsri?
+      - [dimana](kata_tanya) wisuda unsri?
+      - [Kapan](kata_tanya) wisuda Universitas Sriwijaya?
+      - [Kapan](kata_tanya) upacara wisuda dilaksanakan Universitas Sriwijaya?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda Universitas Sriwijaya?
+      - [Dimana](kata_tanya) dilaksanakannya wisuda Universitas Sriwijaya?
+      - [Dimana](kata_tanya) upacara wisuda dilaksanakan Universitas?
+      - [Dimana](kata_tanya) wisuda Universitas Sriwijaya?
+      - [Kapan](kata_tanya) wisuda mahasiswa?
+      - [Kapan](kata_tanya) upacara wisuda mahasasiswa dilaksanakan?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda mahasiswa?
+      - [Dimana](kata_tanya) dilaksanakannya wisuda mahasiswa?
+      - [Dimana](kata_tanya) upacara wisuda mahasiswa dilaksanakan ?
+      - [Dimana](kata_tanya) wisuda mahasiswa unsri?
+      - [Kapan](kata_tanya) wisuda mahasiswa unsri?
+      - [Kapan](kata_tanya) upacara wisuda mahasasiswa dilaksanakan unsri?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda mahasiswa unsri?
+      - [Dimana](kata_tanya) dilaksanakannya wisuda mahasiswa unsri?
+      - [Dimana](kata_tanya) upacara wisuda mahasiswa dilaksanakan unsri ?
+      - [Dimana](kata_tanya) wisuda mahasiswa unsri?
+      - [Kapan](kata_tanya) wisuda mahasiswa Universitas Sriwijaya?
+      - [Kapan](kata_tanya) upacara wisuda mahasasiswa dilaksanakan Universitas Sriwijaya?
+      - [Kapan](kata_tanya) dilaksanakannya wisuda mahasiswa Universitas Sriwijaya?
+      - [Dimana](kata_tanya) dilaksanakannya wisuda mahasiswa Universitas Sriwijaya?
+      - [Dimana](kata_tanya) upacara wisuda mahasiswa dilaksanakan Universitas Sriwijaya?
+      - [Dimana](kata_tanya) wisuda mahasiswa Sriwijaya?
+      - Unsri wisuda [dimana](kata_tanya) ?
+      - UNSRI [kapan](kata_tanya) wisuda ?
+      - UNSRI wisuda [dimana][kata_tanya] ?
+
+  - intent: dokumen_wisuda
+    examples: |
+      - Apa dokumen-dokumen yang harus dilengkapi untuk syarat wisuda Universitas Sriwijaya ?
+      - Dokumen yang harus dilengkapi untuk syarat wisuda UNSRI apa saja ?
+      - Dokumen yang harus dilengkapi untuk syarat wisuda di UNSRI ?
+      - Dokumen untuk syarat wisuda di UNSRI ?
+      - Apa saja dokumen yang diperlukan sebagai syarat wisuda di UNSRI ?
+      - Dokumen syarat wisuda di UNSRI ?
+
+  - intent: kuantitas_dokumen_wisuda
+    examples: |
+      - Berapa jumlah fotocopy [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Berapa jumlah fotocopy [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Berapa jumlah fotocopy [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Berapa jumlah fotocopy [ijazah](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Berapa jumlah fotocopy [SULIET](qty_dokumen_wisuda) yang harus diserahkan ke UNSRI ?
+      - Jumlah fotocopy dokumen [pasfoto](qty_dokumen_wisuda) yang harus diserahkan
+      - Jumlah fotocopy dokumen [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diserahkan
+      - Berapa lembar [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [bukti kelulusan ujian bahasa](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [pasfoto](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [SULIET](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [ijazah](qty_dokumen_wisuda) yang harus diberikan ?
+      - Berapa lembar [ijazah terakhir](qty_dokumen_wisuda) yang harus diberikan ?
+      - Kuantitas [pengesahan tugas akhir](qty_dokumen_wisuda)
+      - Kuantitas [ijazah terakhir](qty_dokumen_wisuda)
+      - Kuantitas [pasfoto](qty_dokumen_wisuda)
+      - Kuantitas [ijazah](qty_dokumen_wisuda)
+      - Kuantitas [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda) yang harus diberikan sebagai syarat wisuda ?
+      - Kuantitas [bukti kelulusan ujian bahasa](qty_dokumen_wisuda) yang harus diberikan sebagai syarat wisuda ?
+      - Kuantitas [ijazah terakhir](qty_dokumen_wisuda) yang harus diberikan sebagai syarat wisuda ?
+      - Berapa lembar fotocopy [pengesahan tugas akhir](qty_dokumen_wisuda) yang harus diberikan untuk mendaftar wisuda ?
+      - Berapa lembar fotocopy [ijazah terakhir](qty_dokumen_wisuda) yang harus diberikan untuk mendaftar wisuda ?
+      - Berapa lembar fotocopy [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang harus diberikan untuk mendaftar wisuda ?
+      - Berapa lembar fotocopy [pasfoto](qty_dokumen_wisuda) yang harus diberikan untuk mendaftar wisuda ?
+      - Jumlah dokumen [pasfoto](qty_dokumen_wisuda) yang diberikan
+      - Jumlah dokumen [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang diberikan
+      - Jumlah dokumen [ijazah terakhir](qty_dokumen_wisuda) yang diberikan
+      - [pasfoto](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
+      - [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
+      - [pas foto](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
+      - [ijazah](qty_dokumen_wisuda) yang harus diserahkan untuk wisuda
+      - Lembaran dokumen [pasfoto](qty_dokumen_wisuda) yang diserahkan untuk wisuda
+      - Lembaran dokumen [ijazah terakhir](qty_dokumen_wisuda) yang diserahkan untuk wisuda
+      - Dokumen [ijazah] yang harus diserahkan?
+      - Dokumen [pasfoto] yang harus diserahkan?
+      - Dokumen [pas foto] yang harus diserahkan?
+      - Jumlah dokumen [bukti kelulusan ujian bahasa inggris](qty_dokumen_wisuda)
+      - Jumlah dokumen [pengesahan tugas akhir](qty_dokumen_wisuda)
+      - Jumlah dokumen [ijazah terakhir](qty_dokumen_wisuda)
+      - Jumlah dokumen [pasfoto](qty_dokumen_wisuda)
+      - Jumlah dokumen [SULIET](qty_dokumen_wisuda)
+      - Jumlah dokumen [ijazah](qty_dokumen_wisuda)
+      - Jumlah dokumen [pas foto](qty_dokumen_wisuda)
+      - Jumlah dokumen [bukti kelulusan ujian penguasaan bahasa inggris](qty_dokumen_wisuda)
+      - Syarat jumlah dokumen [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan?
+      - Syarat jumlah dokumen [pasfoto](qty_dokumen_wisuda) yang harus diserahkan?
+      - Syarat jumlah dokumen [ijazah](qty_dokumen_wisuda) yang harus diserahkan?
+      - Syarat jumlah dokumen [pas foto](qty_dokumen_wisuda) yang harus diserahkan?
+      - Ketentuan jumlah dokumen untuk [ijazah terakhir](qty_dokumen_wisuda) yang harus diserahkan ?
+      - Ketentuan jumlah dokumen untuk [ijazah](qty_dokumen_wisuda) yang harus diserahkan ?
+      - Ketentuan jumlah dokumen untuk [pasfoto](qty_dokumen_wisuda) yang harus diserahkan ?
+      - [pasfoto](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+      - [ijazah terakhir](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+      - [bukti kelulusan ujian bahasa](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+      - [SULIET](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+      - [pas foto](qty_dokumen_wisuda) untuk wisuda berapa banyak ya ?
+
+  - intent: daftar_layanan_sarana_akademik
+    examples: |
+      - Apa saja layanan akademik di Universitas Sriwijaya?
+      - Apa saja layanan sarana akademik di Universitas Sriwijaya?
+      - Apa saja sarana akademik yang ada di Universitas Sriwijaya?
+      - Apa saja layanan akademik di Unsri?
+      - Layanan akademik apa saja yang ada di Universitas Sriwijaya?
+      - Layanan akademik apa yang ada di Universitas Sriwijaya?
+      - Universitas Sriwijaya memiliki layanan akademik apa saja?
+      - Unsri memiliki layanan akademik apa saja?
+      - Di Universitas Sriwijaya memiliki layanan akademik apa?
+      - Daftar layanan sarana akademik di Unsri
+      - Layanan sarana akademik di Unsri
+
+  - intent: definisi_layanan_sarana_akademik
+    examples: |
+      - Apa itu [perpustakaan](sarana_akademik)?
+      - Apa itu [student center](sarana_akademik)?
+      - Apa itu [bus kampus](sarana_akademik)?
+      - Apa itu [bus](sarana_akademik)?
+      - Apa itu [laboratorium dasar](sarana_akademik)?
+      - Apa itu [lab dasar](sarana_akademik)?
+      - Apa itu pelayanan [kesehatan](sarana_akademik)?
+      - Apa yang dimaksud [laboratorium dasar](sarana_akademik)?
+      - Apa yang dimaksud [laboratorium dasar terpadu](sarana_akademik)?
+      - Apa yang dimaksud [auditorium](sarana_akademik)?
+      - Apa yang dimaksud [kafetaria](sarana_akademik)?
+      - [laboratorium komputer](sarana_akademik) adalah
+      - [lab komputer](sarana_akademik) adalah
+      - [fasilitas lapangan](sarana_akademik) adalah
+      - [lapangan](sarana_akademik) adalah
+      - [bank](sarana_akademik) adalah
+      - [lembaga bahasa](sarana_akademik) ialah
+      - Pelayanan [kesehatan](sarana_akademik) ialah
+      - [keamanan kampus](sarana_akademik) ialah
+      - [bis kampus](sarana_akademik) ialah
+      - [bis](sarana_akademik) ialah
+      - [klinik](sarana_akademik) ialah
+      - [asrama](sarana_akademik) merupakan
+      - [asrama mahasiswa](sarana_akademik) merupakan
+      - [tempat peribadatan](sarana_akademik) merupakan
+      - [laboratorium dasar](sarana_akademik) merupakan
+      - [lab dasar terpadu](sarana_akademik) merupakan
+      - Definisi [perpustakaan](sarana_akademik)
+      - Definisi [gedung serbaguna](sarana_akademik)
+      - Definisi [sc](sarana_akademik)
+
+  - intent: jadwal_layanan_sarana_akademik
+    examples: |
+      - Jam berapa pelayanan [perpustakaan](sarana_akademik)?
+      - Jam berapa pelayanan [bus kampus](sarana_akademik) dimulai?
+      - Jam berapa pelayanan [kesehatan](sarana_akademik) dimulai?
+      - Jam berapa pelayanan [bus](sarana_akademik) dimulai?
+      - Jam berapa pelayanan [bis](sarana_akademik) dimulai?
+      - Jam berapa [student center](sarana_akademik) dibuka?
+      - Jam berapa [laboraturium komputer](sarana_akademik) dibuka?
+      - Jam berapa [lab komputer](sarana_akademik) dibuka?
+      - Jam berapa [lembaga bahasa](sarana_akademik) dibuka?
+      - Jam berapa [bank](sarana_akademik) dibuka?
+      - Jadwal layanan [laboraturium dasar](sarana_akademik)
+      - Jadwal layanan [lab dasar](sarana_akademik)
+      - Jadwal layanan [laboraturium dasar terpadu](sarana_akademik)
+      - Jadwal layanan [bus kampus](sarana_akademik)
+      - Jadwal layanan [bis kampus](sarana_akademik)
+      - Jadwal layanan [perpustakaan](sarana_akademik)
+      - [lab dasar terpadu](sarana_akademik) buka jam berapa?
+      - [lembaga bahasa](sarana_akademik) buka jam berapa?
+      - [laboraturium komputer](sarana_akademik) buka jam berapa?
+
+  - intent: cdc
+    examples: |
+      - Apa itu CDC Unsri?
+      - Apa pusat karir Universitas Sriwijaya?
+      - Pusat pengembangan karir Unsri
+      - Info pusat karir
+      - Info pusat pengembangan karir
+      - Info CDC
+      - Info tentang CDC Unsri
+      - CDC Unsri
+      - CDC Universitas Sriwijaya
+      - Pusat Pengembangan Karakter dan Karir
+      - Informasi Pusat Pengembangan Karakter dan Karir
+      - Informasi CDC Universitas Sriwijaya
+      - Jelaskan tentang CDC Unsri
+      - Saya ingin mengetahui tentang Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya
+      - Saya ingin tahu tentang pusat karir
+      - Berikan info tentang pusat pengembangan karir unsri
+
+  - intent: link_cdc
+    examples: |
+      - Apa link web CDC Unsri?
+      - Dimana platform dari CDC Universitas Sriwijaya?
+      - Saya ingin mengunjungi website CDC Unsri
+      - Ingin berkunjung ke situs pusat karir
+      - Situs CDC
+      - Situs pusat karir Universitas Sriwijaya
+      - Website Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya
+      - Web Pusat Pengembangan Karakter dan Karir Unsri
+      - Platform CDC Unsri
+      - Berikan link website CDC
+      - Minta link CDC Unsri
+      - Link pusat pengembangan karir
+      - Platform pusat pengembangan karir Universitas Sriwijaya
+
+  - intent: fungsi_cdc
+    examples: |
+      - Keuntungan apa yang diperoleh dari layanan CDC Unsri?
+      - Apa fungsi dari layanan Pusat Pengembangan Karakter dan Karir Unsri?
+      - Apa guna Pusat Pengembangan Karakter dan Karir Unsri?
+      - Apa tugas dari CDC Universitas Sriwijaya?
+      - Mengapa diperlukan pusat karir unsri?
+      - Pusat Karir Universitas Sriwijaya bertugas sebagai apa?
+      - Apa saja yang diperoleh dari layanan pusat karir unsri?
+      - Fungsi CDC bagi mahasiswa unsri apa saja?
+      - Manfaat apa saja yang didapat mahasiswa dan alumni dari layanan CDC Universitas Sriwijaya?
+      - Apa saja yang diberikan Pusat Pengembangan Karir Unsri?
+      - Fungsi pusat karir unsri
+      - Layanan pusat karir Unsri berguna bagaimana?
+      - Jelaskan manfaat CDC Universitas Sriwijaya bagi mahasiswa dan alumni
+      - Saya ingin tahu manfaat layanan CDC
+      - Fungsi layanan CDC Universitas Sriwijaya
+      - Manfaat layanan pusat karir
+      - Kegunaan pusat karir
+
+  - intent: layanan_cdc
+    examples: |
+      - Layanan apa yang diperoleh dari CDC Unsri?
+      - Apa layanan yang diberikan CDC Universitas Sriwijaya?
+      - Layanan CDC Universitas Sriwijaya
+      - Apa saja layanan Pusat Pengembangan Karakter dan Karir?
+      - Layanan CDC
+      - Layanan pusat pengembangan karir
+      - Layanan yang diberikan pusat karir Unsri
+      - Layanan dari pusat pengembangan karakter dan karir
+      - Berikan informasi layanan CDC Unsri
+      - Saya ingin mengetahui tentang Layanan Pusat Pengembangan Karakter dan Karir Universitas Sriwijaya
+      - Informasi layanan CDC Unsri
+      - Informasi layanan pusat karir
+      - Layanan apa saja yang diberikan oleh CDC?
+      - Layanan pusat karir dari Universitas Sriwijaya
+      - Jenis layanan CDC Universitas Sriwijaya
+      - Jenis-jenis layanan pusat karir unsri
+      - Macam layanan yang diberikan pusat karir Universitas Sriwijaya
+      - Macam-macam layanan pusat pengembangan karir
+      - Jelaskan layanan pusat karir
+      - Jelaskan layanan CDC Unsri
+
+  - intent: acuan_gelar_akademik
+    examples: |
+      - Apa landasan hukum yang mengatur tentang pemberian gelar dan sebutan akademik?
+      - Apa acuan dari pemberian gelar dan sebutan akademik?
+      - Apa dasar pemberian gelar dan sebutan akademik di Universitas Sriwijaya?
+      - Apa yang mengatur pemberian gelar dan sebutan akademik di Unsri?
+      - Hukum apa yang menjadi acuan dalam pemberian gelar sebutan akademik?
+      - Bagaimana hukum yang mengatur pemberian gelar dan sebutan akademik?
+      - Bagaimana gelar dan sebutan akademik diberikan?
+      - Dasar apa yang digunakan untuk pemberian gelar sebutan?
+      - Berikan saya dasar hukum dari pemberian gelar dan sebutan akademik
+      - Saya ingin tahu dasar dari pemberian gelar di Unsri
+      - Hukum pemberian gelar dan sebutan akademik
+      - Dasar pemberian gelar dan sebutan akademik yang digunakan di Universitas Sriwijaya
+      - Hukum gelar dan sebutan
+      - Acuan gelar dan sebutan akademik Universitas Sriwijaya
+
+  - intent: gelar_akademik
+    examples: |
+      - Apa gelar atau sebutan akademik bagi lulusan program?
+      - Gelar apa yang diberikan bagi lulusan program?
+      - Gelar dan sebutan akademik yang diberikan kepada lulusan?
+      - Gelar apa yang akan didapat lulusan?
+      - Saya ingin tahu gelar yang akan didapat oleh lulusan
+      - Saya lulusan program, ingin mengetahui gelar dan sebutan yang diberikan
+      - Jika saya lulus program, gelar atau sebutan apa yang akan saya terima?
+      - Lulusan program mendapat gelar apa?
+      - Mahasiswa yang memilih program akan mendapat gelar apa?
+      - Saya ingin tahu lulusan program dan gelar sebutan akademik yang didapat
+      - Gelar sebutan lulusan program
+      - Gelar dan sebutan program
+      - Gelar yang didapatkan
+      - Gelar akademik
+      - Gelar sebutan
+      - Gelar dan sebutan akademik
+      - Program dan gelar sebutannya
+
+  - intent: materi_ijazah
+    examples: |
+      - Apa redaksi atau materi pada ijazah Universitas Sriwijaya?
+      - Ijazah Universitas Sriwijaya berisi apa saja?
+      - Ijazah Unsri berisi apa?
+      - Apa warna pada tulisan "UNIVERSITAS SRIWIJAYA" pada ijazah?
+      - Apa tinta yang digunakan untuk mencetak Nama Perguruan Tinggi “UNIVERSITAS SRIWIJAYA”?
+      - Apa nomor seri pada ijazah Universitas Sriwijaya?
+      - Apa ukuran pasfoto pada ijazah Universitas Sriwijaya?
+      - Apa tanggal yang tertera pada ijazah Universitas Sriwijaya?
+      - Apa warna untuk pasfoto pada ijazah Universitas Sriwijaya?
+      - Apa ketentuan pakaian pada pasfoto untuk ijazah Universitas Sriwijaya?
+      - Apakah Biodata penerima gelar sesuai dengan akte kelahiran?
+      - Dimana letak nomor ijazah?
+      - Siapa yang menandatangani ijazah Universitas Sriwijaya?
+      - Bagaimana cap di tempel pada ijazah Universitas Sriwijaya?
+      - Redaksi pada ijazah Universitas Sriwijaya
+      - Materi pada ijazah Universitas Sriwijaya
+      - Materi pada ijazah Unsri
+      - Apa saja isi ijazah Unsri
+      - Isi ijazah Universitas Sriwijaya
+
+  - intent: contoh_ijazah
+    examples: |
+      - Bagaimana tampilan pada ijazah Universitas Sriwijaya?
+      - Bagaimana contoh tampilan ijazah Universitas Sriwijaya?
+      - Bagaimana contoh tampilan ijazah Unsri?
+      - Contoh ijazah Universitas Sriwijaya
+      - Contoh tampilan ijazah Universitas Sriwijaya
+      - Bentuk ijazah Unsri
+      - Tampilan ijazah Unsri
+      - Tampilan pada ijazah Universitas Sriwijaya
+      - Contoh ijazah
+      - Contoh tampilan ijazah
+      - Bentuk ijazah
+      - Tampilan ijazah
+
+  - intent: materi_transkrip
+    examples: |
+      - Apa Redaksi atau Materi pada Transkrip Universitas Sriwijaya ?
+      - Apa warna nomor seri pada Transkrip Universitas Sriwijaya ?
+      - Apa teknik yang digunakan untuk mencetak  nomor seri Transkrip Universitas Sriwijaya ?
+      - Apa isi tabel pada daftar nilai biasanya di isi ?
+      - Apa warna pasfoto untuk Transkrip Universitas Sriwijaya ?
+      - Apa ketentuan pakaian pada pasfoto untuk Transkrip Universitas Sriwijaya ?
+      - Dimana letak nomor seri pada Transkrip Universitas Sriwijaya ?
+      - Berapa nomor seri biasanya di isi ?
+      - Berapa ukuran pasfoto untuk Transkrip Universitas Sriwijaya ?
+      - Ada berapa kolom tabel pada daftar nilai di Transkrip Universitas Sriwijaya ?
+      - Bagaimana perhitungan di daftar nilai pada Transkrip Universitas Sriwijaya ?
+      - Bagaimana cap di tempel pada Transkrip Universitas Sriwijaya ?
+      - Siapa yang menandatangani Transkrip Universitas Sriwijaya ?
+
+  - intent: syarat_predikat_program
+    examples: |
+      - Apa syarat untuk memperoleh predikat kelulusan [memuaskan](predikat) untuk program [Pendidikan spesialis](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [memuaskan](predikat) untuk program [Magister](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [memuaskan](predikat) untuk program [Doktor](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [sangat memuaskan](predikat) untuk program [Pendidikan spesialis](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [sangat memuaskan](predikat) untuk program [Magister](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [sangat memuaskan](predikat) untuk program [Doktor](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [pujian](predikat) untuk program [Pendidikan spesialis](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [pujian](predikat) untuk program [Magister](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [pujian](predikat) untuk program [Doktor](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [cumlaude](predikat) untuk program [Pendidikan spesialis](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [cumlaude](predikat) untuk program [Magister](program)?
+      - Apa syarat untuk memperoleh predikat kelulusan [cumlaude](predikat) untuk program [Doktor](program)?
+      - Bagaimana cara memperoleh predikat [memuaskan](predikat) dari program [Pendidikan spesialis](program)?
+      - Bagaimana cara memperoleh predikat [memuaskan](predikat) dari program [Magister](program)?
+      - Bagaimana cara memperoleh predikat [memuaskan](predikat) dari program [Doktor](program)?
+      - Bagaimana cara memperoleh predikat [sangat memuaskan](predikat) dari program [Pendidikan spesialis](program)?
+      - Bagaimana cara memperoleh predikat [sangat memuaskan](predikat) dari program [Magister](program)?
+      - Bagaimana cara memperoleh predikat [sangat memuaskan](predikat) dari program [Doktor](program)?
+      - Bagaimana cara memperoleh predikat [pujian](predikat) dari program [Pendidikan spesialis](program)?
+      - Bagaimana cara memperoleh predikat [pujian](predikat) dari program [Magister](program)?
+      - Bagaimana cara memperoleh predikat [pujian](predikat) dari program [Doktor](program)?
+      - Bagaimana cara memperoleh predikat [cumlaude](predikat) dari program [Pendidikan spesialis](program)?
+      - Bagaimana cara memperoleh predikat [cumlaude](predikat) dari program [Magister](program)?
+      - Bagaimana cara memperoleh predikat [cumlaude](predikat) dari program [Doktor](program)?
+      - Cara mendapatkan [memuaskan](predikat) program [Pendidikan spesialis](program) bagaimana?
+      - Cara mendapatkan [memuaskan](predikat) program [Magister](program) bagaimana?
+      - Cara mendapatkan [memuaskan](predikat) program [Doktor](program) bagaimana?
+      - Cara mendapatkan [sangat memuaskan](predikat) program [Pendidikan spesialis](program) bagaimana?
+      - Cara mendapatkan [sangat memuaskan](predikat) program [Magister](program) bagaimana?
+      - Cara mendapatkan [sangat memuaskan](predikat) program [Doktor](program) bagaimana?
+      - Cara mendapatkan [pujian](predikat) program [Pendidikan spesialis](program) bagaimana?
+      - Cara mendapatkan [pujian](predikat) program [Magister](program) bagaimana?
+      - Cara mendapatkan [pujian](predikat) program [Doktor](program) bagaimana?
+      - Cara mendapatkan [cumlaude](predikat) program [Pendidikan spesialis](program) bagaimana?
+      - Cara mendapatkan [cumlaude](predikat) program [Magister](program) bagaimana?
+      - Cara mendapatkan [cumlaude](predikat) program [Doktor](program) bagaimana?
+      - Apa saja syarat lulus secara [memuaskan](predikat) untuk mahasiswa program [Pendidikan spesialis](program)?
+      - Apa saja syarat lulus secara [memuaskan](predikat) untuk mahasiswa program [Magister](program)?
+      - Apa saja syarat lulus secara [memuaskan](predikat) untuk mahasiswa program [Doktor](program)?
+      - Apa saja syarat lulus secara [sangat memuaskan](predikat) untuk mahasiswa program [Pendidikan spesialis](program)?
+      - Apa saja syarat lulus secara [sangat memuaskan](predikat) untuk mahasiswa program [Magister](program)?
+      - Apa saja syarat lulus secara [sangat memuaskan](predikat) untuk mahasiswa program [Doktor](program)?
+      - Apa saja syarat lulus secara [pujian](predikat) untuk mahasiswa program [Pendidikan spesialis](program)?
+      - Apa saja syarat lulus secara [pujian](predikat) untuk mahasiswa program [Magister](program)?
+      - Apa saja syarat lulus secara [pujian](predikat) untuk mahasiswa program [Doktor](program)?
+      - Apa saja syarat lulus secara [cumlaude](predikat) untuk mahasiswa program [Pendidikan spesialis](program)?
+      - Apa saja syarat lulus secara [cumlaude](predikat) untuk mahasiswa program [Magister](program)?
+      - Apa saja syarat lulus secara [cumlaude](predikat) untuk mahasiswa program [Doktor](program)?
+      - Apa yang diperlukan mahasiswa [Pendidikan spesialis](program) supaya lulus [memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Magister](program) supaya lulus [memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Doktor](program) supaya lulus [memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Pendidikan spesialis](program) supaya lulus [sangat memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Magister](program) supaya lulus [sangat memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Doktor](program) supaya lulus [sangat memuaskan](predikat)?
+      - Apa yang diperlukan mahasiswa [Pendidikan spesialis](program) supaya lulus [pujian](predikat)?
+      - Apa yang diperlukan mahasiswa [Magister](program) supaya lulus [pujian](predikat)?
+      - Apa yang diperlukan mahasiswa [Doktor](program) supaya lulus [pujian](predikat)?
+      - Apa yang diperlukan mahasiswa [Pendidikan spesialis](program) supaya lulus [cumlaude](predikat)?
+      - Apa yang diperlukan mahasiswa [Magister](program) supaya lulus [cumlaude](predikat)?
+      - Apa yang diperlukan mahasiswa [Doktor](program) supaya lulus [cumlaude](predikat)?
+      - Syarat [memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Syarat [memuaskan](predikat) program [Magister](program)
+      - Syarat [memuaskan](predikat) program [Doktor](program)
+      - Syarat [sangat memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Syarat [sangat memuaskan](predikat) program [Magister](program)
+      - Syarat [sangat memuaskan](predikat) program [Doktor](program)
+      - Syarat [pujian](predikat) program [Pendidikan spesialis](program)
+      - Syarat [pujian](predikat) program [Magister](program)
+      - Syarat [pujian](predikat) program [Doktor](program)
+      - Syarat [cumlaude](predikat) program [Pendidikan spesialis](program)
+      - Syarat [cumlaude](predikat) program [Magister](program)
+      - Syarat [cumlaude](predikat) program [Doktor](program)
+      - Lulus [memuaskan](predikat) untuk program [Pendidikan spesialis](program)
+      - Lulus [memuaskan](predikat) untuk program [Magister](program)
+      - Lulus [memuaskan](predikat) untuk program [Doktor](program)
+      - Lulus [sangat memuaskan](predikat) untuk program [Pendidikan spesialis](program)
+      - Lulus [sangat memuaskan](predikat) untuk program [Magister](program)
+      - Lulus [sangat memuaskan](predikat) untuk program [Doktor](program)
+      - Lulus [pujian](predikat) untuk program [Pendidikan spesialis](program)
+      - Lulus [pujian](predikat) untuk program [Magister](program)
+      - Lulus [pujian](predikat) untuk program [Doktor](program)
+      - Lulus [cumlaude](predikat) untuk program [Pendidikan spesialis](program)
+      - Lulus [cumlaude](predikat) untuk program [Magister](program)
+      - Lulus [cumlaude](predikat) untuk program [Doktor](program)
+      - Predikat [memuaskan](predikat) untuk program [Pendidikan spesialis](program)
+      - Predikat [memuaskan](predikat) untuk program [Magister](program)
+      - Predikat [memuaskan](predikat) untuk program [Doktor](program)
+      - Predikat [sangat memuaskan](predikat) untuk program [Pendidikan spesialis](program)
+      - Predikat [sangat memuaskan](predikat) untuk program [Magister](program)
+      - Predikat [sangat memuaskan](predikat) untuk program [Doktor](program)
+      - Predikat [pujian](predikat) untuk program [Pendidikan spesialis](program)
+      - Predikat [pujian](predikat) untuk program [Magister](program)
+      - Predikat [pujian](predikat) untuk program [Doktor](program)
+      - Predikat [cumlaude](predikat) untuk program [Pendidikan spesialis](program)
+      - Predikat [cumlaude](predikat) untuk program [Magister](program)
+      - Predikat [cumlaude](predikat) untuk program [Doktor](program)
+      - Berapa ipk yang diperoleh predikat kelulusan [memuaskan](predikat) dari program [Pendidikan spesialis](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [memuaskan](predikat) dari program [Magister](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [memuaskan](predikat) dari program [Doktor](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [sangat memuaskan](predikat) dari program [Pendidikan spesialis](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [sangat memuaskan](predikat) dari program [Magister](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [sangat memuaskan](predikat) dari program [Doktor](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [pujian](predikat) dari program [Pendidikan spesialis](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [pujian](predikat) dari program [Magister](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [pujian](predikat) dari program [Doktor](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [cumlaude](predikat) dari program [Pendidikan spesialis](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [cumlaude](predikat) dari program [Magister](program)?
+      - Berapa ipk yang diperoleh predikat kelulusan [cumlaude](predikat) dari program [Doktor](program)?
+      - Berapa ipk yang diperlukan mahasiswa program [Pendidikan spesialis](program) untuk lulus secara [memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Magister](program) untuk lulus secara [memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Doktor](program) untuk lulus secara [memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Pendidikan spesialis](program) untuk lulus secara [sangat memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Magister](program) untuk lulus secara [sangat memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Doktor](program) untuk lulus secara [sangat memuaskan](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Pendidikan spesialis](program) untuk lulus secara [pujian](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Magister](program) untuk lulus secara [pujian](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Doktor](program) untuk lulus secara [pujian](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Pendidikan spesialis](program) untuk lulus secara [cumlaude](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Magister](program) untuk lulus secara [cumlaude](predikat)?
+      - Berapa ipk yang diperlukan mahasiswa program [Doktor](program) untuk lulus secara [cumlaude](predikat)?
+      - Berapa minimal ipk untuk mendapatkan predikat [memuaskan](predikat) di program [Pendidikan spesialis](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [memuaskan](predikat) di program [Magister](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [memuaskan](predikat) di program [Doktor](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [sangat memuaskan](predikat) di program [Pendidikan spesialis](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [sangat memuaskan](predikat) di program [Magister](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [sangat memuaskan](predikat) di program [Doktor](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [pujian](predikat) di program [Pendidikan spesialis](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [pujian](predikat) di program [Magister](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [pujian](predikat) di program [Doktor](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [cumlaude](predikat) di program [Pendidikan spesialis](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [cumlaude](predikat) di program [Magister](program)?
+      - Berapa minimal ipk untuk mendapatkan predikat [cumlaude](predikat) di program [Doktor](program)?
+      - Minimal ipk predikat [memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Minimal ipk predikat [memuaskan](predikat) program [Magister](program)
+      - Minimal ipk predikat [memuaskan](predikat) program [Doktor](program)
+      - Minimal ipk predikat [sangat memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Minimal ipk predikat [sangat memuaskan](predikat) program [Magister](program)
+      - Minimal ipk predikat [sangat memuaskan](predikat) program [Doktor](program)
+      - Minimal ipk predikat [pujian](predikat) program [Pendidikan spesialis](program)
+      - Minimal ipk predikat [pujian](predikat) program [Magister](program)
+      - Minimal ipk predikat [pujian](predikat) program [Doktor](program)
+      - Minimal ipk predikat [cumlaude](predikat) program [Pendidikan spesialis](program)
+      - Minimal ipk predikat [cumlaude](predikat) program [Magister](program)
+      - Minimal ipk predikat [cumlaude](predikat) program [Doktor](program)
+      - Batas ipk [memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Batas ipk [memuaskan](predikat) program [Magister](program)
+      - Batas ipk [memuaskan](predikat) program [Doktor](program)
+      - Batas ipk [sangat memuaskan](predikat) program [Pendidikan spesialis](program)
+      - Batas ipk [sangat memuaskan](predikat) program [Magister](program)
+      - Batas ipk [sangat memuaskan](predikat) program [Doktor](program)
+      - Batas ipk [pujian](predikat) program [Pendidikan spesialis](program)
+      - Batas ipk [pujian](predikat) program [Magister](program)
+      - Batas ipk [pujian](predikat) program [Doktor](program)
+      - Batas ipk [cumlaude](predikat) program [Pendidikan spesialis](program)
+      - Batas ipk [cumlaude](predikat) program [Magister](program)
+      - Batas ipk [cumlaude](predikat) program [Doktor](program)
+      - Ipk mahasiswa [Pendidikan spesialis](program) [memuaskan](predikat)
+      - Ipk mahasiswa [Magister](program) [memuaskan](predikat)
+      - Ipk mahasiswa [Doktor](program) [memuaskan](predikat)
+      - Ipk mahasiswa [Pendidikan spesialis](program) [sangat memuaskan](predikat)
+      - Ipk mahasiswa [Magister](program) [sangat memuaskan](predikat)
+      - Ipk mahasiswa [Doktor](program) [sangat memuaskan](predikat)
+      - Ipk mahasiswa [Pendidikan spesialis](program) [pujian](predikat)
+      - Ipk mahasiswa [Magister](program) [pujian](predikat)
+      - Ipk mahasiswa [Doktor](program) [pujian](predikat)
+      - Ipk mahasiswa [Pendidikan spesialis](program) [cumlaude](predikat)
+      - Ipk mahasiswa [Magister](program) [cumlaude](predikat)
+      - Ipk mahasiswa [Doktor](program) [cumlaude](predikat)
+
+  - synonym: laboratorium komputer
+    examples: |
+      - lab komputer
+
+  - synonym: laboratorium dasar
+    examples: |
+      - laboratorium dasar terpadu
+      - lab dasar terpadu
+      - lab dasar
+
+  - synonym: fasilitas lapangan
+    examples: |
+      - lapangan
+
+  - synonym: asrama
+    examples: |
+      - asrama mahasiswa
+
+  - synonym: bus kampus
+    examples: |
+      - bis kampus
+      - bus
+      - bis
+
+  - synonym: auditorium
+    examples: |
+      - gedung serbaguna
+
+  - synonym: student center
+    examples: |
+      - SC
+
+  - synonym: kesehatan
+    examples: |
+      - klinik
+
+  - synonym: ijazah
+    examples: |
+      - ijazah terakhir
+      - ijazah
+
+  - synonym: bukti kelulusan ujian bahasa inggris
+    examples: |
+      - bukti kelulusan ujian penguasaan bahasa inggris
+      - bukti kelulusan ujian bahasa
+      - SULIET
+
+  - synonym: pasfoto
+    examples: |
+      - pas foto
+
+  - synonym: pujian
+    examples: |
+      - cumlaude
